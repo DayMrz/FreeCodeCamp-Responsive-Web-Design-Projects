@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 
 :root {
-    --Primary-Blackcurrant: hsl(276, 20%, 20%);
     --Primary-Black-Rock:hsl(262, 80%, 8%);
+    --Primary-Blackcurrant: hsl(276, 20%, 20%);
     --Secondary-Bossanova: hsl(276, 32%, 26%);
     --Secondary-Trendy-Pink: hsl(276, 21%, 56%);
     --Secondary-Blue-Bell: hsl(249, 62%, 75%);
