@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+:root {
+    --Primary-Blackcurrant: hsl(276, 20%, 20%);
+    --Primary-Black-Rock:hsl(262, 80%, 8%);
+    --Secondary-Bossanova: hsl(276, 32%, 26%);
+    --Secondary-Trendy-Pink: hsl(276, 21%, 56%);
+    --Secondary-Blue-Bell: hsl(249, 62%, 75%);
+    --Primary-Silver: hsl(0, 5%, 75%);
+    --Secondary-Swiss-Coffee: hsl(0, 10%, 87%);
+    --Secondary-White-Rock: hsl(64, 38%, 86%);
+}
+
+body {
+    background: linear-gradient(to right, hsl(276, 20%, 20%) 0%, hsl(262, 80%, 8%) 100%);
+    color: var(--Primary-Silver);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    text-align:initial;
+}
+
+#img-div {
+    margin: 0;
+}
+
+#image {
+    border-radius: 20px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+#img-caption {
+    font-size: 1rem;
+    line-height: normal;
+    text-align: center;
+}
+
+#sidebar {
+    background-color: var(--Secondary-Bossanova);
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px 3px rgb(0 0 0 / 48%);
+}
+
+.info:hover {
+    background-color: var(--Primary-Blackcurrant);
+}
+
+#title {
+    color: var(--Secondary-White-Rock);
+    text-align: center;
+}
+
+.title-sidebar {
+    background-color: var(--Secondary-Swiss-Coffee);
+    color: var(--Primary-Blackcurrant);
+    margin-bottom: 0;
+    padding: .5em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.value-paragraph {
+    font-size: 1rem;
+}
+
+.data-bar,
+.value-paragraph  {
+    margin: 0;
+    padding: .5rem;
+}
+
+.subtitle-info, .paragraph-end {
+    color: var(--Secondary-Swiss-Coffee);
+    font-weight: 600;
+}
+
+#tribute-link {
+    color: var(--Secondary-Blue-Bell);
+}
+
+#tribute-link:visited {
+    color: var(--Secondary-Trendy-Pink);
+}
+
+@media (min-width: 600px) {
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .data-bar {
+        width: 30%;
+    }
+    
+    .value-bar {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #tribute-info {
+        width: 55%;
+    }
+
+    #sidebar {
+        margin-top: 6rem;
+        height: auto;
+        width: 40%;
+    }
+
+    .title-sidebar {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 2000px) {
+    #tribute-info {
+        width: 60%;
+    }
+
+    #sidebar {
+        margin-top: 6rem;
+        height: auto;
+        width: 30%;
+    }
+
+    .value-bar {
+        padding: 5px ;
+    }
+}
