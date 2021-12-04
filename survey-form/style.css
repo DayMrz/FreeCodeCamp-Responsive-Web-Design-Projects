@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0;
+    background-color: rgb(226, 211, 211);
+}
+
+.header {
+    background-color: hsla(12, 100%, 64%, 0.89);
+    padding: 1rem;
+    margin-bottom: 1em;
+}
+
+#title {
+    margin-top: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.container {
+    display: flex; 
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1rem;
+}
