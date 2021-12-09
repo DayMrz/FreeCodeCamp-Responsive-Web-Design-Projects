@@ -1,28 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --primary-Persimmon: hsla(12, 100%, 64%, 0.89);
+    --primary-Geraldine: hsla(12, 67%, 83%, 0.39);
+    --Background-Soft-Peach: hsl(0, 25%, 94%);
+
+    --Primary-Box-Shadow: 0px 5px 10px 0 hsla(12, 75%, 55%, 0.842);
+    --Secondary-Box-Shadow: 0px 5px 10px 0 rgb(0 0 0 / 48%);
+}
+
 body {
-    font-family: sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.5;
+    background-color: var(--Background-Soft-Peach);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
     margin: 0;
-    background-color: rgb(226, 211, 211);
 }
 
 .header {
-    background-color: hsla(12, 100%, 64%, 0.89);
-    padding: 1rem;
+    background-color: var(--primary-Persimmon);
     margin-bottom: 1em;
+    padding: 2rem;
+    text-align: center;
 }
 
-#title {
-    margin-top: 0;
+#title{
     color: #000000;
+    font-weight: 700;
+    margin-top: 0;
     text-align: center;
 }
 
 .container {
-    display: flex; 
-    background-color: hsl(0, 0%, 100%);
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-    padding: 1rem;
+    background-color: var(--primary-Geraldine);
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 2rem;
+    
+}
+
+label {
+    align-items: center;
+    display: flex;
+    margin-top: 1em;
+}
+
+#survey-form{
+    width: 100%;
+}
+
+.form-control,
+.input-textarea,
+#submit-button {
+    border: ridge;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .3rem;
+    width: 100%;
+}
+
+.input-question {
+    margin-bottom: 0;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border: 2px solid var(--primary-Persimmon);
+    outline: 2px solid var(--primary-Persimmon);
+}
+
+input[type=radio],
+input[type=checkbox] {
+    border: 0px;
+    height: 1.5em;
+    width: 10%;
+}
+
+#submit-button{
+    background-color: var(--primary-Persimmon);
+    border: none;
+    box-shadow: var(--Primary-Box-Shadow);
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+@media (min-width: 570px) {
+    .header {
+        background-color: var(--primary-Persimmon);
+        border-radius: 0 0 20px 20px;
+        box-shadow: var(--Primary-Box-Shadow);
+        padding: 1rem;
+        margin-bottom: 1em;
+    }
+
+    .container {
+        box-shadow: var(--Secondary-Box-Shadow);
+        display: flex; 
+        width: 80%;
+        margin: 0 auto;
+    }
+    
 }
