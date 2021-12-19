@@ -43,6 +43,9 @@ body {
     /* height: 200px; */
 }
 
+.img-png {
+    width: 100%;
+}
 
 @media (min-width: 600px) {
     #main {
