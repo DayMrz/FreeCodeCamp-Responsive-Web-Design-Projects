@@ -3,12 +3,67 @@
 /* #b3cdf2 */
 /* #ebbae9 */
 
-
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0;
+}
+
+#header {
+    /* display: flex; */
+    height: auto;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* padding: 1rem; */
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em ;
+}
+
+.fa-shopping-basket {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.basket-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav__list {
+    background-color: rgb(68, 63, 63);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    list-style: none;
+    padding:  1em 0;
+}
+
+.nav__list li {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-link {
+    color: rgb(236, 224, 224);
+    font-size: 1rem;
+    letter-spacing: .0625em;
+    margin-left: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+.nav--visible {
+    height: auto;
+    position: relative;
+    visibility: visible;
 }
 
 .container {

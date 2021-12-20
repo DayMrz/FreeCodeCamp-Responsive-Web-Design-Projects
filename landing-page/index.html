@@ -10,29 +10,24 @@
 </head>
 <body>
     <header id="header">
-        <div>
-            <img src="https://res.cloudinary.com/daymrz/image/upload/v1639448239/LOGO-META-FACEBOOK-scaled_lsbbe7.jpg" alt="" id="header-img">
+        <div class="top-nav">
+            <img src="https://res.cloudinary.com/daymrz/image/upload/v1639448239/LOGO-META-FACEBOOK-scaled_lsbbe7.jpg" alt="meta logo">
+            <a href="" class="basket-icon">
+                <i class="fas fa-shopping-basket"></i>
+            </a>
         </div>
         <nav id="nav-bar">
-            <div>
-                <a href="" class="nav-link">Experiences</a>
-            </div>
-            <div>
-                <a href="" class="nav-link">Apps&Games</a>
-            </div>
-            <div>
-                <a href="" class="nav-link">Support</a>
-            </div>
-            <div>
-                <a href="" class="nav-link">
-                    <i class="far fa-user"></i>
-                </a>
-            </div>
-            <div>
-                <a href="" class="nav-link">
-                    <i class="fas fa-shopping-basket"></i>
-                </a>
-            </div>
+            <ul class="nav__list">
+                <li>
+                    <a href="#experiences" class="nav-link">Experiences</a>
+                </li>
+                <li>
+                    <a href="#discover" class="nav-link">Discover</a>
+                </li>
+                <li>
+                    <a href="#new&updates" class="nav-link">News & Updates</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div class="container">
@@ -52,7 +47,7 @@
         </div>
     </div>
     <section class="container">
-        <h2 class="subtitle">Over 250 Games and Experiences are Ready</h2> 
+        <h2 id="experiences" class="subtitle">Over 250 Games and Experiences are Ready</h2> 
         <p class="info-subtitle">
             Squad up with friends for a battle royale. Slash beats to chart-topping hits. Face your fears in Resident Evil 4. Turn your couch into courtside seats at a live NBA game. Or burn calories in exotic locations around the globe. Quest 2 is ready for everything. All from $299 USD
         </p> 
@@ -61,7 +56,7 @@
             <i class="fas fa-arrow-right"></i>
         </a>
     </section>
-    <section class="discover">
+    <section id="discover">
         <div class="container">
             <h3 class="discover-title">Discover What's Possible in VR</h3>
             <p class="dicover-paragraph">
@@ -85,7 +80,7 @@
 
             <form action="" id="form">
                 <div class="form-control">
-                    <h4 class="subtitle">Get news & updates</h4>
+                    <h4 id="new&updates" class="subtitle">Get news & updates</h4>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="enter your email">
                 </div>
@@ -100,5 +95,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
