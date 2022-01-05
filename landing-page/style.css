@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Barlow+Semi+Condensed:wght@300;600;700;900&display=swap');
 
-/* #b3cdf2 */
-/* #ebbae9 */
+:root {
+    --Background-Perano: hsl(215, 71%, 83%);
+    --Background-Light-Orchid: hsl(302, 55%, 83%);
+    --Secondary-Dodger-Blue: hsl(216, 93%, 62%);
+    --Secondary-letter-Nevada: hsl(199, 10%, 44%);
+    --Secondary-Titan-White: hsl(240, 100%, 100%);
+    --Background-Shark: hsl(220, 6%, 10%);
+}
+
+/* #b3cdf2   gradient background section*/
+/* #ebbae9  gradient background section*/
+/* #1e65c1  button*/
+/* #65747b letter on dark background */
+/* #fefeff title letter on dark background */
+/* #191a1c title letter on dark background */
+
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -11,11 +25,10 @@ body {
 }
 
 #header {
-    /* display: flex; */
-    height: auto;
+    background-color: #fff;
     justify-content: space-between;
-    margin: 0 auto;
-    /* padding: 1rem; */
+    position: fixed;
+    width: 100%;
 }
 
 .top-nav {
@@ -25,23 +38,23 @@ body {
 }
 
 .fa-shopping-basket {
-    font-size: 1.2rem;
     color: #000;
+    font-size: 1.2rem;
 }
 
 .basket-icon {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .nav__list {
-    background-color: rgb(68, 63, 63);
+    background-color: var(--Background-Shark);
     display: flex;
     justify-content: space-evenly;
-    margin: 0;
     list-style: none;
-    padding:  1em 0;
+    margin: 0;
+    padding:  1rem 0;
 }
 
 .nav__list li {
@@ -50,7 +63,7 @@ body {
 }
 
 .nav-link {
-    color: rgb(236, 224, 224);
+    color: var(--Secondary-Titan-White);
     font-size: 1rem;
     letter-spacing: .0625em;
     margin-left: 1em;
@@ -58,22 +71,17 @@ body {
     text-transform: uppercase;
 }
 
-
-
-.nav--visible {
-    height: auto;
-    position: relative;
-    visibility: visible;
-}
-
 .container {
     margin: 0 auto;
-    width: 85%;
     padding: 2rem 0;
+    width: 85%;
 }
 
 #main {
-    height: 300px;
+    margin: 8em 0 4em 0;
+    min-height: 65vh;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .main-title {
@@ -81,21 +89,26 @@ body {
     font-weight: 900;
 }
 
-
-.main-title,
-.main-paragraph {
-    text-align: center;
-}
-
-.main-title,
-.main-paragraph,
-.subtitle {
+.main-button {
+    background-color: var(--Secondary-Dodger-Blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--Secondary-Titan-White);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 2em;
+    padding: 1rem 4.5rem;
     text-transform: uppercase;
 }
 
+.learn-link {
+    margin: 2em;
+}
+
+
 #video {
     width: 100%;
-    /* height: 200px; */
 }
 
 .img-png {
