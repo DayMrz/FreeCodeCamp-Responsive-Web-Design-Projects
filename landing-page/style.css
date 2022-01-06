@@ -4,6 +4,7 @@
     --Background-Perano: hsl(215, 71%, 83%);
     --Background-Light-Orchid: hsl(302, 55%, 83%);
     --Secondary-Dodger-Blue: hsl(216, 93%, 62%);
+    --Primary-Denim: hsl(214, 73%, 44%);
     --Secondary-letter-Nevada: hsl(199, 10%, 44%);
     --Secondary-Titan-White: hsl(240, 100%, 100%);
     --Background-Shark: hsl(220, 6%, 10%);
@@ -19,7 +20,7 @@
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     margin: 0;
 }
@@ -64,7 +65,7 @@ body {
 
 .nav-link {
     color: var(--Secondary-Titan-White);
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: .0625em;
     margin-left: 1em;
     text-decoration: none;
@@ -78,10 +79,14 @@ body {
 }
 
 #main {
-    margin: 8em 0 4em 0;
+    margin: 7.5em 0 4em 0;
     min-height: 65vh;
+}
+
+.layout {
     text-align: center;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .main-title {
@@ -90,22 +95,38 @@ body {
 }
 
 .main-button {
-    background-color: var(--Secondary-Dodger-Blue);
+    background-color: var(--Primary-Denim);
     border: none;
     border-radius: 50px;
     color: var(--Secondary-Titan-White);
     font-family: inherit;
-    font-size: 1rem;
+    font-size: .7em;
     font-weight: 700;
-    margin: 2em;
+    margin: 1.5em;
     padding: 1rem 4.5rem;
     text-transform: uppercase;
 }
-
-.learn-link {
-    margin: 2em;
+.main-button:hover {
+background-color: var(--Secondary-Dodger-Blue);
 }
 
+.learn-link {
+    margin: 1.5em;
+}
+
+.fa-arrow-right {
+    margin-left: .5em;
+}
+
+.learn-more:hover .fa-arrow-right {
+    color: var(--Secondary-Dodger-Blue);
+}
+
+.learn-more {
+    text-decoration: none;
+    color: var(--Background-Shark);
+    font-weight: 600;
+}
 
 #video {
     width: 100%;
