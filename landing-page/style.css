@@ -2,21 +2,12 @@
 
 :root {
     --Background-Perano: hsl(215, 71%, 83%);
-    --Background-Light-Orchid: hsl(302, 55%, 83%);
     --Secondary-Dodger-Blue: hsl(216, 93%, 62%);
     --Primary-Denim: hsl(214, 73%, 44%);
     --Secondary-letter-Nevada: hsl(199, 10%, 44%);
-    --Secondary-Titan-White: hsl(240, 100%, 100%);
     --Background-Shark: hsl(220, 6%, 10%);
+    --Secondary-Titan-White: hsl(240, 100%, 100%);
 }
-
-/* #b3cdf2   gradient background section*/
-/* #ebbae9  gradient background section*/
-/* #1e65c1  button*/
-/* #65747b letter on dark background */
-/* #fefeff title letter on dark background */
-/* #191a1c title letter on dark background */
-
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -106,20 +97,9 @@ body {
     padding: 1rem 4.5rem;
     text-transform: uppercase;
 }
+
 .main-button:hover {
 background-color: var(--Secondary-Dodger-Blue);
-}
-
-.learn-link {
-    margin: 1.5em;
-}
-
-.fa-arrow-right {
-    margin-left: .5em;
-}
-
-.learn-more:hover .fa-arrow-right {
-    color: var(--Secondary-Dodger-Blue);
 }
 
 .learn-more {
@@ -128,8 +108,44 @@ background-color: var(--Secondary-Dodger-Blue);
     font-weight: 600;
 }
 
+.learn-more:hover .fa-arrow-right {
+    color: var(--Secondary-Dodger-Blue);
+}
+
+.learn-link {
+    margin: 1.5em;
+}
+
+.gradient-explore {
+    background: linear-gradient(hsl(263, 49%, 8%), hsl(295, 55%, 13%),  hsl(308, 53%, 25%));
+    color: var(--Secondary-Titan-White);
+    margin-top: 2em;
+    padding: 1rem 0 1rem 0;
+}
+
+.gradient-explore .learn-more {
+    color: var(--Secondary-Titan-White);
+}
+
+.fa-arrow-right {
+    margin-left: .5em;
+}
+
+.break-line {
+    width: 85%;
+    color: var(--Secondary-letter-Nevada);
+}
+
 #video {
     width: 100%;
+}
+
+#experiences {
+    text-transform: uppercase;
+}
+
+#discover {
+    background: linear-gradient();
 }
 
 .img-png {
