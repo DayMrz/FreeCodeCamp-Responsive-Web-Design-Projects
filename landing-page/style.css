@@ -75,7 +75,7 @@ body {
 }
 
 #main {
-    margin: 7.5em 0 4em 0;
+    margin: 9em 0 3em 0;
     min-height: 65vh;
 }
 
@@ -88,6 +88,14 @@ body {
 .main-title {
     font-family: 'Archivo', sans-serif;
     font-weight: 900;
+}
+
+.main-title,
+.subtitle,
+.discover-title,
+.title-img {
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .main-button {
@@ -149,11 +157,6 @@ background-color: var(--Secondary-Dodger-Blue);
     height: 300px;
 }
 
-#experiences {
-    text-transform: uppercase;
-    /* color: hsl(284, 36%, 77%); */
-}
-
 #discover {
     background: linear-gradient(to left, hsl(var(--Gradient-h), var(--Gradient-l), var(--Gradient-s), 48%), hsl(var(--Gradient-h), var(--Gradient-l), var(--Gradient-s), 60%));
     color: var(--Secondary-Titan-White);
@@ -164,7 +167,6 @@ background-color: var(--Secondary-Dodger-Blue);
 .discover-title {
     font-size: 3rem;
     font-weight: 900;
-    line-height: 1;
 }
 
 .discover-btn {
