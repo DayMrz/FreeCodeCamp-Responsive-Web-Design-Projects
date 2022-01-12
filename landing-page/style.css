@@ -293,21 +293,18 @@ background-color: var(--Secondary-Dodger-Blue);
     }
 
     .boxes {
-        display: flex;
-        flex-direction: row;
+        column-count: 2;
+        gap: 50px;
     }
 
     .info-box {
         margin-top: 0;
     }
 
-    .info-box + .info-box {
-        margin-left: 1.5em;
-    }
-
     #footer .container {
         display: flex;
         justify-content: space-between;
+        margin-top: 2em;
     }
 
     .non_break-line {
@@ -328,23 +325,27 @@ background-color: var(--Secondary-Dodger-Blue);
         width: 90%;
     }
 
+    #discover {
+        margin-bottom: 2em;
+    }
+
     .row {
         display: flex;
         justify-content: space-between;
     }
 
     .background-img-quest2 {
-        width: 45%;
+        width: 50%;
         margin: 0;
+        padding-top: 5rem;
     }
 
     .container-boxes {
-        width: 45%;
+        width: 40%;
     }
 
-    .info-box + .info-box,
-    .info-box {
-        margin: 0;
+    .info-box{
+        margin: 0 auto;
     }
 
     .info-box .paragraph-img{
@@ -352,4 +353,11 @@ background-color: var(--Secondary-Dodger-Blue);
         font-size: 1.5rem;
     }
 
+    .safety-notice {
+        width: 45%;
+    }
+
+    .form {
+        width: 45%;
+    }
 }
