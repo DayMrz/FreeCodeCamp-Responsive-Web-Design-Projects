@@ -114,11 +114,11 @@
                 </p>
                 <pre class="code-container">
                     <code>
-                        ReactDOM.render(
-                            &#60;h1&#62;Hello, World!&#60;&#47;h1&#62;,
+ReactDOM.render(
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;,
 
-                        document.getElementById('root')
-                        );
+document.getElementById('root')
+);
                         </code>
                     </pre>
                 <p>
@@ -139,25 +139,45 @@
                 </p>
                 <pre class="code-container">
                     <code>
-                        class ShoppingList extends
-                        React.Component {
-                            render() {
-                                return ( 
-                                    &#60;div&#62;
-                                    className="shopping-list"&#62;
-                                        &#60;h1&#62;Shopping List for {this.props.name}&#60;&#47;h1&#62;
-                                            &#60;ul&#62;
-                                                &#60;li&#62;Instagram&#60;&#47;li&#62;
-                                                &#60;li&#62;WhatsApp&#60;&#47;li&#62;
-                                                &#60;li&#62;Oculus&#60;&#47;li&#62;
-                                            &#60;&#47;ul&#62;
-                                    &#60;&#47;div&#62;
-                                );
-                            }
-                        }
-
-                        <span class="light-text">// Example usage: &#60;ShoppingList
-                            name="Mark&#47;&#62;</span>
+class ShoppingList extends
+    React.Component {
+        render() {
+            return ( 
+                &lt;div&gt;
+                className="shopping-list"&gt;
+                    &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Instagram&lt;/li&gt;
+                            &lt;li&gt;WhatsApp&lt;/li&gt;
+                            &lt;li&gt;Oculus&lt;/li&gt;
+                        &lt;/ul&gt;
+                &lt;/div&gt;
+            );
+        }
+    }
+    &lt;!--// Example usage: &lt;ShoppingList
+    name="Mark"/> -->
+                    </code>
+                </pre>
+                <p>
+                    We&#96;ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+                </p>
+                <p>
+                    Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <span class="yellow-highlight">props</span> (short for “properties”), and returns a hierarchy of views to display via the <span class="yellow-highlight">render</span> method.
+                </p>
+                <p>
+                    The <span class="yellow-highlight">render</span> method returns a description of what you want to see on the screen. React takes the description and displays the result. In particular, <span class="yellow-highlight">render</span> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The &lt;div/&gt; syntax is transformed at build time to <span class="yellow-highlight">React.createElement('div')</span>. The example above is equivalent to:
+                </p>
+                <pre>
+                    <code>
+return
+React.createElement('div',
+{classNAme: 'shopping-list'},
+React.createElement('h1',  /&#42;
+...h1 children ...&#42;/),
+React.createElement('ul',  /&#42;
+...ul children ...&#42;/),
+);
                     </code>
                 </pre>
             </article>
