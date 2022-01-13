@@ -32,7 +32,7 @@
                 <ul>
                     <li><h4>Online Playgrounds</h4></li>
                     <p>
-                        If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on <a class="blue-link" href="https://codepen.io/pen?&editors=0010">CodePen</a>, <a class="blue-link" href="https://codesandbox.io/s/new">CodeSandbox</a> or <a class="blue-link" href="https://stackblitz.com/edit/react-u7mesu">Stackblitz</a>.
+                        If you&#96;re interested in playing around with React, you can use an online code playground. Try a Hello World template on <a class="blue-link" href="https://codepen.io/pen?&editors=0010">CodePen</a>, <a class="blue-link" href="https://codesandbox.io/s/new">CodeSandbox</a> or <a class="blue-link" href="https://stackblitz.com/edit/react-u7mesu">Stackblitz</a>.
                     </p>
                     <li><h4>Add React to a Website</h4></li>
                     <p>
@@ -52,7 +52,7 @@
             <header><h3>Learn React</h3></header>
             <article>
                 <p>
-                    People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
+                    People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you&#96;ll find this section helpful.
                 </p>
                 <ul>
                     <li> If you prefer to <strong>learn by doing</strong>, start with our <a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">practical tutorial</a>.
@@ -64,16 +64,104 @@
                     Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
                 </p>
 
+                <h4>First Examples</h4>
+                <p>
+                    The React homepage contains a few small React examples with a live editor. Even if you don&#96;t know anything about React yet, try changing their code and see how it affects the result.
+                </p>
+                <h4>React for Beginners</h4>
+                <p>
+                    If you feel that the React documentation goes at a faster pace than you&#96;re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you&#96;re done, give the documentation another try!
+                </p>
+                <h4>React for Designers</h4>
+                <p>
+                    If you’re coming from a design background, these resources are a great place to get started.
+                </p>
+                <h4>JavaScript Resources</h4>
+                <p>
+                    The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
+                </p>
+                <p>
+                    We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+                </p>
+                <blockquote>
+                    <h5>Tip</h5>
+                    <p>
+                        Whenever you get confused by something in JavaScript, MDN and javascript.info are great websites to check. There are also community support forums where you can ask for help.
+                    </p>
+                </blockquote>
+
             </article>
         </section>
-        <section class="main-section" id="learn-react">
+        <section class="main-section" id="guie-to-main-concept">
             <header><h3>Guide to Main Concepts</h3></header>
             <article>
                 <p>
 
                 </p>
+                <h4> How to Read This Guide</h4>
+                <p>
+                    In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+                </p>
+
+                <blockquote>
+                    <h5>Tip</h5>
+                    <p>
+                        This guide is designed for people who prefer learning concepts step by step. If you prefer to learn by doing, check out our practical tutorial. You might find this guide and the tutorial complementary to each other.
+                    </p>
+                </blockquote>
+                <p class="light-text">
+                    The smallest React example looks like this:
+                </p>
+                <pre class="code-container">
+                    <code>
+                        ReactDOM.render(
+                            &#60;h1&#62;Hello, World!&#60;&#47;h1&#62;,
+
+                        document.getElementById('root')
+                        );
+                        </code>
+                    </pre>
+                <p>
+                    It displays a heading saying “Hello, world!” on the page.
+                </p>
             </article>
-        </section>    
+        </section>  
+        <section class="main-section" id="what-is-react">
+            <header>
+                <h3>What is React</h3>
+            </header>
+            <article>
+                <p>
+                    React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                </p>
+                <p>
+                    React has a few different kinds of components, but we’ll start with <span class="yellow-highlight">React.Component</span> subclasses:
+                </p>
+                <pre class="code-container">
+                    <code>
+                        class ShoppingList extends
+                        React.Component {
+                            render() {
+                                return ( 
+                                    &#60;div&#62;
+                                    className="shopping-list"&#62;
+                                        &#60;h1&#62;Shopping List for {this.props.name}&#60;&#47;h1&#62;
+                                            &#60;ul&#62;
+                                                &#60;li&#62;Instagram&#60;&#47;li&#62;
+                                                &#60;li&#62;WhatsApp&#60;&#47;li&#62;
+                                                &#60;li&#62;Oculus&#60;&#47;li&#62;
+                                            &#60;&#47;ul&#62;
+                                    &#60;&#47;div&#62;
+                                );
+                            }
+                        }
+
+                        <span class="light-text">// Example usage: &#60;ShoppingList
+                            name="Mark&#47;&#62;</span>
+                    </code>
+                </pre>
+            </article>
+        </section>  
         <section class="main-section" id="staying-informed">
             <header><h3>Staying Informed</h3></header>
             <article>
@@ -81,7 +169,7 @@
                     The React blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
                 </p>
                 <p>
-                    You can also follow the @reactjs account on Twitter, but you won’t miss anything essential if you only read the blog.
+                    You can also follow the @reactjs account on Twitter, but you won&#96;t miss anything essential if you only read the blog.
                 </p>
                 <p>
                     Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the CHANGELOG.md file in the React repository, as well as on the Releases page.
@@ -92,7 +180,7 @@
             <header><h3>Versioned Documentation</h3></header>
             <article>
                 <p>
-                    This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a separate page. Note that documentation for past versions is snapshotted at the time of the release, and isn’t being continuously updated.
+                    This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a separate page. Note that documentation for past versions is snapshotted at the time of the release, and isn&#96;t being continuously updated.
                 </p>
             </article>
         </section>
