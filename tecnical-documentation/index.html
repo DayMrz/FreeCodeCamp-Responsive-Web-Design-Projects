@@ -8,10 +8,8 @@
 </head>
 <body>
 
-
-
     <main id="main-doc">
-        <section class="main-section">
+        <section class="main-section" id="Getting_Started">
             <header>
                 <h2>Getting Started</h2>
             </header>
@@ -23,7 +21,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="try-react">
+        <section class="main-section" id="Try_React">
             <header><h3>Try React</h3></header>
             <article>
                 <p>
@@ -48,7 +46,7 @@
                 </ul>
             </article>
         </section>
-        <section class="main-section" id="learn-react">
+        <section class="main-section" id="Learn_React">
             <header><h3>Learn React</h3></header>
             <article>
                 <p>
@@ -74,11 +72,11 @@
                 </p>
                 <h4>React for Designers</h4>
                 <p>
-                    If you’re coming from a design background, these resources are a great place to get started.
+                    If you&#96;re coming from a design background, these resources are a great place to get started.
                 </p>
                 <h4>JavaScript Resources</h4>
                 <p>
-                    The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
+                    The React documentation assumes some familiarity with programming in the JavaScript language. You don&#96;t have to be an expert, but it&#96;s harder to learn both React and JavaScript at the same time.
                 </p>
                 <p>
                     We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
@@ -92,7 +90,7 @@
 
             </article>
         </section>
-        <section class="main-section" id="guie-to-main-concept">
+        <section class="main-section" id="Guie_to_Main_Concept">
             <header><h3>Guide to Main Concepts</h3></header>
             <article>
                 <p>
@@ -114,11 +112,11 @@
                 </p>
                 <pre class="code-container">
                     <code>
-ReactDOM.render(
-    &lt;h1&gt;Hello, World!&lt;/h1&gt;,
+    ReactDOM.render(
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;,
 
-document.getElementById('root')
-);
+    document.getElementById('root')
+    );
                         </code>
                     </pre>
                 <p>
@@ -126,7 +124,7 @@ document.getElementById('root')
                 </p>
             </article>
         </section>  
-        <section class="main-section" id="what-is-react">
+        <section class="main-section" id="What_is_React">
             <header>
                 <h3>What is React</h3>
             </header>
@@ -135,28 +133,28 @@ document.getElementById('root')
                     React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
                 </p>
                 <p>
-                    React has a few different kinds of components, but we’ll start with <span class="yellow-highlight">React.Component</span> subclasses:
+                    React has a few different kinds of components, but we&#96;ll start with <span class="yellow-highlight">React.Component</span> subclasses:
                 </p>
                 <pre class="code-container">
                     <code>
-class ShoppingList extends
-    React.Component {
-        render() {
-            return ( 
-                &lt;div&gt;
-                className="shopping-list"&gt;
-                    &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
-                        &lt;ul&gt;
-                            &lt;li&gt;Instagram&lt;/li&gt;
-                            &lt;li&gt;WhatsApp&lt;/li&gt;
-                            &lt;li&gt;Oculus&lt;/li&gt;
-                        &lt;/ul&gt;
-                &lt;/div&gt;
-            );
+    class ShoppingList extends
+        React.Component {
+            render() {
+                return ( 
+                    &lt;div&gt;
+                    className="shopping-list"&gt;
+                        &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Instagram&lt;/li&gt;
+                                &lt;li&gt;WhatsApp&lt;/li&gt;
+                                &lt;li&gt;Oculus&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/div&gt;
+                );
+            }
         }
-    }
-    &lt;!--// Example usage: &lt;ShoppingList
-    name="Mark"/> -->
+        &lt;!--// Example usage: &lt;ShoppingList
+        name="Mark"/> -->
                     </code>
                 </pre>
                 <p>
@@ -170,33 +168,97 @@ class ShoppingList extends
                 </p>
                 <pre>
                     <code>
-return
-React.createElement('div',
-{classNAme: 'shopping-list'},
-React.createElement('h1',  /&#42;
-...h1 children ...&#42;/),
-React.createElement('ul',  /&#42;
-...ul children ...&#42;/),
-);
+    return
+    React.createElement('div',
+    {classNAme: 'shopping-list'},
+    React.createElement('h1',  /&#42;
+    ...h1 children ...&#42;/),
+    React.createElement('ul',  /&#42;
+    ...ul children ...&#42;/),
+    );
                     </code>
                 </pre>
+                <p>
+                    <a class="blue-link" href="https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=DwEwlgbgBAxgNgQwM5IHIILYFMC8AiJACwHsAHUsAOwHMBaOMJAFzwD4AoKKYQgRlYDKJclWpQAMoyZQAZsQBOUAN6l5ZJADpKmLAF9gAej4cuwAK5wTXbg1YBJSswTV5mQ7c7XgtgOqEETEgAguTuYFamtgDyMBZmSGFWhhYchuAQrADc7EA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.16.9&externalPlugins=&assumptions=%7B%7D">See full expanded version.</a>
+                </p>
+                <p>
+                    The <span class="yellow-highlight">ShoppingList</span> component above only renders built-in DOM components like 
+                    <span class="yellow-highlight">&lt;div /></span> and <span class="yellow-highlight">&lt;li /></span>. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing <span class="yellow-highlight">&lt;ShoppingList /></span> . Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
+                </p>
+                <h4 id="inspecting-the-starter-code">Inspecting the Starter Code</h4>
+                <p>
+                    If you&#96;re going to work on the tutorial <strong>in your browser</strong>, open this code in a new tab: <strong><a class="blue-link" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a></strong>. If you&#96;re going to work on the tutorial locally, instead open <span class="yellow-highlight">src/index.js</span> in your project folder (you have already touched this file during the <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">setup</a>).
+                </p>
+                <p>
+                    This Starter Code is the base of what we&#96;re building. We&#96;ve provided the CSS styling so that you only need to focus on learning React and programming the tic-tac-toe game.
+                </p>
+                <p>
+                    By inspecting the code, you&#96;ll notice that we have three React components:
+                </p>
+                <ul>
+                    <li>Square</li>
+                    <li>Board</li>
+                    <li>Game</li>
+                </ul>
+                <p>
+                    The Square component renders a single &lt;button> and the Board renders 9 squares. The Game component renders a board with placeholder values which we&#96;ll modify later. There are currently no interactive components.
+                </p>
+                <h4 id="passing-data-through-props">Passing Data Through Props</h4>
+                <p>
+                    To get our feet wet, let&#96;s try passing some data from our Board component to our Square component.
+                </p>
+                <p>
+                    We strongly recommend typing code by hand as you&#96;re working through the tutorial and not using copy/paste. This will help you develop muscle memory and a stronger understanding.
+                </p>
+                <p>
+                    In Board&#96;s <span class="yellow-highlight">renderSquare</span> method, change the code to pass a prop called <span class="yellow-highlight">value</span> to the Square:
+                </p>
+                <pre>
+                    <code>
+    class Board extends
+    React.Component {
+        renderSquare(i) {
+            return &lt;Square value={i} /&gt;
+        }
+    }
+                    </code>
+                </pre>
+                <p>
+                    Change Square&#96;s <span class="yellow-highlight">render</span> method to show that value by replacing <span class="yellow-highlight">{/* TODO */}</span> with <span class="yellow-highlight">{this.props.value}</span>:
+                </p>
+                <pre>
+                    <code>
+    class Square extends
+    React.component {
+        render() {
+            return (
+                &lt;button
+                className="square"&gt;
+                {this.props.value}
+                &lt;/button&gt;
+            );
+        }
+    }
+                    </code>
+                </pre>
+
             </article>
         </section>  
-        <section class="main-section" id="staying-informed">
+        <section class="main-section" id="Staying_Informed">
             <header><h3>Staying Informed</h3></header>
             <article>
                 <p>
                     The React blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
                 </p>
                 <p>
-                    You can also follow the @reactjs account on Twitter, but you won&#96;t miss anything essential if you only read the blog.
+                    You can also follow the &#64;reactjs account on Twitter, but you won&#96;t miss anything essential if you only read the blog.
                 </p>
                 <p>
                     Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the CHANGELOG.md file in the React repository, as well as on the Releases page.
                 </p>
             </article>
         </section>
-        <section class="main-section" id="versioned-documentatio">
+        <section class="main-section" id="Versioned_Documentatio">
             <header><h3>Versioned Documentation</h3></header>
             <article>
                 <p>
@@ -204,19 +266,15 @@ React.createElement('ul',  /&#42;
                 </p>
             </article>
         </section>
-        <section class="main-section" id="somenthing-missing">
+        <section class="main-section" id="Somenthing_Missing">
             <header><h3>Something Missing?</h3></header>
             <article>
                 <p>
-                    If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the @reactjs account. We love hearing from you!
+                    If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the &#64;reactjs account. We love hearing from you!
                 </p>
             </article>
         </section>
     </main>
-
-    <ul>
-        <li></li>
-    </ul>
     
 </body>
 </html>
