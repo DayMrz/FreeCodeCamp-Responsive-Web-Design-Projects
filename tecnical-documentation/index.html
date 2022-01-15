@@ -5,14 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header id="logo_header">
+    <img src="https://res.cloudinary.com/daymrz/image/upload/v1642211280/React-logo_asfghj.png" alt="react logo">
+</header>
+    <nav id="nav">
+        <header><h2>Docs</h2></header>
+        <ul>
+            <li><a href="#Getting_Started">Getting Started</a></li>
+            <li><a href="#Try_React">Try React</a></li>
+            <li><a href="#Learn_React">Learn React</a></li>
+            <li><a href="#Guide_to_Main_Concepts">Guide to Main Concepts</a></li>
+            <li><a href="#What_is_React">What is React</a>
+                <ul>
+                    <li><a href="#Inspecting-the-Starter-Code">Inspecting the Starter Code</a></li>
+                    <li><a href="#Passing-Data-Through-Props">Passing Data Through Props</a></li>
+                </ul>
+            </li>
+            <li><a href="#Staying_Informed">Staying Informed</a></li>
+            <li><a href="#Versioned_Documentation">Versioned Documentation</a></li>
+            <li><a href="#Something_Missing?">Something Missing?</a></li>
+        </ul>
+    </nav>
 
     <main id="main-doc">
         <section class="main-section" id="Getting_Started">
-            <header>
-                <h2>Getting Started</h2>
-            </header>
+            <header><h2>Getting Started</h2></header>
             <article> 
                 <p>This page is an overview of the React documentation and related resources.
                 </p>
@@ -22,7 +42,7 @@
         </section>
 
         <section class="main-section" id="Try_React">
-            <header><h3>Try React</h3></header>
+            <header><h2>Try React</h2></header>
             <article>
                 <p>
                     React has been designed from the start for gradual adoption, and <strong>you can use as little or as much React</strong> as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
@@ -47,7 +67,7 @@
             </article>
         </section>
         <section class="main-section" id="Learn_React">
-            <header><h3>Learn React</h3></header>
+            <header><h2>Learn React</h2></header>
             <article>
                 <p>
                     People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you&#96;ll find this section helpful.
@@ -90,8 +110,8 @@
 
             </article>
         </section>
-        <section class="main-section" id="Guie_to_Main_Concept">
-            <header><h3>Guide to Main Concepts</h3></header>
+        <section class="main-section" id="Guide_to_Main_Concepts">
+            <header><h2>Guide to Main Concepts</h2></header>
             <article>
                 <p>
 
@@ -125,9 +145,7 @@
             </article>
         </section>  
         <section class="main-section" id="What_is_React">
-            <header>
-                <h3>What is React</h3>
-            </header>
+            <header><h2>What is React</h2></header>
             <article>
                 <p>
                     React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
@@ -185,7 +203,7 @@
                     The <span class="yellow-highlight">ShoppingList</span> component above only renders built-in DOM components like 
                     <span class="yellow-highlight">&lt;div /></span> and <span class="yellow-highlight">&lt;li /></span>. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing <span class="yellow-highlight">&lt;ShoppingList /></span> . Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
                 </p>
-                <h4 id="inspecting-the-starter-code">Inspecting the Starter Code</h4>
+                <h4 id="Inspecting-the-Starter-Code">Inspecting the Starter Code</h4>
                 <p>
                     If you&#96;re going to work on the tutorial <strong>in your browser</strong>, open this code in a new tab: <strong><a class="blue-link" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a></strong>. If you&#96;re going to work on the tutorial locally, instead open <span class="yellow-highlight">src/index.js</span> in your project folder (you have already touched this file during the <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">setup</a>).
                 </p>
@@ -203,7 +221,7 @@
                 <p>
                     The Square component renders a single &lt;button> and the Board renders 9 squares. The Game component renders a board with placeholder values which we&#96;ll modify later. There are currently no interactive components.
                 </p>
-                <h4 id="passing-data-through-props">Passing Data Through Props</h4>
+                <h4 id="Passing-Data-Through-Props">Passing Data Through Props</h4>
                 <p>
                     To get our feet wet, let&#96;s try passing some data from our Board component to our Square component.
                 </p>
@@ -241,11 +259,11 @@
     }
                     </code>
                 </pre>
-
+                <p><a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">view full tutorial</a></p>
             </article>
         </section>  
         <section class="main-section" id="Staying_Informed">
-            <header><h3>Staying Informed</h3></header>
+            <header><h2>Staying Informed</h2></header>
             <article>
                 <p>
                     The React blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
@@ -258,16 +276,16 @@
                 </p>
             </article>
         </section>
-        <section class="main-section" id="Versioned_Documentatio">
-            <header><h3>Versioned Documentation</h3></header>
+        <section class="main-section" id="Versioned_Documentation">
+            <header><h2>Versioned Documentation</h2></header>
             <article>
                 <p>
                     This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a separate page. Note that documentation for past versions is snapshotted at the time of the release, and isn&#96;t being continuously updated.
                 </p>
             </article>
         </section>
-        <section class="main-section" id="Somenthing_Missing">
-            <header><h3>Something Missing?</h3></header>
+        <section class="main-section" id="Something_Missing?">
+            <header><h2>Something Missing?</h2></header>
             <article>
                 <p>
                     If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the &#64;reactjs account. We love hearing from you!
@@ -275,6 +293,6 @@
             </article>
         </section>
     </main>
-    
+
 </body>
 </html>
