@@ -8,291 +8,295 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="logo_header">
-    <img src="https://res.cloudinary.com/daymrz/image/upload/v1642211280/React-logo_asfghj.png" alt="react logo">
-</header>
-    <nav id="nav">
-        <header><h2>Docs</h2></header>
-        <ul>
-            <li><a href="#Getting_Started">Getting Started</a></li>
-            <li><a href="#Try_React">Try React</a></li>
-            <li><a href="#Learn_React">Learn React</a></li>
-            <li><a href="#Guide_to_Main_Concepts">Guide to Main Concepts</a></li>
-            <li><a href="#What_is_React">What is React</a>
-                <ul>
-                    <li><a href="#Inspecting-the-Starter-Code">Inspecting the Starter Code</a></li>
-                    <li><a href="#Passing-Data-Through-Props">Passing Data Through Props</a></li>
-                </ul>
-            </li>
-            <li><a href="#Staying_Informed">Staying Informed</a></li>
-            <li><a href="#Versioned_Documentation">Versioned Documentation</a></li>
-            <li><a href="#Something_Missing?">Something Missing?</a></li>
-        </ul>
-    </nav>
+    <header id="logo_header">
+        <img src="https://res.cloudinary.com/daymrz/image/upload/v1642211280/React-logo_asfghj.png" alt="react logo">
+    </header>
 
-    <main id="main-doc">
-        <section class="main-section" id="Getting_Started">
-            <header><h2>Getting Started</h2></header>
-            <article> 
-                <p>This page is an overview of the React documentation and related resources.
-                </p>
+    <div class="row">
+        <nav id="navbar">
+            <header><h1 class="docs_title">Docs</h1></header>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+                <li><a class="nav-link" href="#Try_React">Try React</a></li>
+                <li><a class="nav-link" href="#Learn_React">Learn React</a></li>
+                <li><a class="nav-link" href="#Guide_to_Main_Concepts">Guide to Main Concepts</a></li>
+                <li><a class="nav-link" href="#What_is_React">What is React</a>
+                </li>
+                <li><a class="nav-link" href="#Staying_Informed">Staying Informed</a></li>
+                <li><a class="nav-link" href="#Versioned_Documentation">Versioned Documentation</a></li>
+                <li><a class="nav-link" href="#Something_Missing?">Something Missing?</a></li>
+            </ul>
+        </nav>
 
-                <p><strong>React</strong>is a JavaScript library for building user interfaces. Learn what React is all about <a class="blue-link" href="https://reactjs.org/">on our homepage</a> or <a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">in the tutorial</a>.</p>
-            </article>
-        </section>
 
-        <section class="main-section" id="Try_React">
-            <header><h2>Try React</h2></header>
-            <article>
-                <p>
-                    React has been designed from the start for gradual adoption, and <strong>you can use as little or as much React</strong> as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
-                </p>
-                <ul>
-                    <li><h4>Online Playgrounds</h4></li>
-                    <p>
-                        If you&#96;re interested in playing around with React, you can use an online code playground. Try a Hello World template on <a class="blue-link" href="https://codepen.io/pen?&editors=0010">CodePen</a>, <a class="blue-link" href="https://codesandbox.io/s/new">CodeSandbox</a> or <a class="blue-link" href="https://stackblitz.com/edit/react-u7mesu">Stackblitz</a>.
+        <main id="main-doc" class="container">
+            <section class="main-section" id="Getting_Started">
+                <header><h2>Getting Started</h2></header>
+                <article> 
+                    <p>This page is an overview of the React documentation and related resources.
                     </p>
-                    <li><h4>Add React to a Website</h4></li>
-                    <p>
-                        You can <a class="blue-link" href="https://reactjs.org/docs/add-react-to-a-website.html">add React to an HTML page in one minute</a>. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
-                    </p>
-                    <li><h4>Create a New React App</h4></li>
-                    <p>
-                        When starting a React project, a <a href="https://reactjs.org/docs/add-react-to-a-website.html">simple HTML page with script tags</a> might still be the best option. It only takes a minute to set up!
-                    </p>
-                    <p>
-                        As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. <a href="https://reactjs.org/docs/create-a-new-react-app.html">Learn how</a>.
-                    </p>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="Learn_React">
-            <header><h2>Learn React</h2></header>
-            <article>
-                <p>
-                    People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you&#96;ll find this section helpful.
-                </p>
-                <ul>
-                    <li> If you prefer to <strong>learn by doing</strong>, start with our <a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">practical tutorial</a>.
-                    </li>
-                    <li>If you prefer to <strong>learn concepts step by step</strong>, start with our <a href="https://reactjs.org/docs/hello-world.html">guide to main concepts</a>.
-                    </li>
-                </ul>
-                <p>
-                    Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-                </p>
 
-                <h4>First Examples</h4>
-                <p>
-                    The React homepage contains a few small React examples with a live editor. Even if you don&#96;t know anything about React yet, try changing their code and see how it affects the result.
-                </p>
-                <h4>React for Beginners</h4>
-                <p>
-                    If you feel that the React documentation goes at a faster pace than you&#96;re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you&#96;re done, give the documentation another try!
-                </p>
-                <h4>React for Designers</h4>
-                <p>
-                    If you&#96;re coming from a design background, these resources are a great place to get started.
-                </p>
-                <h4>JavaScript Resources</h4>
-                <p>
-                    The React documentation assumes some familiarity with programming in the JavaScript language. You don&#96;t have to be an expert, but it&#96;s harder to learn both React and JavaScript at the same time.
-                </p>
-                <p>
-                    We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
-                </p>
-                <blockquote>
-                    <h5>Tip</h5>
+                    <p><strong>React</strong> is a JavaScript library for building user interfaces. Learn what React is all about <a class="blue-link" href="https://reactjs.org/">on our homepage</a> or <a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">in the tutorial</a>.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Try_React">
+                <header><h2>Try React</h2></header>
+                <article>
                     <p>
-                        Whenever you get confused by something in JavaScript, MDN and javascript.info are great websites to check. There are also community support forums where you can ask for help.
+                        React has been designed from the start for gradual adoption, and <strong>you can use as little or as much React</strong> as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
                     </p>
-                </blockquote>
-
-            </article>
-        </section>
-        <section class="main-section" id="Guide_to_Main_Concepts">
-            <header><h2>Guide to Main Concepts</h2></header>
-            <article>
-                <p>
-
-                </p>
-                <h4> How to Read This Guide</h4>
-                <p>
-                    In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
-                </p>
-
-                <blockquote>
-                    <h5>Tip</h5>
+                    <ul>
+                        <li><h4>Online Playgrounds</h4></li>
+                        <p>
+                            If you&#96;re interested in playing around with React, you can use an online code playground. Try a Hello World template on <a class="blue-link" href="https://codepen.io/pen?&editors=0010">CodePen</a>, <a class="blue-link" href="https://codesandbox.io/s/new">CodeSandbox</a> or <a class="blue-link" href="https://stackblitz.com/edit/react-u7mesu">Stackblitz</a>.
+                        </p>
+                        <li><h4>Add React to a Website</h4></li>
+                        <p>
+                            You can <a class="blue-link" href="https://reactjs.org/docs/add-react-to-a-website.html">add React to an HTML page in one minute</a>. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+                        </p>
+                        <li><h4>Create a New React App</h4></li>
+                        <p>
+                            When starting a React project, a <a href="https://reactjs.org/docs/add-react-to-a-website.html">simple HTML page with script tags</a> might still be the best option. It only takes a minute to set up!
+                        </p>
+                        <p>
+                            As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. <a href="https://reactjs.org/docs/create-a-new-react-app.html">Learn how</a>.
+                        </p>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Learn_React">
+                <header><h2>Learn React</h2></header>
+                <article>
+                    <ul>
+                        <li><a class="nav-link" href="#Inspecting-the-Starter-Code">Inspecting the Starter Code</a></li>
+                        <li><a class="nav-link" href="#Passing-Data-Through-Props">Passing Data Through Props</a></li>
+                    </ul>
                     <p>
-                        This guide is designed for people who prefer learning concepts step by step. If you prefer to learn by doing, check out our practical tutorial. You might find this guide and the tutorial complementary to each other.
+                        People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you&#96;ll find this section helpful.
                     </p>
-                </blockquote>
-                <p class="light-text">
-                    The smallest React example looks like this:
-                </p>
-                <pre class="code-container">
-                    <code>
-    ReactDOM.render(
-        &lt;h1&gt;Hello, World!&lt;/h1&gt;,
+                    <ul>
+                        <li> If you prefer to <strong>learn by doing</strong>, start with our <a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">practical tutorial</a>.
+                        </li>
+                        <li>If you prefer to <strong>learn concepts step by step</strong>, start with our <a href="https://reactjs.org/docs/hello-world.html">guide to main concepts</a>.
+                        </li>
+                    </ul>
+                    <p>
+                        Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
+                    </p>
 
-    document.getElementById('root')
-    );
+                    <h4>First Examples</h4>
+                    <p>
+                        The React homepage contains a few small React examples with a live editor. Even if you don&#96;t know anything about React yet, try changing their code and see how it affects the result.
+                    </p>
+                    <h4>React for Beginners</h4>
+                    <p>
+                        If you feel that the React documentation goes at a faster pace than you&#96;re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you&#96;re done, give the documentation another try!
+                    </p>
+                    <h4>React for Designers</h4>
+                    <p>
+                        If you&#96;re coming from a design background, these resources are a great place to get started.
+                    </p>
+                    <h4>JavaScript Resources</h4>
+                    <p>
+                        The React documentation assumes some familiarity with programming in the JavaScript language. You don&#96;t have to be an expert, but it&#96;s harder to learn both React and JavaScript at the same time.
+                    </p>
+                    <p>
+                        We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+                    </p>
+                    <blockquote>
+                        <h5>Tip</h5>
+                        <p>
+                            Whenever you get confused by something in JavaScript, MDN and javascript.info are great websites to check. There are also community support forums where you can ask for help.
+                        </p>
+                    </blockquote>
+
+                </article>
+            </section>
+            <section class="main-section" id="Guide_to_Main_Concepts">
+                <header><h2>Guide to Main Concepts</h2></header>
+                <article>
+                    <p>
+
+                    </p>
+                    <h4> How to Read This Guide</h4>
+                    <p>
+                        In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+                    </p>
+
+                    <blockquote>
+                        <h5>Tip</h5>
+                        <p>
+                            This guide is designed for people who prefer learning concepts step by step. If you prefer to learn by doing, check out our practical tutorial. You might find this guide and the tutorial complementary to each other.
+                        </p>
+                    </blockquote>
+                    <p class="light-text">
+                        The smallest React example looks like this:
+                    </p>
+                    <pre class="code-container">
+                        <code>
+        ReactDOM.render(
+            &lt;h1&gt;Hello, World!&lt;/h1&gt;,
+
+        document.getElementById('root')
+        );
+                            </code>
+                        </pre>
+                    <p>
+                        It displays a heading saying “Hello, world!” on the page.
+                    </p>
+                </article>
+            </section>  
+            <section class="main-section" id="What_is_React">
+                <header><h2>What is React</h2></header>
+                <article>
+                    <p>
+                        React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                    </p>
+                    <p>
+                        React has a few different kinds of components, but we&#96;ll start with <span class="yellow-highlight">React.Component</span> subclasses:
+                    </p>
+                    <pre class="code-container">
+                        <code>
+        class ShoppingList extends
+            React.Component {
+                render() {
+                    return ( 
+                        &lt;div&gt;
+                        className="shopping-list"&gt;
+                            &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;Instagram&lt;/li&gt;
+                                    &lt;li&gt;WhatsApp&lt;/li&gt;
+                                    &lt;li&gt;Oculus&lt;/li&gt;
+                                &lt;/ul&gt;
+                        &lt;/div&gt;
+                    );
+                }
+            }
+            &lt;!--// Example usage: &lt;ShoppingList
+            name="Mark"/> -->
                         </code>
                     </pre>
-                <p>
-                    It displays a heading saying “Hello, world!” on the page.
-                </p>
-            </article>
-        </section>  
-        <section class="main-section" id="What_is_React">
-            <header><h2>What is React</h2></header>
-            <article>
-                <p>
-                    React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
-                </p>
-                <p>
-                    React has a few different kinds of components, but we&#96;ll start with <span class="yellow-highlight">React.Component</span> subclasses:
-                </p>
-                <pre class="code-container">
-                    <code>
-    class ShoppingList extends
+                    <p>
+                        We&#96;ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+                    </p>
+                    <p>
+                        Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <span class="yellow-highlight">props</span> (short for “properties”), and returns a hierarchy of views to display via the <span class="yellow-highlight">render</span> method.
+                    </p>
+                    <p>
+                        The <span class="yellow-highlight">render</span> method returns a description of what you want to see on the screen. React takes the description and displays the result. In particular, <span class="yellow-highlight">render</span> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The &lt;div/&gt; syntax is transformed at build time to <span class="yellow-highlight">React.createElement('div')</span>. The example above is equivalent to:
+                    </p>
+                    <pre>
+                        <code>
+        return
+        React.createElement('div',
+        {classNAme: 'shopping-list'},
+        React.createElement('h1',  /&#42;
+        ...h1 children ...&#42;/),
+        React.createElement('ul',  /&#42;
+        ...ul children ...&#42;/),
+        );
+                        </code>
+                    </pre>
+                    <p>
+                        <a class="blue-link" href="https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=DwEwlgbgBAxgNgQwM5IHIILYFMC8AiJACwHsAHUsAOwHMBaOMJAFzwD4AoKKYQgRlYDKJclWpQAMoyZQAZsQBOUAN6l5ZJADpKmLAF9gAej4cuwAK5wTXbg1YBJSswTV5mQ7c7XgtgOqEETEgAguTuYFamtgDyMBZmSGFWhhYchuAQrADc7EA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.16.9&externalPlugins=&assumptions=%7B%7D">See full expanded version.</a>
+                    </p>
+                    <p>
+                        The <span class="yellow-highlight">ShoppingList</span> component above only renders built-in DOM components like 
+                        <span class="yellow-highlight">&lt;div /></span> and <span class="yellow-highlight">&lt;li /></span>. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing <span class="yellow-highlight">&lt;ShoppingList /></span> . Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
+                    </p>
+                    <h4 id="Inspecting-the-Starter-Code">Inspecting the Starter Code</h4>
+                    <p>
+                        If you&#96;re going to work on the tutorial <strong>in your browser</strong>, open this code in a new tab: <strong><a class="blue-link" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a></strong>. If you&#96;re going to work on the tutorial locally, instead open <span class="yellow-highlight">src/index.js</span> in your project folder (you have already touched this file during the <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">setup</a>).
+                    </p>
+                    <p>
+                        This Starter Code is the base of what we&#96;re building. We&#96;ve provided the CSS styling so that you only need to focus on learning React and programming the tic-tac-toe game.
+                    </p>
+                    <p>
+                        By inspecting the code, you&#96;ll notice that we have three React components:
+                    </p>
+                    <ul>
+                        <li>Square</li>
+                        <li>Board</li>
+                        <li>Game</li>
+                    </ul>
+                    <p>
+                        The Square component renders a single &lt;button> and the Board renders 9 squares. The Game component renders a board with placeholder values which we&#96;ll modify later. There are currently no interactive components.
+                    </p>
+                    <h4 id="Passing-Data-Through-Props">Passing Data Through Props</h4>
+                    <p>
+                        To get our feet wet, let&#96;s try passing some data from our Board component to our Square component.
+                    </p>
+                    <p>
+                        We strongly recommend typing code by hand as you&#96;re working through the tutorial and not using copy/paste. This will help you develop muscle memory and a stronger understanding.
+                    </p>
+                    <p>
+                        In Board&#96;s <span class="yellow-highlight">renderSquare</span> method, change the code to pass a prop called <span class="yellow-highlight">value</span> to the Square:
+                    </p>
+                    <pre>
+                        <code>
+        class Board extends
         React.Component {
+            renderSquare(i) {
+                return &lt;Square value={i} /&gt;
+            }
+        }
+                        </code>
+                    </pre>
+                    <p>
+                        Change Square&#96;s <span class="yellow-highlight">render</span> method to show that value by replacing <span class="yellow-highlight">{/* TODO */}</span> with <span class="yellow-highlight">{this.props.value}</span>:
+                    </p>
+                    <pre>
+                        <code>
+        class Square extends
+        React.component {
             render() {
-                return ( 
-                    &lt;div&gt;
-                    className="shopping-list"&gt;
-                        &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
-                            &lt;ul&gt;
-                                &lt;li&gt;Instagram&lt;/li&gt;
-                                &lt;li&gt;WhatsApp&lt;/li&gt;
-                                &lt;li&gt;Oculus&lt;/li&gt;
-                            &lt;/ul&gt;
-                    &lt;/div&gt;
+                return (
+                    &lt;button
+                    className="square"&gt;
+                    {this.props.value}
+                    &lt;/button&gt;
                 );
             }
         }
-        &lt;!--// Example usage: &lt;ShoppingList
-        name="Mark"/> -->
-                    </code>
-                </pre>
-                <p>
-                    We&#96;ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
-                </p>
-                <p>
-                    Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <span class="yellow-highlight">props</span> (short for “properties”), and returns a hierarchy of views to display via the <span class="yellow-highlight">render</span> method.
-                </p>
-                <p>
-                    The <span class="yellow-highlight">render</span> method returns a description of what you want to see on the screen. React takes the description and displays the result. In particular, <span class="yellow-highlight">render</span> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The &lt;div/&gt; syntax is transformed at build time to <span class="yellow-highlight">React.createElement('div')</span>. The example above is equivalent to:
-                </p>
-                <pre>
-                    <code>
-    return
-    React.createElement('div',
-    {classNAme: 'shopping-list'},
-    React.createElement('h1',  /&#42;
-    ...h1 children ...&#42;/),
-    React.createElement('ul',  /&#42;
-    ...ul children ...&#42;/),
-    );
-                    </code>
-                </pre>
-                <p>
-                    <a class="blue-link" href="https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=DwEwlgbgBAxgNgQwM5IHIILYFMC8AiJACwHsAHUsAOwHMBaOMJAFzwD4AoKKYQgRlYDKJclWpQAMoyZQAZsQBOUAN6l5ZJADpKmLAF9gAej4cuwAK5wTXbg1YBJSswTV5mQ7c7XgtgOqEETEgAguTuYFamtgDyMBZmSGFWhhYchuAQrADc7EA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.16.9&externalPlugins=&assumptions=%7B%7D">See full expanded version.</a>
-                </p>
-                <p>
-                    The <span class="yellow-highlight">ShoppingList</span> component above only renders built-in DOM components like 
-                    <span class="yellow-highlight">&lt;div /></span> and <span class="yellow-highlight">&lt;li /></span>. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing <span class="yellow-highlight">&lt;ShoppingList /></span> . Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
-                </p>
-                <h4 id="Inspecting-the-Starter-Code">Inspecting the Starter Code</h4>
-                <p>
-                    If you&#96;re going to work on the tutorial <strong>in your browser</strong>, open this code in a new tab: <strong><a class="blue-link" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a></strong>. If you&#96;re going to work on the tutorial locally, instead open <span class="yellow-highlight">src/index.js</span> in your project folder (you have already touched this file during the <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">setup</a>).
-                </p>
-                <p>
-                    This Starter Code is the base of what we&#96;re building. We&#96;ve provided the CSS styling so that you only need to focus on learning React and programming the tic-tac-toe game.
-                </p>
-                <p>
-                    By inspecting the code, you&#96;ll notice that we have three React components:
-                </p>
-                <ul>
-                    <li>Square</li>
-                    <li>Board</li>
-                    <li>Game</li>
-                </ul>
-                <p>
-                    The Square component renders a single &lt;button> and the Board renders 9 squares. The Game component renders a board with placeholder values which we&#96;ll modify later. There are currently no interactive components.
-                </p>
-                <h4 id="Passing-Data-Through-Props">Passing Data Through Props</h4>
-                <p>
-                    To get our feet wet, let&#96;s try passing some data from our Board component to our Square component.
-                </p>
-                <p>
-                    We strongly recommend typing code by hand as you&#96;re working through the tutorial and not using copy/paste. This will help you develop muscle memory and a stronger understanding.
-                </p>
-                <p>
-                    In Board&#96;s <span class="yellow-highlight">renderSquare</span> method, change the code to pass a prop called <span class="yellow-highlight">value</span> to the Square:
-                </p>
-                <pre>
-                    <code>
-    class Board extends
-    React.Component {
-        renderSquare(i) {
-            return &lt;Square value={i} /&gt;
-        }
-    }
-                    </code>
-                </pre>
-                <p>
-                    Change Square&#96;s <span class="yellow-highlight">render</span> method to show that value by replacing <span class="yellow-highlight">{/* TODO */}</span> with <span class="yellow-highlight">{this.props.value}</span>:
-                </p>
-                <pre>
-                    <code>
-    class Square extends
-    React.component {
-        render() {
-            return (
-                &lt;button
-                className="square"&gt;
-                {this.props.value}
-                &lt;/button&gt;
-            );
-        }
-    }
-                    </code>
-                </pre>
-                <p><a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">view full tutorial</a></p>
-            </article>
-        </section>  
-        <section class="main-section" id="Staying_Informed">
-            <header><h2>Staying Informed</h2></header>
-            <article>
-                <p>
-                    The React blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
-                </p>
-                <p>
-                    You can also follow the &#64;reactjs account on Twitter, but you won&#96;t miss anything essential if you only read the blog.
-                </p>
-                <p>
-                    Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the CHANGELOG.md file in the React repository, as well as on the Releases page.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Versioned_Documentation">
-            <header><h2>Versioned Documentation</h2></header>
-            <article>
-                <p>
-                    This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a separate page. Note that documentation for past versions is snapshotted at the time of the release, and isn&#96;t being continuously updated.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Something_Missing?">
-            <header><h2>Something Missing?</h2></header>
-            <article>
-                <p>
-                    If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the &#64;reactjs account. We love hearing from you!
-                </p>
-            </article>
-        </section>
-    </main>
+                        </code>
+                    </pre>
+                    <p><a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">view full tutorial</a></p>
+                </article>
+            </section>  
+            <section class="main-section" id="Staying_Informed">
+                <header><h2>Staying Informed</h2></header>
+                <article>
+                    <p>
+                        The React blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
+                    </p>
+                    <p>
+                        You can also follow the &#64;reactjs account on Twitter, but you won&#96;t miss anything essential if you only read the blog.
+                    </p>
+                    <p>
+                        Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the CHANGELOG.md file in the React repository, as well as on the Releases page.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Versioned_Documentation">
+                <header><h2>Versioned Documentation</h2></header>
+                <article>
+                    <p>
+                        This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a separate page. Note that documentation for past versions is snapshotted at the time of the release, and isn&#96;t being continuously updated.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Something_Missing?">
+                <header><h2>Something Missing?</h2></header>
+                <article>
+                    <p>
+                        If something is missing in the documentation or if you found some part confusing, please file an issue for the documentation repository with your suggestions for improvement, or tweet at the &#64;reactjs account. We love hearing from you!
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
 
 </body>
 </html>
