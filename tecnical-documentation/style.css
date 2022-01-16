@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+*:root {
+    --Primary-Charade: hsl(222, 14%, 18%);
+    --primary-Background-Alabaster: hsl(0, 0%, 97%);
+    --highlight-Blue-Foam: hsl(191, 81%, 96%);
+    --Highlight-Citrine-White: hsl(52, 76%, 92%);
+    --Primary-Main-Malibu: #62DAFC;
+
+}
+/* #faf6db */
+/* #ecfafd */
+
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
@@ -9,7 +20,7 @@ body {
 
 #logo_header {
     align-items: center;
-    background: hsl(222, 14%, 18%);
+    background: var(--Primary-Charade);
     display: flex;
     flex-direction: column;
     padding: 3rem 0;
@@ -26,7 +37,7 @@ img {
 }
 
 #navbar {
-    background-color: #f7f7f7;
+    background-color: var(--primary-Background-Alabaster);
     padding: 2rem 0 2rem 0;
 }
 
@@ -58,10 +69,11 @@ img {
     text-decoration: none;
 }
 
+pre {
+    overflow-y: scroll ;
+    background-color:  #f7f7f7;
 
-/* #faf6db */
-/* #ecfafd */
-
+}
 
 .blue-link {
     background-color: #ecfafd;

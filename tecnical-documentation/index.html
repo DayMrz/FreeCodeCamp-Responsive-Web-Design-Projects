@@ -135,11 +135,11 @@
                     </p>
                     <pre class="code-container">
                         <code>
-        ReactDOM.render(
-            &lt;h1&gt;Hello, World!&lt;/h1&gt;,
+    ReactDOM.render(
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;,
 
-        document.getElementById('root')
-        );
+    document.getElementById('root')
+    );
                             </code>
                         </pre>
                     <p>
@@ -158,24 +158,24 @@
                     </p>
                     <pre class="code-container">
                         <code>
-        class ShoppingList extends
-            React.Component {
-                render() {
-                    return ( 
-                        &lt;div&gt;
-                        className="shopping-list"&gt;
-                            &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
-                                &lt;ul&gt;
-                                    &lt;li&gt;Instagram&lt;/li&gt;
-                                    &lt;li&gt;WhatsApp&lt;/li&gt;
-                                    &lt;li&gt;Oculus&lt;/li&gt;
-                                &lt;/ul&gt;
-                        &lt;/div&gt;
-                    );
-                }
+    class ShoppingList extends
+        React.Component {
+            render() {
+                return ( 
+                    &lt;div&gt;
+                    className="shopping-list"&gt;
+                        &lt;h1&gt;Shopping List for {this.props.name}&lt;/h1&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Instagram&lt;/li&gt;
+                                &lt;li&gt;WhatsApp&lt;/li&gt;
+                                &lt;li&gt;Oculus&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/div&gt;
+                );
             }
-            &lt;!--// Example usage: &lt;ShoppingList
-            name="Mark"/> -->
+        }
+        &lt;!--// Example usage: &lt;ShoppingList
+        name="Mark"/> -->
                         </code>
                     </pre>
                     <p>
@@ -189,14 +189,14 @@
                     </p>
                     <pre>
                         <code>
-        return
-        React.createElement('div',
-        {classNAme: 'shopping-list'},
-        React.createElement('h1',  /&#42;
-        ...h1 children ...&#42;/),
-        React.createElement('ul',  /&#42;
-        ...ul children ...&#42;/),
-        );
+    return
+    React.createElement('div',
+    {classNAme: 'shopping-list'},
+    React.createElement('h1',  /&#42;
+    ...h1 children ...&#42;/),
+    React.createElement('ul',  /&#42;
+    ...ul children ...&#42;/),
+    );
                         </code>
                     </pre>
                     <p>
@@ -236,12 +236,12 @@
                     </p>
                     <pre>
                         <code>
-        class Board extends
-        React.Component {
-            renderSquare(i) {
-                return &lt;Square value={i} /&gt;
-            }
+    class Board extends
+    React.Component {
+        renderSquare(i) {
+            return &lt;Square value={i} /&gt;
         }
+    }
                         </code>
                     </pre>
                     <p>
@@ -249,17 +249,17 @@
                     </p>
                     <pre>
                         <code>
-        class Square extends
-        React.component {
-            render() {
-                return (
-                    &lt;button
-                    className="square"&gt;
-                    {this.props.value}
-                    &lt;/button&gt;
-                );
-            }
+    class Square extends
+    React.component {
+        render() {
+            return (
+                &lt;button
+                className="square"&gt;
+                {this.props.value}
+                &lt;/button&gt;
+            );
         }
+    }
                         </code>
                     </pre>
                     <p><a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">view full tutorial</a></p>
@@ -298,5 +298,6 @@
         </main>
     </div>
 
+    <!-- <script src="app.js"></script> -->
 </body>
 </html>
