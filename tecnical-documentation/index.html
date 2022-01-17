@@ -21,6 +21,10 @@
                 <li><a class="nav-link" href="#Learn_React">Learn React</a></li>
                 <li><a class="nav-link" href="#Guide_to_Main_Concepts">Guide to Main Concepts</a></li>
                 <li><a class="nav-link" href="#What_is_React">What is React</a>
+                    <ul>
+                        <li class="nav-list_change"><a class="nav-link" href="#Inspecting_the_Starter_Code">Inspecting the Starter Code</a></li>
+                        <li class="nav-list_change"><a class="nav-link" href="#Passing_Data_Through_Props">Passing Data Through Props</a></li>
+                    </ul>
                 </li>
                 <li><a class="nav-link" href="#Staying_Informed">Staying Informed</a></li>
                 <li><a class="nav-link" href="#Versioned_Documentation">Versioned Documentation</a></li>
@@ -117,9 +121,9 @@
                 <header><h2>Guide to Main Concepts</h2></header>
                 <article>
                     <p>
-
+                        Every chapter in this guide builds on the knowledge introduced in earlier chapters. You can learn most of React by reading the “Main Concepts” guide chapters in the order they appear in the sidebar. For example, “Introducing JSX” is the next chapter after this one.
                     </p>
-                    <h4> How to Read This Guide</h4>
+                    <header><h4>How to Read This Guide</h4></header>
                     <p>
                         In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
                     </p>
@@ -206,49 +210,56 @@
                         The <span class="yellow-highlight">ShoppingList</span> component above only renders built-in DOM components like 
                         <span class="yellow-highlight">&lt;div /></span> and <span class="yellow-highlight">&lt;li /></span>. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing <span class="yellow-highlight">&lt;ShoppingList /></span> . Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
                     </p>
-                    <h4 id="Inspecting-the-Starter-Code">Inspecting the Starter Code</h4>
-                    <p>
-                        If you&#96;re going to work on the tutorial <strong>in your browser</strong>, open this code in a new tab: <strong><a class="blue-link" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a></strong>. If you&#96;re going to work on the tutorial locally, instead open <span class="yellow-highlight">src/index.js</span> in your project folder (you have already touched this file during the <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">setup</a>).
-                    </p>
-                    <p>
-                        This Starter Code is the base of what we&#96;re building. We&#96;ve provided the CSS styling so that you only need to focus on learning React and programming the tic-tac-toe game.
-                    </p>
-                    <p>
-                        By inspecting the code, you&#96;ll notice that we have three React components:
-                    </p>
-                    <ul>
-                        <li>Square</li>
-                        <li>Board</li>
-                        <li>Game</li>
-                    </ul>
-                    <p>
-                        The Square component renders a single &lt;button> and the Board renders 9 squares. The Game component renders a board with placeholder values which we&#96;ll modify later. There are currently no interactive components.
-                    </p>
-                    <h4 id="Passing-Data-Through-Props">Passing Data Through Props</h4>
-                    <p>
-                        To get our feet wet, let&#96;s try passing some data from our Board component to our Square component.
-                    </p>
-                    <p>
-                        We strongly recommend typing code by hand as you&#96;re working through the tutorial and not using copy/paste. This will help you develop muscle memory and a stronger understanding.
-                    </p>
-                    <p>
-                        In Board&#96;s <span class="yellow-highlight">renderSquare</span> method, change the code to pass a prop called <span class="yellow-highlight">value</span> to the Square:
-                    </p>
-                    <pre>
-                        <code>
+                </article>
+                <section class="main-section" id="Inspecting_the_Starter_Code">
+                    <header><h4>Inspecting the Starter Code</h4></header>
+                    <article>
+                        <p>
+                            If you&#96;re going to work on the tutorial <strong>in your browser</strong>, open this code in a new tab: <strong><a class="blue-link" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">Starter Code</a></strong>. If you&#96;re going to work on the tutorial locally, instead open <span class="yellow-highlight">src/index.js</span> in your project folder (you have already touched this file during the <a href="https://reactjs.org/tutorial/tutorial.html#setup-option-2-local-development-environment">setup</a>).
+                        </p>
+                        <p>
+                            This Starter Code is the base of what we&#96;re building. We&#96;ve provided the CSS styling so that you only need to focus on learning React and programming the tic-tac-toe game.
+                        </p>
+                        <p>
+                            By inspecting the code, you&#96;ll notice that we have three React components:
+                        </p>
+                        <ul>
+                            <li>Square</li>
+                            <li>Board</li>
+                            <li>Game</li>
+                        </ul>
+                        <p>
+                            The Square component renders a single &lt;button> and the Board renders 9 squares. The Game component renders a board with placeholder values which we&#96;ll modify later. There are currently no interactive components.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Passing_Data_Through_Props">
+                    <header><h4>Passing Data Through Props</h4></header>
+                    <article>
+                        <p>
+                            To get our feet wet, let&#96;s try passing some data from our Board component to our Square component.
+                        </p>
+                        <p>
+                            We strongly recommend typing code by hand as you&#96;re working through the tutorial and not using copy/paste. This will help you develop muscle memory and a stronger understanding.
+                        </p>
+                        <p>
+                            In Board&#96;s <span class="yellow-highlight">renderSquare</span> method, change the code to pass a prop called <span class="yellow-highlight">value</span> to the Square:
+                        </p>
+                        <pre>
+                            <code>
     class Board extends
     React.Component {
         renderSquare(i) {
             return &lt;Square value={i} /&gt;
         }
     }
-                        </code>
-                    </pre>
-                    <p>
-                        Change Square&#96;s <span class="yellow-highlight">render</span> method to show that value by replacing <span class="yellow-highlight">{/* TODO */}</span> with <span class="yellow-highlight">{this.props.value}</span>:
-                    </p>
-                    <pre>
-                        <code>
+                            </code>
+                        </pre>
+                        <p>
+                            Change Square&#96;s <span class="yellow-highlight">render</span> method to show that value by replacing <span class="yellow-highlight">{/* TODO */}</span> with <span class="yellow-highlight">{this.props.value}</span>:
+                        </p>
+                        <pre>
+                            <code>
     class Square extends
     React.component {
         render() {
@@ -260,10 +271,11 @@
             );
         }
     }
-                        </code>
-                    </pre>
-                    <p><a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">view full tutorial</a></p>
-                </article>
+                            </code>
+                        </pre>
+                        <p><a class="blue-link" href="https://reactjs.org/tutorial/tutorial.html">view full tutorial</a></p>
+                    </article>
+                </section>
             </section>  
             <section class="main-section" id="Staying_Informed">
                 <header><h2>Staying Informed</h2></header>

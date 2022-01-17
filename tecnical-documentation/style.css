@@ -80,6 +80,13 @@ img {
     text-decoration: none;
 }
 
+.nav-list .nav-list_change:hover {
+    border-left: none;
+}
+.nav-link_change {
+    font-weight: 400;
+}
+
 pre {
     background-color:  var(--primary-Background-Alabaster);
     overflow-x: scroll ;
