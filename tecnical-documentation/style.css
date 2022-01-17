@@ -6,12 +6,15 @@
     --primary-Background-Alabaster: hsla(0, 0%, 97%, 0.609);
     --highlight-Blue-Foam: hsl(191, 81%, 96%);
     --Highlight-Citrine-White: hsl(52, 76%, 92%);
+    --Secondary-Translucence-Kournikova: hsla(50, 100%, 70%, 0.302); 
+    --Secondary-Yellow-Kournikova: hsl(50, 100%, 70%);
     --Primary-Main-Malibu: hsl(193, 96%, 69%);
+
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.256rem;
+    font-size: 1rem;
     line-height: 1.7;
     margin: 0;
 
@@ -22,15 +25,15 @@ body {
     background: var(--Primary-Charade);
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
-    width: 100%;
-    position: sticky;
+    padding: 1rem 0;
     position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    width: 100%;
 }
 
 img {
-    width: 30%;
+    width: 20%;
 }
 
 .container {
@@ -50,15 +53,13 @@ img {
 
 .docs_title{
     margin: 0;
-    padding: 0 .5rem 0 .5em;
+    text-transform: uppercase;
 }
 
 .nav-list li {
     list-style: none;
     margin-top: .5em;
     padding: 0;
-    text-transform: uppercase;
-
 }
 
 .nav-list li:hover {
@@ -80,7 +81,7 @@ img {
 }
 
 pre {
-    background-color:  #f7f7f7;
+    background-color:  var(--primary-Background-Alabaster);
     overflow-x: scroll ;
 
 }
@@ -97,8 +98,8 @@ pre {
 
 
 blockquote {
-    background-color: rgba(255,229,100,0.3);
-    border-left-color: hsl(50, 100%, 70%);
+    background-color: var(--Secondary-Translucence-Kournikova);
+    border-left-color: var(--Secondary-Yellow-Kournikova);
     border-left-width: 10px;
     border-left-style: solid;
     margin-left: -1.2rem;
@@ -112,7 +113,7 @@ blockquote h3 {
 
 @media (min-width: 700px) {
     img {
-        width: 20%;
+        width: 25%;
     }
 
     .row {
@@ -122,20 +123,21 @@ blockquote h3 {
     }
 
     #navbar {
+        border-left-style: 1px;
         min-height: 100vh;
         padding: 0 2rem 0 1rem;
         position: sticky;
-        top: 8%;
+        top: 6%;
         width: 25%;
     }
 
     #logo_header {
-        z-index: 2;
+        z-index: 3;
     }
 
     #main-doc {
         margin: 0 auto;
-        width: 65%;
+        width: 60%;
     }
 
     .docs_title{
@@ -145,21 +147,35 @@ blockquote h3 {
     
     .nav-list li {
         list-style: none;
+        font-weight: 900;
         margin-top: .5em;
         padding: 0;
-        text-transform: uppercase;
     }
     
     .docs_title {
         margin: 1em 0;
     }
-}
 
-@media (min-width: 1020px) {
-    #navbar {
-        top: 19%;
+    blockquote {
+        margin-left: -.9em;
+        margin-right: 0;
+    }
+    
+    blockquote h3 {
+        margin-top: 0;
     }
 }
 
+@media (min-width: 1020px) {
+    body {
+        font-size: 1.5em;
+    }
 
-/* overflow-x: scroll; */
+    img {
+        width: 20%;
+    }
+
+    #navbar {
+        top: 8%;
+    }
+}
