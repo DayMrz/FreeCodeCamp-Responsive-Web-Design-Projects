@@ -9,7 +9,6 @@ $dark.addEventListener('click', darkTheme);
 
 function lightTheme() {
     document.body.classList.toggle('light');
-    
     $dark.hidden = false
     $light.hidden = true
 }
