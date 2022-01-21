@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;600;700&display=swap');
+
+:root {
+    --Primary-Background: hsla(0, 7%, 94%, 0.966);
+    --Primary-Btn-Background: hsl(265, 62%, 75%);
+
+    --Primary-Btn-Shadow: 0 8px 16px 0 rgba(185, 152, 231, 0.048), 0 10px 20px 0 hsla(265, 62%, 75%, 0.6);
+    --Secondary-Btn-Shadow: 0 8px 16px 0 hsla(0, 7%, 94%, 0.30), 0 10px 20px 0 hsla(0, 7%, 94%, 0.6);
+
+    --Tertiary-Icon-Theme-Color: hsl(0, 0%, 0%);
+    
+    --Font-Family: 'Roboto Mono', monospace;
+}
+
+.dark {
+    --Primary-Background: hsl(266, 56%, 16%);
+    --Primary-Btn-Background: hsla(0, 17%, 93%, 0.89);
+
+    --Tertiary-Icon-Theme-Color: hsl(61, 85%, 47%);
+}
+
+*, *::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 1rem;
+}
+
+#canvas {
+    background: var(--Primary-Background);
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+#container {
+    height: auto;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 90%;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(255,255,255,.9);
+    padding: 0.1em 1em;
+    width: 100%;
+}
+
+
