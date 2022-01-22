@@ -22,15 +22,16 @@
 
 .Btn-theme:focus,
 .Btn-theme:hover {
-    color: turquoise;
     box-shadow: var(--Primary-Btn-Shadow);
 }
 
-#Dark{
-    background-image: url('../icons/moon-solid.svg');
+.icon-lightbulb-o {
+    font-size: 6.5rem;
+    color: var(--Primary-Btn-Background);
 }
-
-#Light{
-    background-image: url('../icons/sun-solid.svg');
-    color: var(--Tertiary-Icon-Theme-Color);
-}
+.icon-magic,
+.icon-mobile-devices,
+.icon-rocket {
+    font-size: 5rem;
+    color: var(--Primary-Btn-Background);
+  }

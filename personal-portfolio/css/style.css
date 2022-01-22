@@ -1,5 +1,4 @@
-@import url("buttons-style.css");
-@import url("icons-style.css");
+@import url("icon-style.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;600;700&display=swap');
 
 :root {
@@ -26,8 +25,31 @@
     margin: 0;
 }
 
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+    font-size: 70%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+    font-size: 58%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+        }
+    }
+
 body {
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 #canvas {
@@ -62,5 +84,3 @@ body {
     padding: 0.1em 1em;
     width: 100%;
 }
-
-
