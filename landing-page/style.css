@@ -292,13 +292,15 @@ background-color: var(--Secondary-Dodger-Blue);
         font-size: 2rem;
     }
 
-    .boxes {
-        column-count: 2;
-        gap: 50px;
+    .wrapper-boxes {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(10, 1fr);
     }
 
     .info-box {
-        margin-top: 0;
+        grid-column: span 5;
+        margin: 0;
     }
 
     #footer .container {
