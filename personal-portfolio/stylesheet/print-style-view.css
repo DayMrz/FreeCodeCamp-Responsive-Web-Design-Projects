@@ -1,0 +1,23 @@
+/* :root {
+
+} */
+
+*, *::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.project-tile {
+  color: inherit;
+  pointer-events: none;
+}
+
+
+
+

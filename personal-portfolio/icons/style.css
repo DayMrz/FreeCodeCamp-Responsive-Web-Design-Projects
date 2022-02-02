@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4ri641');
-  src:  url('fonts/icomoon.eot?4ri641#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4ri641') format('truetype'),
-    url('fonts/icomoon.woff?4ri641') format('woff'),
-    url('fonts/icomoon.svg?4ri641#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jsxu0n');
+  src:  url('fonts/icomoon.eot?jsxu0n#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jsxu0n') format('truetype'),
+    url('fonts/icomoon.woff?jsxu0n') format('woff'),
+    url('fonts/icomoon.svg?jsxu0n#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,34 +25,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-rocket:before {
-  content: "\e900";
+.icon-sphere:before {
+  content: "\e90a";
 }
-.icon-half-moon:before {
-  content: "\e901";
+.icon-globe:before {
+  content: "\e90a";
 }
-.icon-mobile-devices:before {
-  content: "\e902";
+.icon-internet:before {
+  content: "\e90a";
 }
-.icon-bars:before {
-  content: "\e903";
+.icon-education:before {
+  content: "\e906";
 }
-.icon-magic:before {
-  content: "\e904";
+.icon-print:before {
+  content: "\e90b";
 }
-.icon-lightbulb-o:before {
+.icon-chain:before {
+  content: "\e909";
+}
+.icon-laptop:before {
+  content: "\e908";
+}
+.icon-pencil:before {
+  content: "\e907";
+}
+.icon-linkedin-square:before {
   content: "\e905";
 }
-.icon-envelop:before {
-  content: "\e945";
+.icon-envelope:before {
+  content: "\e902";
 }
-.icon-facebook:before {
-  content: "\ea90";
-}
-.icon-twitter:before {
-  content: "\ea96";
+.icon-map-marker:before {
+  content: "\e903";
 }
 .icon-github:before {
-  content: "\eab0";
+  content: "\e904";
 }
-
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-mobile:before {
+  content: "\e900";
+}

@@ -1,23 +1,24 @@
 @import url("icon-style.css");
+@import url("font-size.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;600;700&display=swap');
 
 :root {
     --Primary-Background: hsla(0, 7%, 94%, 0.966);
     --Primary-Btn-Background: hsl(265, 62%, 75%);
+    --Secondary-Background: hsl(0, 0%, 100%);
+    --Primary-Font-Color-Bon-Jour: hsl(0, 82%, 4%);
+
 
     --Primary-Btn-Shadow: 0 8px 16px 0 rgba(185, 152, 231, 0.048), 0 10px 20px 0 hsla(265, 62%, 75%, 0.6);
     --Secondary-Btn-Shadow: 0 8px 16px 0 hsla(0, 7%, 94%, 0.30), 0 10px 20px 0 hsla(0, 7%, 94%, 0.6);
-
-    --Tertiary-Icon-Theme-Color: hsl(0, 0%, 0%);
-    
-    --Font-Family: 'Roboto Mono', monospace;
 }
 
 .dark {
     --Primary-Background: hsl(266, 56%, 16%);
+    --Secondary-Background: hsl(266, 47%, 27%);
     --Primary-Btn-Background: hsla(0, 17%, 93%, 0.89);
+    --Primary-Font-Color-Bon-Jour: hsl(0, 6%, 87%);
 
-    --Tertiary-Icon-Theme-Color: hsl(61, 85%, 47%);
 }
 
 *, *::before, ::after {
@@ -25,39 +26,23 @@
     margin: 0;
 }
 
-html {
-    font-size: 65%;
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 75em) {
-    html {
-    font-size: 70%;
-    }
-}
-
-@media (max-width: 61.25em) {
-    html {
-    font-size: 58%;
-    }
-}
-
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-        }
-    }
-
 body {
+    Font-Family: 'Roboto Mono', monospace;
     font-size: 1.8rem;
+    line-height: 1.4;
+    color: red;
 }
 
-#canvas {
-    background: var(--Primary-Background);
-    left: 0;
-    position: fixed;
-    top: 0;
-    z-index: -1;
+.print-view {
+    display: none;
+}
+
+.web-view {
+    display: block;
+}
+
+.only-print {
+    display: none;
 }
 
 .Header {
@@ -75,7 +60,7 @@ body {
 }
 
 .title {
-    color: #fff;
+    color: var(--Primary-Font-Color-Bon-Jour);
     text-align: center;
 }
 
@@ -83,4 +68,9 @@ body {
     background-color: rgba(255,255,255,.9);
     padding: 0.1em 1em;
     width: 100%;
+}
+
+.about-info {
+    background-color: var(--Secondary-Background);
+    /* color: ; */
 }

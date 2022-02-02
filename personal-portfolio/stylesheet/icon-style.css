@@ -7,7 +7,7 @@
     box-shadow: var(--Primary-Btn-Shadow);
 } 
 
-.Btn-theme {
+#Btn-theme-toggle {
     background-color: transparent;
     block-size: 30px;
     border-radius: 50%;
@@ -16,12 +16,12 @@
     inline-size: 30px;
 }
 
-.Btn-theme:active {
+#Btn-theme-toggle:active {
     transform: scale(.9);
 }
 
-.Btn-theme:focus,
-.Btn-theme:hover {
+#Btn-theme-toggle:focus,
+#Btn-theme-toggle:hover {
     box-shadow: var(--Primary-Btn-Shadow);
 }
 
@@ -31,7 +31,9 @@
 }
 .icon-magic,
 .icon-mobile-devices,
+.icon-sun-o, 
+.icon-moon-o,
 .icon-rocket {
     font-size: 5rem;
     color: var(--Primary-Btn-Background);
-  }
+}

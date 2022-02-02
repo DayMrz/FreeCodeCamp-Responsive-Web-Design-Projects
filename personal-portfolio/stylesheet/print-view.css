@@ -1,0 +1,66 @@
+@import url("icon-style.css");
+@import url("print-style-view.css");
+
+.not-print,
+.web-view {
+  display: none;
+}
+
+.print-view {
+  display: block;
+  text-decoration: none;
+}
+
+.only-print {
+  display: none;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(10, 1fr);
+  margin: auto;
+  max-width: 800px;
+}
+
+.wrapper #welcome-section {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.wrapper aside {
+  grid-column: span 3;
+}
+
+.wrapper main {
+  grid-column: span 7;
+}
+
+@media only print {
+  .btn-not-print{
+      display: none;
+  }
+
+  .display-link::before,
+  .contact-icon-link::before {
+    content: attr(href);
+    text-decoration: underline;
+  }
+
+  .contact-icons li{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icon-contact {
+    margin-right: .5em;
+  }
+
+  .only-print {
+    display: block;
+  }
+
+  .not-print {
+    display: none;
+  }
+}
