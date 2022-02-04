@@ -31,22 +31,33 @@ a {
   padding: 0;
 }
 
-.icon-contact {
-    margin-right: .5em;
-  }
 
 #welcome-section a .icon-contact {
   margin-right: .5em;
 }
 
-.contact-icons {
+#skills .contact-icons {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
   list-style: none;
   padding: 0;
 }
 
-.contact-icons li {
-  margin-bottom: .5em;
+#skills .display-title {
+  text-decoration: none;
 }
+
+.logo-contact-icon {
+  border-radius: 50%;
+  max-height: 20vw ;
+  padding: 0;
+  width: 30px;
+}
+
+.icon-contact {
+    margin-right: .3em;
+  }
 
 .two-cols,
 .education {

@@ -2,7 +2,7 @@
 @import url("print-style-view.css");
 
 /* * {
-border: 1px solid purple;
+border: .1px solid purple;
 } */
 
 .not-print,
@@ -45,6 +45,10 @@ border: 1px solid purple;
 }
 
 @media only print {
+body {
+  font-size: .8rem;
+}
+
   .btn-not-print{
         display: none;
     }
@@ -73,8 +77,22 @@ border: 1px solid purple;
     border-right: none;
   }
 
+  #skills .contact-icons {
+    display: flex;
+    flex-direction: column; 
+    font-size: inherit;
+  }
+  
   .contact-icons .display-title::before {
     content: attr(href);
+  }
+  
+  .contact-icons li {
+    padding-bottom: .5em;
+  }
+
+  .contact-icons li:first-of-type {
+    padding-top: .5em;
   }
 
   .only-print {
