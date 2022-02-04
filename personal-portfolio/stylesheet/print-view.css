@@ -21,10 +21,10 @@ border: .1px solid purple;
 
 .wrapper {
   display: grid;
-  gap: .1em;
   grid-template-columns: repeat(10, 1fr);
   margin: auto;
   max-width: 1000px;
+  padding: .5em;
 }
 
 .wrapper #welcome-section {

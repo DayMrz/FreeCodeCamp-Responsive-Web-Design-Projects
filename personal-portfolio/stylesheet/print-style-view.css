@@ -1,5 +1,6 @@
 :root {
-  --primary-link-active: rgb(65, 65, 211);
+  --primary-link-active: hsl(240, 62%, 54%);
+  --primary-background: hsla(265, 62%, 75%, 0.082);
 }
 
 *, *::before, ::after {
@@ -15,8 +16,22 @@ a {
   color: var(--primary-link-active);
 }
 
+aside,
+#welcome-section,
+footer {
+  background-color: var(--primary-background);
+}
+
+
 .line-breaks {
   margin: .5em;
+}
+
+.line-breaks_complete {
+  margin: .5em 0 .5em 0;
+}
+#projects {
+  padding-left: .5em;
 }
 
 .project-tile {
@@ -33,7 +48,7 @@ a {
 
 
 #welcome-section a .icon-contact {
-  margin-right: .5em;
+  margin-right: 1em;
 }
 
 #skills .contact-icons {
@@ -64,6 +79,17 @@ a {
   padding: 1em;
 }
 
+#skills li .project-description {
+  padding-bottom: .5em;
+}
+
 .projects {
   padding: 1em;
+
 } 
+
+.projects li {
+  padding-bottom: .5em;
+}
+
+
