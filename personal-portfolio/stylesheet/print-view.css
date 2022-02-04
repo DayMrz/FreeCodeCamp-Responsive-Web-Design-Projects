@@ -1,6 +1,10 @@
 @import url("icon-style.css");
 @import url("print-style-view.css");
 
+/* * {
+border: 1px solid purple;
+} */
+
 .not-print,
 .web-view {
   display: none;
@@ -17,10 +21,10 @@
 
 .wrapper {
   display: grid;
-  gap: 1em;
+  gap: .1em;
   grid-template-columns: repeat(10, 1fr);
   margin: auto;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .wrapper #welcome-section {
@@ -36,10 +40,14 @@
   grid-column: span 7;
 }
 
+.wrapper footer {
+  grid-column: 1 / -1;
+}
+
 @media only print {
   .btn-not-print{
-      display: none;
-  }
+        display: none;
+    }
 
   .display-link::before,
   .contact-icon-link::before {
@@ -47,13 +55,26 @@
     text-decoration: underline;
   }
 
-  .contact-icons li{
-    display: flex;
-    flex-direction: row;
+  .display-title::before {
+    content: attr(title);
   }
 
-  .icon-contact {
-    margin-right: .5em;
+  .under-title-contact-info .display-title {
+    border-left:  .9px solid rgba(0, 0, 0, 0.411);
+    border-right:  .9px solid rgba(0, 0, 0, 0.411);
+    padding: 0 .2em;
+  }
+
+  .display-title:first-of-type {
+    border-left: none;
+  }
+
+  .display-title:last-of-type {
+    border-right: none;
+  }
+
+  .contact-icons .display-title::before {
+    content: attr(href);
   }
 
   .only-print {
@@ -63,4 +84,10 @@
   .not-print {
     display: none;
   }
+
+  .contact-icons {
+    list-style:circle;
+    padding: 1.5em;
+  }
+
 }
