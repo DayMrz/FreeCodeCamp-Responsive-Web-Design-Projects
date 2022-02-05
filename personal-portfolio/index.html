@@ -10,12 +10,22 @@
     <link id="pagestyle" rel="stylesheet" href="stylesheet/web-view.css" type="text/css">
 </head>
 <body>
+  <div class="wrapper">
   <header>
-    <div class="print-view not-print">
-    <input type="button" onclick="window.print();return false;" value="print as a PDF"/>
+    <div class="btn-not-print">
+      <button class="print-view"
+      onclick="window.print();return false;" title="Print">
+        <span class="icon-print"></span>
+      </button>
+      <button id="print-style-sheet" class="web-view" 
+      title="Resume View">
+        <span class="icon-profile"></span>
+      </button>
+      <button id="default-style-sheet" class="print-view"
+      title="Web-View">
+        <span class="icon-globe"></span>
+      </button>
     </div>
-    <button id="print-style-sheet" class="btn-not-print">PDF View</button>
-    <button id="default-style-sheet" class="btn-not-print">Web View</button>
     <nav id="navbar" class="web-view">
       <ul>
         <li><a href="#about-section">About Me</a></li>
@@ -23,11 +33,9 @@
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-
     </nav>
   </header>
 
-  <div class="wrapper">
     <section id="welcome-section">
       <h1 class="main-title web-view">Hello I'm Day</h1>
       <h1 class="main-title print-view">Day Munoz</h1>
@@ -43,7 +51,7 @@
           <span class="icon-linkedin-square icon-contact print-view not-print"></span>
         </a>
       </div>
-      <hr class="line-breaks_complete  print-view web-view">
+      <hr class="line-breaks  print-view web-view">
     </section>
 
     <aside id="skills" class="web-view print-view">

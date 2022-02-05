@@ -24,7 +24,10 @@ border: .1px solid purple;
   grid-template-columns: repeat(10, 1fr);
   margin: auto;
   max-width: 1000px;
-  padding: .5em;
+  padding: 0 .5em;
+}
+.wrapper header {
+  grid-column: 1 / -1;
 }
 
 .wrapper #welcome-section {
@@ -45,9 +48,9 @@ border: .1px solid purple;
 }
 
 @media only print {
-body {
-  font-size: .8rem;
-}
+  body {
+    font-size: .8rem;
+  }
 
   .btn-not-print{
         display: none;
@@ -64,17 +67,12 @@ body {
   }
 
   .under-title-contact-info .display-title {
-    border-left:  .9px solid rgba(0, 0, 0, 0.411);
-    border-right:  .9px solid rgba(0, 0, 0, 0.411);
+    border-left:  .9px solid var(--Secondary-Link-Active);
     padding: 0 .2em;
   }
 
   .display-title:first-of-type {
     border-left: none;
-  }
-
-  .display-title:last-of-type {
-    border-right: none;
   }
 
   #skills .contact-icons {

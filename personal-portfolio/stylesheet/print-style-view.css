@@ -1,6 +1,10 @@
 :root {
-  --primary-link-active: hsl(240, 62%, 54%);
-  --primary-background: hsla(265, 62%, 75%, 0.082);
+  --Primary-Link-Active: hsl(240, 54%, 37%);
+  --Secondary-Link-Active: hsla(240, 39%, 42%, 0.842);
+  --Primary-Background: hsla(265, 51%, 80%, 0.082);
+  --Primary-Button: hsl(266, 47%, 27%);
+  --Secondary-Button: hsla(267, 47%, 27%, 0.397);
+  --Secondary-Background: hsla(0, 0%, 100%, 0.89);
 }
 
 *, *::before, ::after {
@@ -13,23 +17,48 @@ body {
 }
 
 a {
-  color: var(--primary-link-active);
+  color: var(--Primary-Link-Active);
+  transition: all 0.3s ease ;
+}
+
+a:hover {
+  color: var(--Secondary-Link-Active);
+}
+
+.btn-not-print {
+  background-color: var(--Primary-Background);
+  display: flex;
+}
+
+.btn-not-print button {
+  background-color: transparent;
+  border-radius: 50px;
+  border: none;
+  color: var(--Secondary-Button);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: .2em;
+  padding: .2em;
+  transition: all 0.4s ease-out;
+}
+
+.btn-not-print button:hover {
+  background-color: var(--Secondary-Button);
+  color: var(--Secondary-Background);
 }
 
 aside,
-#welcome-section,
-footer {
-  background-color: var(--primary-background);
+footer,
+#welcome-section {
+  background-color: var(--Primary-Background);
 }
-
 
 .line-breaks {
   margin: .5em;
 }
 
-.line-breaks_complete {
-  margin: .5em 0 .5em 0;
-}
+aside,
+footer,
 #projects {
   padding-left: .5em;
 }
@@ -46,6 +75,9 @@ footer {
   padding: 0;
 }
 
+.display-title {
+  text-decoration: none;
+}
 
 #welcome-section a .icon-contact {
   margin-right: 1em;
@@ -71,8 +103,8 @@ footer {
 }
 
 .icon-contact {
-    margin-right: .3em;
-  }
+  margin-right: .3em;
+}
 
 .two-cols,
 .education {
@@ -85,7 +117,6 @@ footer {
 
 .projects {
   padding: 1em;
-
 } 
 
 .projects li {
