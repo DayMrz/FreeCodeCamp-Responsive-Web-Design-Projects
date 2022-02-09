@@ -1,8 +1,31 @@
+header {
+  background-color: var(--Background-Night-Black-Opacity);
+  height: auto;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  padding: .5em;
+}
+
+/* header .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
 #bars {
   cursor: pointer;
   color: rgb(239, 230, 253);
-  font-size: 2rem;
+  display: flex;
+  font-size: 3.5rem;
+  position: absolute;
+  top: .5em;
+  right: .5em;
 }
+
+/* #bars:hover {
+
+} */
 
 .navbar {
   position: absolute;
@@ -23,6 +46,7 @@
 
 .nav-list li {
   list-style: none;
+  padding-bottom: 1em;
 }
 
 .nav-list li:hover,
@@ -33,6 +57,7 @@
 .nav-link {
   color: var(--Active-Letter-Gray);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 

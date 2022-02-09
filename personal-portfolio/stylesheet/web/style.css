@@ -1,5 +1,6 @@
 @import url('font-size.css');
 @import url('navbar.css');
+@import url('screen.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
@@ -10,7 +11,7 @@
   --Background-Night-Black: hsl(250, 75%, 2%);
   --Background-Night-Black-Opacity: hsla(255, 80%, 2%, 0.842);
 
-  --Secondary-Link-Active: hsla(240, 39%, 42%, 0.842);
+  --Secondary-Link-Active: hsla(240, 39%, 42%, 0.534);
 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
@@ -45,40 +46,33 @@ body {
   display: none;
 }
 
-header {
-  background-color: var(--Background-Night-Black-Opacity);
-  display: flex;
-  flex-direction: row-reverse;
-  height: auto;
-  justify-content: flex-start;
-  margin: 0 auto;
-  position: fixed;
-  width: 100%;
-  padding: 1em .5em;
-}
-
 #welcome-section {
+  /* height: calc(calc(100vw / 16) * 9); */
   align-items: center;
   background-image: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-  background-size: cover;
-  height: 100vh;
-  /* height: calc(calc(100vw / 16) * 9); */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
   width: 100%;
 }
 
 .settings {
   position: absolute;
   top: 8rem;
+  right: 1rem;
   display: flex;
-  justify-content: end;
-}
+  flex-direction: column;
+  align-items: center;}
 
 .settings-list {
   padding: 0;
+}
+
+.settings-list li {
+  list-style: none;
 }
 
 .logo-contact-icon {
@@ -89,7 +83,7 @@ header {
 
 * {
   border: 1px solid magenta ;
-}
+} 
 
 @media (min-width: 600px) {
   header {

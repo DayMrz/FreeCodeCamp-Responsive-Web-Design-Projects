@@ -12,18 +12,18 @@
 <body>
   <div class="wrapper">
   <header>
-    <div class="btn-not-print">
-      <button class="print-view"
-      onclick="window.print();return false;" title="Print">
+    <div class="btn-not-print print-view">
+      <button onclick="window.print();return false;" title="Print Resume">
         <span class="icon-print"></span>
       </button>
-      <button id="default-style-sheet" class="print-view"
-      title="Web-View">
+      <button id="default-style-sheet" title="Web-View">
         <span class="icon-globe"></span>
       </button>
     </div>
-    <div class=""></div>
-    <span id="bars" class="icon-bars web-view" aria-label="nav--visible"></span>
+    <div class="header-container web-view">
+      <h1 class="">Day </h1>
+      <span id="bars" class="icon-bars web-view" aria-label="nav--visible"></span>
+    </div>
     <nav id="navbar" class="navbar web-view">
       <ul class="nav-list">
         <li><a class="nav-link" href="#about-section">About Me</a></li>
@@ -32,49 +32,53 @@
         <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     </nav>
+  </header>
+
+  <section id="welcome-section">
     <div class="settings web-view">
       <span class="icon-cog"></span>
       <ul class="settings-list">
-        <li><button id="print-style-sheet" class="web-view" 
+        <li><button id="print-style-sheet" class="settings-btn web-view" 
           title="Resume View">
-            <span class="icon-profile"></span></li>
+            <span class="icon-profile"></span>
+          </li>
+        <li><button class="settings-btn web-view" 
+          title="Resume View">
+            <span class="icon-profile"></span>
+          </li>
+        <li><button class="settings-btn web-view" 
+          title="Resume View">
+            <span class="icon-profile"></span>
+          </li>
       </ul>
       </button>
     </div>
-  </header>
-
-    <section id="welcome-section">
-      <!-- <div class="btn-not-print web-view">
-        <button id="print-style-sheet" class="web-view" 
-        title="Resume View">
-          <span class="icon-profile"></span>
-        </button>
-      </div> -->
-      <h1 class="main-title web-view">Hello! 👋 I'm Day </h1>
-      <h1 class="main-title print-view">Day Munoz</h1>
-      <div class="img">
-        <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
-      </div>
-      <div class="language-icons web-view">
-        <span class="icon-html5"></span>
-        <span class="icon-css3"></span>
-        <span class="icon-javascript"></span>
-      </div>
-      <p class="web-view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate expedita</p>
-      <div class="under-title-contact-info print-view>
-        <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
-        target="_blank" title="San Jose, CA, 95124">
-          <span class="icon-map-marker print-view icon-contact not-print"></span>
-        </a>
-        <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
-          <span class="icon-envelope icon-contact print-view not-print"></span>
-        </a>
-        <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
-          <span class="icon-linkedin-square icon-contact print-view not-print"></span>
-        </a>
-      </div>
-      <hr class="line-breaks  print-view">
-    </section>
+    
+    <h1 class="main-title web-view">Hello! 👋 I'm Day </h1>
+    <h1 class="main-title print-view">Day Munoz</h1>
+    <div class="img">
+      <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
+    </div>
+    <div class="language-icons web-view">
+      <span class="icon-html5"></span>
+      <span class="icon-css3"></span>
+      <span class="icon-javascript"></span>
+    </div>
+    <p class="web-view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate expedita</p>
+    <div class="under-title-contact-info print-view">
+      <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
+      target="_blank" title="San Jose, CA, 95124">
+        <span class="icon-map-marker print-view icon-contact not-print"></span>
+      </a>
+      <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
+        <span class="icon-envelope icon-contact print-view not-print"></span>
+      </a>
+      <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
+        <span class="icon-linkedin-square icon-contact print-view not-print"></span>
+      </a>
+    </div>
+    <hr class="line-breaks  print-view">
+  </section>
 
     <aside id="skills" class="web-view print-view">
       <ul class="contact-icons print-view">
