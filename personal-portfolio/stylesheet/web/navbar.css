@@ -1,0 +1,60 @@
+#bars {
+  cursor: pointer;
+  color: rgb(239, 230, 253);
+  font-size: 2rem;
+}
+
+.navbar {
+  position: absolute;
+  transition: all ;
+  visibility: hidden;
+  width: 100%;
+}
+
+.nav--visible {
+  height: auto;
+  position: relative;
+  visibility: visible;
+}
+
+.nav-list {
+  padding: 1em;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li:hover,
+.nav-list li:focus {
+  opacity: .50;
+}
+
+.nav-link {
+  color: var(--Active-Letter-Gray);
+  text-decoration: none;
+}
+
+
+@media (min-width: 600px) {
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    visibility: visible;
+    width: 100%;
+  }
+
+  #bars {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .nav-list li {
+    padding: .5em 1em;
+  }
+}

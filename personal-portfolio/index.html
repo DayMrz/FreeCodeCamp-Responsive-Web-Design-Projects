@@ -7,7 +7,7 @@
   <title>Day's Portfolio</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/day-logo-purple-background.jpg">
   <link rel="stylesheet" href="./icons/style.css">
-    <link id="pagestyle" rel="stylesheet" href="stylesheet/web-view.css" type="text/css">
+    <link id="pagestyle" rel="stylesheet" href="stylesheet/web/style.css" type="text/css">
 </head>
 <body>
   <div class="wrapper">
@@ -22,8 +22,8 @@
         <span class="icon-globe"></span>
       </button>
     </div>
-    <span id="bars" 
-    class="icon-bars web-view" aria-label="nav--visible"></span>
+    <div class=""></div>
+    <span id="bars" class="icon-bars web-view" aria-label="nav--visible"></span>
     <nav id="navbar" class="navbar web-view">
       <ul class="nav-list">
         <li><a class="nav-link" href="#about-section">About Me</a></li>
@@ -32,15 +32,24 @@
         <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     </nav>
+    <div class="settings web-view">
+      <span class="icon-cog"></span>
+      <ul class="settings-list">
+        <li><button id="print-style-sheet" class="web-view" 
+          title="Resume View">
+            <span class="icon-profile"></span></li>
+      </ul>
+      </button>
+    </div>
   </header>
 
     <section id="welcome-section">
-      <div class="btn-not-print web-view">
+      <!-- <div class="btn-not-print web-view">
         <button id="print-style-sheet" class="web-view" 
         title="Resume View">
           <span class="icon-profile"></span>
         </button>
-      </div>
+      </div> -->
       <h1 class="main-title web-view">Hello! 👋 I'm Day </h1>
       <h1 class="main-title print-view">Day Munoz</h1>
       <div class="img">

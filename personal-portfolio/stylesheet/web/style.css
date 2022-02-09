@@ -1,4 +1,5 @@
-@import url("font-size.css");
+@import url('font-size.css');
+@import url('navbar.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
@@ -14,6 +15,10 @@
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
 }
+
+/* .light {
+
+} */
 
 *, *::before, ::after {
   box-sizing: border-box;
@@ -52,58 +57,34 @@ header {
   padding: 1em .5em;
 }
 
-#bars {
-  cursor: pointer;
-  color: rgb(239, 230, 253);
-  font-size: 2rem;
-}
-
-.navbar {
-  position: absolute;
-  transition: all ;
-  visibility: hidden;
-  width: 100%;
-}
-
-.nav--visible {
-  height: auto;
-  position: relative;
-  visibility: visible;
-}
-
-.nav-list {
-  padding: 1em;
-}
-
-.nav-list li {
-  list-style: none;
-}
-
-.nav-list li:hover,
-.nav-list li:focus {
-  opacity: .50;
-}
-
-.nav-link {
-  color: var(--Active-Letter-Gray);
-  text-decoration: none;
-}
-
 #welcome-section {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-image: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  /* height: calc(calc(100vw / 16) * 9); */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
   width: 100%;
+}
+
+.settings {
+  position: absolute;
+  top: 8rem;
+  display: flex;
+  justify-content: end;
+}
+
+.settings-list {
+  padding: 0;
 }
 
 .logo-contact-icon {
   background-color: var(--Background-Strong-Purple);
   border-radius: 50%;
+  margin: 3em 0;
 }
 
 * {
@@ -116,26 +97,6 @@ header {
     padding: 0;
   }
   
-  #navbar {
-    display: flex;
-    justify-content: flex-end;
-    visibility: visible;
-    width: 100%;
-  }
-
-  #bars {
-    display: none;
-  }
-
-  .nav-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .nav-list li {
-    padding: .5em 1em;
-  }
 }
 
 @media (min-width: 1000px) {

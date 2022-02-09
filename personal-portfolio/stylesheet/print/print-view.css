@@ -1,4 +1,4 @@
-@import url("print-style-view.css");
+@import url('print-style-view.css');
 
 .web-view {
   display: none;
@@ -40,6 +40,27 @@
 
 .wrapper footer {
   grid-column: 1 / -1;
+}
+
+@media (max-width: 300px) {
+  .wrapper {
+    padding: 0;
+  }
+  .wrapper aside {
+    grid-column: span 4;
+  }
+  
+  .wrapper main {
+    grid-column: span 6;
+  }
+
+  .icon-contact {
+    margin-right: .1em;
+  }
+
+  .project-title  {
+    margin-left: .5em;
+  }
 }
 
 @media only print {
