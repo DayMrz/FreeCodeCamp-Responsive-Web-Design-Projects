@@ -1,76 +1,146 @@
-@import url("icon-style.css");
 @import url("font-size.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
-    --Primary-Background: hsla(0, 7%, 94%, 0.966);
-    --Primary-Btn-Background: hsl(265, 62%, 75%);
-    --Secondary-Background: hsl(0, 0%, 100%);
-    --Primary-Font-Color-Bon-Jour: hsl(0, 82%, 4%);
+  --Primary-Background-Purple:hsl(274, 98%, 22%);
+  --Primary-Background-Medium-Purple: hsl(288, 100%, 21%);
+  --Primary-Background-Dark-Purple: hsl(281, 97%, 35%);
+  --Background-Strong-Purple: hsl(264, 72%, 27%);
+  --Background-Night-Black: hsl(250, 75%, 2%);
+  --Background-Night-Black-Opacity: hsla(255, 80%, 2%, 0.842);
 
+  --Secondary-Link-Active: hsla(240, 39%, 42%, 0.842);
 
-    --Primary-Btn-Shadow: 0 8px 16px 0 rgba(185, 152, 231, 0.048), 0 10px 20px 0 hsla(265, 62%, 75%, 0.6);
-    --Secondary-Btn-Shadow: 0 8px 16px 0 hsla(0, 7%, 94%, 0.30), 0 10px 20px 0 hsla(0, 7%, 94%, 0.6);
-}
-
-.dark {
-    --Primary-Background: hsl(266, 56%, 16%);
-    --Secondary-Background: hsl(266, 47%, 27%);
-    --Primary-Btn-Background: hsla(0, 17%, 93%, 0.89);
-    --Primary-Font-Color-Bon-Jour: hsl(0, 6%, 87%);
-
+  --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
+  --Active-Letter-Gray: hsl(264, 7%, 86%);
 }
 
 *, *::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    Font-Family: 'Roboto Mono', monospace;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    color: red;
+  background-color: var(--Background-Night-Black);
+  color: var(--Active-Letter-Gray);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
 }
 
 .print-view {
-    display: none;
+  display: none;
 }
 
 .web-view {
-    display: block;
+  display: block;
 }
 
 .only-print {
-    display: none;
+  display: none;
 }
 
-.Header {
+header {
+  background-color: var(--Background-Night-Black-Opacity);
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+  justify-content: flex-start;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  padding: 1em .5em;
+}
+
+#bars {
+  cursor: pointer;
+  color: rgb(239, 230, 253);
+  font-size: 2rem;
+}
+
+.navbar {
+  position: absolute;
+  transition: all ;
+  visibility: hidden;
+  width: 100%;
+}
+
+.nav--visible {
+  height: auto;
+  position: relative;
+  visibility: visible;
+}
+
+.nav-list {
+  padding: 1em;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li:hover,
+.nav-list li:focus {
+  opacity: .50;
+}
+
+.nav-link {
+  color: var(--Active-Letter-Gray);
+  text-decoration: none;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo-contact-icon {
+  background-color: var(--Background-Strong-Purple);
+  border-radius: 50%;
+}
+
+* {
+  border: 1px solid magenta ;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    padding: 0;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    visibility: visible;
+    width: 100%;
+  }
+
+  #bars {
+    display: none;
+  }
+
+  .nav-list {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: .5em;
+    padding: 0;
+  }
+
+  .nav-list li {
+    padding: .5em 1em;
+  }
 }
 
-#container {
-    height: auto;
-    margin: 0 auto;
-    max-width: 960px;
-    width: 90%;
-}
-
-.title {
-    color: var(--Primary-Font-Color-Bon-Jour);
-    text-align: center;
-}
-
-.content {
-    background-color: rgba(255,255,255,.9);
-    padding: 0.1em 1em;
-    width: 100%;
-}
-
-.about-info {
-    background-color: var(--Secondary-Background);
-    /* color: ; */
+@media (min-width: 1000px) {
+  .logo-contact-icon {
+    background-color: var(--Background-Night-Black);
+  }
+  
 }

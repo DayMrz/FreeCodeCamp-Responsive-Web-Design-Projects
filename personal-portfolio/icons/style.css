@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?n45egt');
-  src:  url('fonts/icomoon.eot?n45egt#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?n45egt') format('truetype'),
-    url('fonts/icomoon.woff?n45egt') format('woff'),
-    url('fonts/icomoon.svg?n45egt#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6kyuze');
+  src:  url('fonts/icomoon.eot?6kyuze#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6kyuze') format('truetype'),
+    url('fonts/icomoon.woff?6kyuze') format('woff'),
+    url('fonts/icomoon.svg?6kyuze#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-django:before {
+  content: "\e915";
+}
+.icon-mongodb:before {
+  content: "\e90f";
+  color: #47a248;
+}
+.icon-npm:before {
+  content: "\e910";
+  color: #cb3837;
+}
+.icon-bootstrap:before {
+  content: "\e911";
+  color: #563d7c;
+}
+.icon-postman:before {
+  content: "\e912";
+  color: #ff6c37;
+}
+.icon-node-dot-js:before {
+  content: "\e913";
+  color: #393;
+}
+.icon-javascript:before {
+  content: "\e914";
+  color: #f7df1e;
+}
+.icon-html5:before {
+  content: "\e90e";
+  color: #e34f26;
+}
+.icon-css3:before {
+  content: "\e90d";
+  color: #1572b6;
+}
 .icon-profile:before {
   content: "\e90c";
 }
@@ -39,6 +74,12 @@
 }
 .icon-education:before {
   content: "\e906";
+}
+.icon-cog:before {
+  content: "\e917";
+}
+.icon-bars:before {
+  content: "\e916";
 }
 .icon-print:before {
   content: "\e90b";

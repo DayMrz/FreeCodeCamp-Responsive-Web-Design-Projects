@@ -17,67 +17,81 @@
       onclick="window.print();return false;" title="Print">
         <span class="icon-print"></span>
       </button>
-      <button id="print-style-sheet" class="web-view" 
-      title="Resume View">
-        <span class="icon-profile"></span>
-      </button>
       <button id="default-style-sheet" class="print-view"
       title="Web-View">
         <span class="icon-globe"></span>
       </button>
     </div>
-    <nav id="navbar" class="web-view">
-      <ul>
-        <li><a href="#about-section">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <span id="bars" 
+    class="icon-bars web-view" aria-label="nav--visible"></span>
+    <nav id="navbar" class="navbar web-view">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#about-section">About Me</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#blog">Blog</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     </nav>
   </header>
 
     <section id="welcome-section">
-      <h1 class="main-title web-view">Hello I'm Day</h1>
+      <div class="btn-not-print web-view">
+        <button id="print-style-sheet" class="web-view" 
+        title="Resume View">
+          <span class="icon-profile"></span>
+        </button>
+      </div>
+      <h1 class="main-title web-view">Hello! 👋 I'm Day </h1>
       <h1 class="main-title print-view">Day Munoz</h1>
-      <div class="under-title-contact-info">
-        <a class="display-title" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
+      <div class="img">
+        <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
+      </div>
+      <div class="language-icons web-view">
+        <span class="icon-html5"></span>
+        <span class="icon-css3"></span>
+        <span class="icon-javascript"></span>
+      </div>
+      <p class="web-view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate expedita</p>
+      <div class="under-title-contact-info print-view>
+        <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
         target="_blank" title="San Jose, CA, 95124">
           <span class="icon-map-marker print-view icon-contact not-print"></span>
         </a>
-        <a class="display-title" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
+        <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
           <span class="icon-envelope icon-contact print-view not-print"></span>
         </a>
-        <a class="display-title" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
+        <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
           <span class="icon-linkedin-square icon-contact print-view not-print"></span>
         </a>
       </div>
-      <hr class="line-breaks  print-view web-view">
+      <hr class="line-breaks  print-view">
     </section>
 
     <aside id="skills" class="web-view print-view">
       <ul class="contact-icons print-view">
         <li>
           <span class="only-print"><strong>Portfolio</strong></span>
-          <a class="display-title" href="https://github.com/DayMrz" target="_blank">
+          <a class="display-title" href="https://github.com/DayMrz" target="_blank" title="Portfolio">
             <img class="logo-contact-icon icon-contact print-view not-print" src="./images/day-logo-purple-background.jpg" alt="Day Logo">
           </a>
         </li>
         <li>
           <span class="only-print"><strong>GitHub</strong></span>
-          <a id="profile-link" class="display-title" href="https://github.com/DayMrz" target="_blank" >
+          <a id="profile-link" class="display-title" href="https://github.com/DayMrz" target="_blank" title="GitHub" >
             <span class="icon-github icon-contact print-view not-print"></span>
           </a>
         </li>
         <li>
           <span class="only-print"><strong>Twitter</strong></span>
-          <a class="display-title" href="https://twitter.com/daymrz_" target="_blank">
+          <a class="display-title" href="https://twitter.com/daymrz_" target="_blank" title="Twitter">
             <span class="icon-twitter icon-contact print-view not-print"></span>
           </a>
         </li>
       </ul>
-      <hr class="line-breaks">
+      <hr class="line-breaks print-view">
       <h2 class="subtitle print-view">Skills</h2>
       <h2 class="subtitle web-view">About Me</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, vero facilis aspernatur dolorem magni fugiat voluptas eaque similique iure ea facere quo voluptates nobis illum nam alias nisi vel perferendis.</p>
       <ul class="two-cols">
         <li>
           <span class="web-view icon-education"></span>
@@ -222,6 +236,7 @@
     
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   <script src="./js/app.js" type="application/javascript"></script>
+  <script src="./js/web-view.js" type="application/javascript"></script>
   
   </body>
   </html>

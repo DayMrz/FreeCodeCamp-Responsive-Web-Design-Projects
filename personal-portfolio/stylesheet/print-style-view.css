@@ -28,6 +28,7 @@ a:hover {
 .btn-not-print {
   background-color: var(--Primary-Background);
   display: flex;
+  flex-direction: row;
 }
 
 .btn-not-print button {

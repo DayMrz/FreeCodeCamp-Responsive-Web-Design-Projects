@@ -1,11 +1,5 @@
-@import url("icon-style.css");
 @import url("print-style-view.css");
 
-/* * {
-border: .1px solid purple;
-} */
-
-.not-print,
 .web-view {
   display: none;
 }
@@ -26,6 +20,7 @@ border: .1px solid purple;
   max-width: 1000px;
   padding: 0 .5em;
 }
+
 .wrapper header {
   grid-column: 1 / -1;
 }
