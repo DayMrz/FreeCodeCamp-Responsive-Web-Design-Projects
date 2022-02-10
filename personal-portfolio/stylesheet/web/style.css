@@ -1,20 +1,22 @@
 @import url('font-size.css');
 @import url('navbar.css');
 @import url('screen.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Lobster&display=swap');
 
 :root {
-  --Primary-Background-Purple:hsl(274, 98%, 22%);
-  --Primary-Background-Medium-Purple: hsl(288, 100%, 21%);
-  --Primary-Background-Dark-Purple: hsl(281, 97%, 35%);
-  --Background-Strong-Purple: hsl(264, 72%, 27%);
+  --Button-Anakiwa: hsl(195, 100%, 75%);
+  --Primary-Background-Violet: hsl(288, 77%, 12%);
+  --Secondary-Background-Persian-Indigo: hsl(269, 75%, 31%);
+  --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
+  --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
   --Background-Night-Black: hsl(250, 75%, 2%);
   --Background-Night-Black-Opacity: hsla(255, 80%, 2%, 0.842);
 
-  --Secondary-Link-Active: hsla(240, 39%, 42%, 0.534);
-
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
+  --Active-Icon-Gray: hsl(263, 54%, 83%);
+
+  --Background-Image-Theme: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
 }
 
 /* .light {
@@ -27,11 +29,12 @@
 }
 
 body {
-  background-color: var(--Background-Night-Black);
+  background-color: var(--Primary-Background-Violet);
   color: var(--Active-Letter-Gray);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   font-size: 1.8rem;
   line-height: 1.4;
+  letter-spacing: 1px;
 }
 
 .print-view {
@@ -49,7 +52,7 @@ body {
 #welcome-section {
   /* height: calc(calc(100vw / 16) * 9); */
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-image: var(--Background-Image-Theme);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -60,12 +63,13 @@ body {
 }
 
 .settings {
-  position: absolute;
-  top: 8rem;
-  right: 1rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;}
+  position: absolute;
+  right: 1rem;
+  top: 7rem;
+}
 
 .settings-list {
   padding: 0;
@@ -73,22 +77,37 @@ body {
 
 .settings-list li {
   list-style: none;
+  padding: .3em;
+}
+
+.settings-btn {
+  background-color: transparent;
+  border: 3px solid var(--Icon-Chetwode-Blue);
+  border-radius: 30%;
+  padding: .5em;
+  margin: 0 auto;
+}
+
+.icon-btn-set {
+  padding: 0;
+  font-size: 2rem;
+  color: var(--Active-Icon-Gray);
 }
 
 .logo-contact-icon {
-  background-color: var(--Background-Strong-Purple);
+  background-color: var(--Secondary-Background-Persian-Indigo);
   border-radius: 50%;
   margin: 3em 0;
 }
-
-* {
-  border: 1px solid magenta ;
-} 
 
 @media (min-width: 600px) {
   header {
     display: flex;
     padding: 0;
+  }
+
+  .settings {
+    top: 12rem
   }
   
 }

@@ -2,16 +2,16 @@ header {
   background-color: var(--Background-Night-Black-Opacity);
   height: auto;
   margin: 0 auto;
+  padding: .5em;
   position: fixed;
   width: 100%;
-  padding: .5em;
 }
 
-/* header .header-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
+.nav-title {
+  font-family: 'Lobster', cursive;
+  color: var(--Icon-Chetwode-Blue);
+}
+
 
 #bars {
   cursor: pointer;
@@ -19,13 +19,9 @@ header {
   display: flex;
   font-size: 3.5rem;
   position: absolute;
-  top: .5em;
   right: .5em;
+  top: .5em;
 }
-
-/* #bars:hover {
-
-} */
 
 .navbar {
   position: absolute;
@@ -41,27 +37,38 @@ header {
 }
 
 .nav-list {
-  padding: 1em;
+  padding: 1em 0;
+  text-align: center;
+  font-weight: 500;
 }
 
 .nav-list li {
   list-style: none;
-  padding-bottom: 1em;
+  padding: .3em 0;
 }
 
+#bars:hover,
+#bars:focus {
+  color: var(--Icon-Chetwode-Blue);
+}
 .nav-list li:hover,
 .nav-list li:focus {
-  opacity: .50;
+  background-color: var(--Icon-Chetwode-Blue);
 }
 
 .nav-link {
   color: var(--Active-Letter-Gray);
+  letter-spacing: .1em;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 
 @media (min-width: 600px) {
+  header {
+    padding: 3em;
+
+  }
   #navbar {
     display: flex;
     justify-content: flex-end;
@@ -81,5 +88,9 @@ header {
 
   .nav-list li {
     padding: .5em 1em;
+  }
+
+  .nav-title {
+    padding-left: .5em;
   }
 }
