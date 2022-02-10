@@ -1,7 +1,7 @@
 @import url('font-size.css');
 @import url('navbar.css');
 @import url('screen.css');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
 
 :root {
   --Button-Anakiwa: hsl(195, 100%, 75%);
@@ -31,8 +31,7 @@
 body {
   background-color: var(--Primary-Background-Violet);
   color: var(--Active-Letter-Gray);
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  font-size: 1.8rem;
+  font-family: 'Rubik', sans-serif;  font-size: 2rem;
   line-height: 1.4;
   letter-spacing: 1px;
 }
@@ -94,10 +93,24 @@ body {
   color: var(--Active-Icon-Gray);
 }
 
+#welcome-section .main-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+#welcome-section .description {
+  padding-top: 2em;
+  width: 60%;
+  text-align: center;
+  font-weight: 600;
+}
+
 .logo-contact-icon {
   background-color: var(--Secondary-Background-Persian-Indigo);
   border-radius: 50%;
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 @media (min-width: 600px) {
