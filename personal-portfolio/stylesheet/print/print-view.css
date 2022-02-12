@@ -91,7 +91,7 @@
     border-left: none;
   }
 
-  #skills .contact-icons {
+  #about-me .contact-icons {
     display: flex;
     flex-direction: column; 
     font-size: inherit;

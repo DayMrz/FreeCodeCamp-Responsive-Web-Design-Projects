@@ -67,13 +67,15 @@ header {
 @media (min-width: 600px) {
   header {
     padding: 3em;
-
   }
+
   #navbar {
     display: flex;
     justify-content: flex-end;
     visibility: visible;
     width: 100%;
+    transition: top 0.3s;
+    top: 0;
   }
 
   #bars {

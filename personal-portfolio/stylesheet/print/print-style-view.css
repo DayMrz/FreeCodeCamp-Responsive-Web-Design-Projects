@@ -84,7 +84,7 @@ footer,
   margin-right: 1em;
 }
 
-#skills .contact-icons {
+#about-me .contact-icons {
   display: flex;
   font-size: 2rem;
   justify-content: center;
@@ -92,7 +92,7 @@ footer,
   padding: 0;
 }
 
-#skills .display-title {
+#about-me .display-title {
   text-decoration: none;
 }
 
@@ -112,7 +112,7 @@ footer,
   padding: 1em;
 }
 
-#skills li .project-description {
+#about-me li .project-description {
   padding-bottom: .5em;
 }
 
