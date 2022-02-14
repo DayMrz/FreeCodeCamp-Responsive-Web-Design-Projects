@@ -5,6 +5,7 @@
 :root {
   --Button-Anakiwa: hsl(195, 100%, 75%);
   --Primary-Background-Violet: hsl(288, 77%, 12%);
+  --Secondary-Background-Violet: hsla(289, 72%, 24%, 0.431);
   --Secondary-Background-Persian-Indigo: hsl(269, 75%, 31%);
   --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
   --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
@@ -120,7 +121,7 @@ body {
   font-weight: 600;
   padding-top: 2em;
   text-align: center;
-  width: 60%;
+  width: 80%;
 }
 
 .logo-contact-icon {
@@ -129,7 +130,9 @@ body {
   margin: 2em 0;
 }
 
-#about-me {
+#about-me,
+#projects {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,25 +158,43 @@ body {
 }
 
 #about-me .subtitle {
-  font-weight: 800;
-  padding-bottom: 1em;
-  text-align: center;
   color: var(--Icon-Chetwode-Blue);
+  font-size: 3.5rem;
+  font-weight: 800;
   letter-spacing: .3em;
+  padding-bottom: 1em;
 }
 
 #skill-list .subtitle {
   color: var(--Active-Letter-Gray);
+  font-size: inherit;
   letter-spacing: normal;
 }
 
 #about-me .icons {
-  font-size: 2em;
-  padding-bottom: .5em;
-  color: var(--Icon-Chetwode-Blue);
+  color: var(--Button-Anakiwa);
+  font-size: 3em;
 }
 
+#projects article {
+  background-color: var(--Secondary-Background-Violet);
+  border-radius: 2rem;
+  margin-bottom: 2em;
+  padding: 1em;
+}
 
+.projects {
+  padding: 0;
+}
+
+.projects li {
+  list-style: none;
+}
+
+.project-two-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
 @media (min-width: 600px) {
