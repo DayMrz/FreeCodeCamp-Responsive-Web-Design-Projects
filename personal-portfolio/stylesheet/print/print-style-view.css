@@ -5,6 +5,7 @@
   --Primary-Button: hsl(266, 47%, 27%);
   --Secondary-Button: hsla(267, 47%, 27%, 0.397);
   --Secondary-Background: hsla(0, 0%, 100%, 0.89);
+  --Background-Chetwode-Blue:hsl(237, 33%, 53%);
 }
 
 *, *::before, ::after {
@@ -13,6 +14,7 @@
 }
 
 body {
+  background-color: var(--Background-Chetwode-Blue);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -117,7 +119,7 @@ footer,
 }
 
 .projects {
-  padding: 1em;
+  padding: 1em 0 0 1em;
 } 
 
 .projects li {
