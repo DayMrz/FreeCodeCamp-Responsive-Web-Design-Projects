@@ -10,22 +10,23 @@ header {
 .nav-title {
   font-family: 'Lobster', cursive;
   color: var(--Icon-Chetwode-Blue);
+  font-size: 2em;
+  padding-left: .3em;
 }
-
 
 #bars {
   cursor: pointer;
   color: rgb(239, 230, 253);
   display: flex;
-  font-size: 3.5rem;
+  font-size: 1.8em;
   position: absolute;
   right: .5em;
-  top: .5em;
+  top: .3em;
 }
 
 .navbar {
   position: absolute;
-  transition: all ;
+  /* transition: all; */
   visibility: hidden;
   width: 100%;
 }

@@ -1,11 +1,12 @@
 @import url('font-size.css');
 @import url('navbar.css');
+@import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
 
 :root {
-  --Button-Anakiwa: hsl(195, 100%, 75%);
+  --Button-Anakiwa: hsla(195, 100%, 75%, 0.685);
   --Primary-Background-Violet: hsl(288, 77%, 12%);
-  --Secondary-Background-Violet: hsla(289, 72%, 24%, 0.431);
+  --Secondary-Background-Violet: hsla(289, 72%, 24%, 0.329);
   --Secondary-Background-Persian-Indigo: hsl(269, 75%, 31%);
   --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
   --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
@@ -14,9 +15,13 @@
 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
-  --Active-Icon-Gray: hsl(263, 54%, 83%);
+  --Active-Icon-Lila: hsl(263, 54%, 83%);
 
   --Background-Image-Theme: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+
+  ---Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
+  --Box-Shadow-Light-Btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
+  --Box-Shadow-Color-Btn: hsla(195, 100%, 75%, 0.685) 0px 50px 200px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsla(195, 100%, 75%, 0.171) 0px -2px 6px 0px inset;
 }
 
 /* .light {
@@ -30,9 +35,8 @@
 
 body {
   color: var(--Active-Letter-Gray);
-  font-family: 'Rubik', sans-serif;  font-size: 2rem;
-  line-height: 1.6;
-  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;  
+  font-size: 2em;
 }
 
 .wrapper {
@@ -53,7 +57,6 @@ body {
 }
 
 #welcome-section {
-  /* height: calc(calc(100vw / 16) * 9); */
   align-items: center;
   background-image: var(--Background-Image-Theme);
   background-repeat: no-repeat;
@@ -91,14 +94,14 @@ body {
 .settings-btn {
   background-color: transparent;
   border: 3px solid var(--Icon-Chetwode-Blue);
-  border-radius: 30%;
+  border-radius: 10px;
   padding: .5em;
 }
 
 .icon-btn-set {
   padding: 0;
-  font-size: 2rem;
-  color: var(--Active-Icon-Gray);
+  font-size: 1.5em;
+  color: var(--Active-Icon-Lila);
 }
 
 #icon-setting {
@@ -115,7 +118,7 @@ body {
 } 
 
 #welcome-section .main-title {
-  font-size: 3rem;
+  font-size: 1.5em;
   font-weight: 800;
   letter-spacing: 1rem;
   text-transform: uppercase;
@@ -140,7 +143,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 4.5em;
+  padding: 4.5em 0 4.5em 0;
   text-align: justify;
   width: 90%;
 }
@@ -162,11 +165,12 @@ body {
 #about-me .subtitle,
 #projects .project-title {
   color: var(--Icon-Chetwode-Blue);
-  font-size: 3.5rem;
+  font-size: 1.5em;
   font-weight: 800;
   letter-spacing: .1em;
   padding-bottom: 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #skill-list .subtitle {
@@ -177,22 +181,25 @@ body {
 
 #about-me .icons {
   color: var(--Button-Anakiwa);
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .line-breaks {
-  border: 0;
-  height: 1px;
   background-color: var(--Secondary-Background-Persian-Indigo);
-  margin: .5em;
+  border: 0;
+  height: 3px;
+  margin: 0 3em;
 }
 
 #projects article {
   background-color: var(--Secondary-Background-Violet);
-  border-radius: 2rem;
+  border-radius: 10px;
+  box-shadow: var(---Box-Shadow-Dark);
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 1.5em;
   text-align: center;
+  width: fit-content;
+
 }
 
 .projects {
@@ -201,32 +208,84 @@ body {
 
 .projects a {
   text-decoration: none;
-  color: inherit;
 }
 
 .projects li {
   list-style: none;
 }
 
+.projects .project-subtitle {
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.container-project-img {
+  padding-bottom: 1em;
+}
+
 .project-img {
-  width: 100%;
-  margin: auto;
+  border-radius: 10px;
+  box-shadow: var(---Box-Shadow-Dark);
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.muted-text {
+  color: var(--Icon-Chetwode-Blue);
+  text-transform: uppercase;
+}
+
+article .description {
+  padding-bottom: 1em;
 }
 
 .project-btn,
 .live-btn {
-  padding: 0 5rem;
+  border-radius: 10px;
+  font-size: .7em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-transform: uppercase;  
+  transition: color 0.3s ease-out;
+}
+
+.project-btn {
+  background-color: transparent;
+  border: 3px solid var(--Active-Icon-Lila);
+  box-shadow: var(--Box-Shadow-Light-Btn);
+  color: var(--Active-Icon-lila);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.live-btn {
+  background-color: var(--Button-Anakiwa);
+  box-shadow: var(--Box-Shadow-Color-Btn);
+  border: none;
+  color: var(--Background-Night-Black);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.project-btn:hover, 
+.live-btn:hover {
+  opacity: .70;
 }
 
 .project-two-btn {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
 }
 
 .code {
   color: transparent;
   transition: color 0.3s ease-out;
-
+  font-size: 1em;
 }
 
 .project-two-btn:hover .code {
@@ -251,17 +310,9 @@ body {
     padding: 0;
     text-align: center;
   }
-
-  /* #projects article{
-    padding: 2em;
-  } */
 }
 
 @media (min-width: 900px) {
-  /* #projects article{
-    padding: 0;
-  } */
-  
   .projects {
     display: grid;
     gap: 1em;
@@ -270,8 +321,6 @@ body {
     padding: 0;
     text-align: center;
   }
-
-
   
 }
 
@@ -280,7 +329,6 @@ body {
     background-color: var(--Secondary-Background-Violet);
     display: flex;
     justify-content: center;
-    font-size:x-large;
     }
 
   .wrapper,
