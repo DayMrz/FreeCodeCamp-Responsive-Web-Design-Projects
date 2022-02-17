@@ -1,12 +1,3 @@
-#blog {
-  margin-bottom: 2em;
-}
-
-.img-carousel {
-  width: 100%;
-  object-fit: cover;
-}
-
 .carousel {
   box-shadow: var(--Box-Shadow-Dark);
   width: 90%;
@@ -14,8 +5,21 @@
 
 }
 
+.carousel-window { 
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-carousel { 
+  aspect-ratio: 16/9;  
+  /* width: 86vw; */
+  height: 100%;
+}
+
 .carousel-image-container {
   display: flex;
+  height: 100%;
   transform: translateX(0);
   transition: transform .5s ease-in-out;
 }
@@ -28,16 +32,17 @@
 .btn-carousel {
   background-color: var(--Button-Anakiwa);
   border: none;
-  padding: 1em;
+  padding: .5em;
   cursor: pointer;
   width: 49.5%;
   font-weight: 700;
 }
 
 #left {
-  border-radius: 10px 0 0 10px;
+  border-radius: 0 0 0 10px;
 }
 
 #right {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 0 10px 0;
 }
+

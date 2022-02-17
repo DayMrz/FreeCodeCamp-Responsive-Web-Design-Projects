@@ -39,7 +39,7 @@
 body {
   color: var(--Active-Letter-Gray);
   font-family: 'Rubik', sans-serif;  
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .wrapper {
