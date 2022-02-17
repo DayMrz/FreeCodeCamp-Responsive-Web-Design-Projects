@@ -12,8 +12,6 @@ settingBtn.addEventListener('click', () => {
   settingList.classList.toggle('setting--visible');
 })
 
-
-
 // function settingButton(change) {
 //     if (change.style.backgroundColor === 'transparent') {
 //       change.style.backgroundColor = 'hsl(237, 63%, 71%)'

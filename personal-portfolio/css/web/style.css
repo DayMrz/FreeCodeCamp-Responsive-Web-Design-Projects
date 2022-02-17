@@ -1,4 +1,5 @@
 @import url('font-size.css');
+@import url('carousel.css');
 @import url('navbar.css');
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
@@ -19,9 +20,11 @@
 
   --Background-Image-Theme: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
 
-  ---Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
+  --Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
   --Box-Shadow-Light-Btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
   --Box-Shadow-Color-Btn: hsla(195, 100%, 75%, 0.685) 0px 50px 200px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsla(195, 100%, 75%, 0.171) 0px -2px 6px 0px inset;
+
+
 }
 
 /* .light {
@@ -194,7 +197,7 @@ body {
 #projects article {
   background-color: var(--Secondary-Background-Violet);
   border-radius: 10px;
-  box-shadow: var(---Box-Shadow-Dark);
+  box-shadow: var(--Box-Shadow-Dark);
   margin-bottom: 2em;
   padding: 1.5em;
   text-align: center;
@@ -225,7 +228,7 @@ body {
 
 .project-img {
   border-radius: 10px;
-  box-shadow: var(---Box-Shadow-Dark);
+  box-shadow: var(--Box-Shadow-Dark);
   max-height: 100%;
   max-width: 100%;
 }
@@ -272,8 +275,9 @@ article .description {
 }
 
 .project-btn:hover, 
-.live-btn:hover {
-  opacity: .70;
+.live-btn:hover,
+.btn-carousel:hover {
+  opacity: .9;
 }
 
 .project-two-btn {

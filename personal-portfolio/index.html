@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="wrapper">
-  <header>
+    <header>
     <div class="btn-not-print print-view">
       <button onclick="window.print();return false;" title="Print Resume">
         <span class="icon-print"></span>
@@ -33,9 +33,9 @@
         <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
     </nav>
-  </header>
+    </header>
 
-  <section id="welcome-section">
+    <section id="welcome-section">
     <div class="settings web-view">
       <button id="icon-setting" class="settings-btn" aria-label="setting-visible">
           <span class="icon-params icon-btn-set"></span>
@@ -77,7 +77,7 @@
       </a>
     </div>
     <hr class="line-breaks  print-view">
-  </section>
+    </section>
 
     <aside id="about-me" class="web-view print-view">
       <ul class="contact-icons print-view">
@@ -103,7 +103,8 @@
       <hr class="line-breaks print-view">
       <h2 class="subtitle print-view">Skills</h2>
       <h2 class="subtitle web-view">About Me</h2>
-      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, vero facilis aspernatur dolorem magni fugiat voluptas eaque similique iure ea facere quo voluptates nobis illum nam alias nisi vel perferendis.</p>
+      <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
       <ul id="skill-list" class="two-cols">
         <li>
           <span class="web-view icon-laptop icons"></span>
@@ -137,8 +138,8 @@
               <div class="container-project-img web-view">
                 <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644881337/Web_capture_14-2-2022_152359_daymrz.github.io_rwmmvs.jpg" target="_blank">
                   <img class="project-img web-view" src="./images/project-img/video-player.jpeg" alt="image video player project">
-                </div>
-              </a>
+                </a>
+              </div>
               <h3 class="project-subtitle web-view print-view">Video Player</h3>
               <p class="muted-text web-view">
                 html &#124; css &#124; JavaScript
@@ -169,8 +170,8 @@
               <div class="container-project-img web-view">
                 <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644966961/Portfolio-Day/yelpcamp_stgb3v.jpg" target="_blank">
                   <img class="project-img web-view" src="./images/project-img//yelpcamp.jpeg" alt="image yelpcamp app">
-                </div>
-              </a>
+                </a>
+              </div>
               <h3 class="project-subtitle web-view print-view">YelpCamp App</h3>
               <p class="muted-text web-view">
                 EJS &#124; Node.js &#124; Express &#124; MongoDB ...
@@ -201,8 +202,8 @@
               <div class="container-project-img web-view">
                 <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644971772/Portfolio-Day/landing-page_gmbm5n.jpg" target="_blank">
                   <img class="project-img web-view" src="./images/project-img/landing-page.jpeg" alt="image landing page">
-                </div>
-              </a>
+                </a>
+              </div>
               <h3 class="project-subtitle web-view print-view">Landing Page</h3>
               <p class="muted-text web-view">
                 html &#124; css &#124; JavaScript
@@ -233,8 +234,8 @@
               <div class="container-project-img web-view">
                 <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644881337/Web_capture_14-2-2022_152359_daymrz.github.io_rwmmvs.jpg" target="_blank">
                   <img class="project-img web-view" src="./images/project-img/video-player.jpeg" alt="image video player project">
-                </div>
-              </a>
+                </a>
+              </div>
               <h3 class="project-subtitle web-view print-view">Video Player</h3>
               <p class="muted-text web-view">
                 html &#124; css &#124; JavaScript
@@ -260,13 +261,68 @@
               </a>
             </article>
           </li>
-          
+        </ul>
+        <hr class="line-breaks print-view">
+        <h3 class="print-view">Blog on Hashnode</h3>
+        <ul class="blog projects print-view">
+          <li class="print-view">
+            <h4 class="project-subtitle">What is Regex</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus quam error earum accusamus
+            </p>
+            <span class="only-print">Visit</span>
+            <a class="display-link" href="https://daynotes.hashnode.dev/what-is-regex">
+              <span class="not-print">Visit</span>
+            </a>
+          </li>
+          <li class="print-view">
+            <h4 class="project-subtitle">Your McAfee Siscription Has Expired</h4>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus quam error earum accusamus
+            </p>
+            <span class="only-print">Visit</span>
+            <a class="display-link" href="https://daynotes.hashnode.dev/what-is-regex">
+              <span class="print-view not-print">Visit</span>
+            </a>
+          </li>
+          <p class="description print-view">
+            To know more about my blog
+          </p>
+          <span class="only-print">Visit</span>
+          <a class="display-link" href="https://hashnode.com/@DayNotes">
+            <span class="print-view not-print">Visit</span>
+          </a>
         </ul>
       </section>
     </main>
+    <section id="blog" class="web-view">
+      <h2 class="subtitle web-view">Blog</h2>
+      <div class="carousel">
+        <div class="carousel-image-container" id="img">
+          <a class="link-img-carousel" href="https://daynotes.hashnode.dev/what-is-regex">
+            <img class="img-carousel" src="./images/project-img/regex.jpeg" alt="what is regex?">
+          </a>
+          <a class="link-img-carousel" href="https://daynotes.hashnode.dev/how-do-i-create-an-express-router">
+            <img class="img-carousel" src="./images/project-img/express-route.jpeg" alt="how do you create an express route">
+          </a>
+          <a class="link-img-carousel" href="https://daynotes.hashnode.dev/your-mcafee-subscription-has-expired">
+            <img class="img-carousel" src="./images/project-img/Mcafee-viruses.jpeg" alt="virus your mcafee suscription has expired">
+          </a>
+          <a class="link-img-carousel" href="https://daynotes.hashnode.dev/error-heroku-cannot-find-mongodb-yelpcamp-on-the-web-developer-bootcamp-2022">
+            <img class="img-carousel" src="./images/project-img/heroku.jpeg" alt="error heroku cannot find mongodb yelp camp web developer bootcamp">
+          </a>
+        </div>
+        <div class="buttons-container">
+          <button id="left" class="btn-carousel">Prev</button>
+          <button id="right" class="btn-carousel">Next</button>
+
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <hr class="line-breaks">
-      <h3 class="subtitle"> Education</h3>
+      <hr class="line-breaks print-view">
+      <h3 class="subtitle print-view"> Education</h3>
       <ul class="education print-view">
         <li class="footer-grid">
           <h4 class="subtitle">The Web Developer Bootcamp</h4>
@@ -297,6 +353,7 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="./js/app.js" type="application/javascript"></script>
   <script src="./js/web-view.js" type="application/javascript"></script>
+  <script src="./js/carousel.js" type="application/javascript"></script>
   
   </body>
   </html>

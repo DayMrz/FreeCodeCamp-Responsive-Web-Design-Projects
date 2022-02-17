@@ -1,0 +1,43 @@
+#blog {
+  margin-bottom: 2em;
+}
+
+.img-carousel {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  box-shadow: var(--Box-Shadow-Dark);
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.carousel-image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform .5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-carousel {
+  background-color: var(--Button-Anakiwa);
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  width: 49.5%;
+  font-weight: 700;
+}
+
+#left {
+  border-radius: 10px 0 0 10px;
+}
+
+#right {
+  border-radius: 0 10px 10px 0;
+}
