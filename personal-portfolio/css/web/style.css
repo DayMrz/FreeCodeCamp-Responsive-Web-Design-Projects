@@ -166,7 +166,8 @@ body {
 }
 
 #about-me .subtitle,
-#projects .project-title {
+#projects .project-title,
+#blog .subtitle {
   color: var(--Icon-Chetwode-Blue);
   font-size: 1.5em;
   font-weight: 800;
@@ -294,6 +295,10 @@ article .description {
 
 .project-two-btn:hover .code {
   color: var(--Button-Anakiwa);
+}
+
+#blog {
+  padding: 4.5em 0 4.5em 0;
 }
 
 @media (min-width: 600px) {

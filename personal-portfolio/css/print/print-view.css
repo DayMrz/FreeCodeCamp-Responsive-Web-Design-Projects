@@ -98,6 +98,12 @@
     flex-direction: column; 
     font-size: inherit;
   }
+
+  aside,
+  footer,
+  #welcome-section {
+    background-color: var(--Primary-Background);
+  }
   
   .contact-icons .display-title::before {
     content: attr(href);

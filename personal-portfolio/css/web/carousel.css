@@ -1,7 +1,7 @@
 .carousel {
   box-shadow: var(--Box-Shadow-Dark);
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
 
 }
 
@@ -13,7 +13,6 @@
 
 .img-carousel { 
   aspect-ratio: 16/9;  
-  /* width: 86vw; */
   height: 100%;
 }
 
@@ -32,10 +31,10 @@
 .btn-carousel {
   background-color: var(--Button-Anakiwa);
   border: none;
-  padding: .5em;
   cursor: pointer;
-  width: 49.5%;
   font-weight: 700;
+  padding: .5em;
+  width: 49.5%;
 }
 
 #left {
