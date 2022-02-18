@@ -12,7 +12,7 @@
   --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
   --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
   --Background-Night-Black: hsl(250, 75%, 2%);
-  --Background-Night-Black-Opacity: hsla(255, 80%, 2%, 0.924);
+  --Background-Night-Black-Opacity: hsla(255, 2%, 38%, 0.356);
 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
@@ -23,8 +23,6 @@
   --Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
   --Box-Shadow-Light-Btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
   --Box-Shadow-Color-Btn: hsla(195, 100%, 75%, 0.685) 0px 50px 200px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, hsla(195, 100%, 75%, 0.171) 0px -2px 6px 0px inset;
-
-
 }
 
 /* .light {
@@ -39,7 +37,7 @@
 body {
   color: var(--Active-Letter-Gray);
   font-family: 'Rubik', sans-serif;  
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .wrapper {
@@ -166,8 +164,7 @@ body {
 }
 
 #about-me .subtitle,
-#projects .project-title,
-#blog .subtitle {
+#projects .project-title {
   color: var(--Icon-Chetwode-Blue);
   font-size: 1.5em;
   font-weight: 800;
@@ -301,6 +298,50 @@ article .description {
   padding: 4.5em 0 4.5em 0;
 }
 
+#blog .description {
+  padding-top: 2em;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#blog .subtitle {
+  color: var(--Icon-Chetwode-Blue);
+  font-size: 1.5em;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: var(--Background-Night-Black);
+  padding: 4.5em 0 4.5em 0;
+}
+
+.container-form {
+  width: 90%;
+  margin: 0 auto;
+  border: 5px solid var(--Primary-Link-Active);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-form .subtitle {
+  font-family: 'Lobster', cursive;
+  color: var(--Icon-Chetwode-Blue);
+  text-align: center;
+  font-size: 2em;
+}
+
+
+
 @media (min-width: 600px) {
   header {
     display: flex;
@@ -330,7 +371,6 @@ article .description {
     padding: 0;
     text-align: center;
   }
-  
 }
 
 @media (min-width: 1500px) {
