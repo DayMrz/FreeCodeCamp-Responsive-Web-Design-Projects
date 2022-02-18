@@ -1,5 +1,6 @@
 @import url('font-size.css');
 @import url('carousel.css');
+@import url('form.css');
 @import url('navbar.css');
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
@@ -12,7 +13,7 @@
   --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
   --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
   --Background-Night-Black: hsl(250, 75%, 2%);
-  --Background-Night-Black-Opacity: hsla(255, 2%, 38%, 0.356);
+  --Background-Night-Black-Opacity: hsla(252, 86%, 5%, 0.938);
 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
@@ -317,27 +318,6 @@ article .description {
 footer {
   background-color: var(--Background-Night-Black);
   padding: 4.5em 0 4.5em 0;
-}
-
-.container-form {
-  width: 90%;
-  margin: 0 auto;
-  border: 5px solid var(--Primary-Link-Active);
-  border-radius: 10px;
-  padding: 1em;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.container-form .subtitle {
-  font-family: 'Lobster', cursive;
-  color: var(--Icon-Chetwode-Blue);
-  text-align: center;
-  font-size: 2em;
 }
 
 

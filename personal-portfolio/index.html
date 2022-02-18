@@ -337,18 +337,22 @@
       </ul>
       <section id="contact" class="container-form web-view">
         <h2  class="subtitle">Contact Me</h2>
-        <form class="form"
-              action="mailto:daymrz1465@gmail.com"
+        <form class="form" 
+              action="https://formspree.io/f/xbjwoapv"
               method="POST"
               enctype="multipart/form-data"
-              name="EmailForm">
-              Name: <br>
-              <input type="text" size="19" name="Contact-Name" id=""><br><br>
-              Email: <br>
-              <input type="email" name="Contact-Email" id=""><br><br>
-              message: <br>
-              <textarea name="Contact-Message" id="" cols="20" rows="6">
-              </textarea><br><br>
+              name="contact-form"
+              accept-charset="utf-8">
+              <label for="full-name">Full Name:</label>
+              <input type="text" size="19" name="name" 
+              id="full-name" placeholder="First and Last" required>
+              <label for="email-address">Email</label>
+              <input type="email" name="Contact-Email" required
+              id="email-address" placeholder="email@domain.com">
+              <label for="message">Message:</label>
+              <textarea name="message" required
+              id="message" cols="20" rows="6" placeholder="Write yor message here">
+              </textarea>
               <button type="submit" value="submit">Send</button>
         </form>
       </section>
