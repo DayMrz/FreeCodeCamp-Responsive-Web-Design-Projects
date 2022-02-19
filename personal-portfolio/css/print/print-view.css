@@ -27,6 +27,8 @@
   grid-column: 1 / -1;
 }
 
+
+
 .wrapper #welcome-section {
   grid-column: 1 / -1;
   text-align: center;
@@ -48,6 +50,7 @@
   .wrapper {
     padding: 0;
   }
+
   .wrapper aside {
     grid-column: span 4;
   }
@@ -68,6 +71,10 @@
 @media only print {
   body {
     font-size: .8rem;
+  }
+
+  header .btn-not-print {
+    display: none;
   }
 
   .btn-not-print{

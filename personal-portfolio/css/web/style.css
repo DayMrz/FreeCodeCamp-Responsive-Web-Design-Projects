@@ -320,7 +320,34 @@ footer {
   padding: 4.5em 0 4.5em 0;
 }
 
+.icons-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0 1em 0;
+}
 
+.contact-icons {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-icons li {
+  list-style: none;
+}
+
+.contact-icons .contact-icon-link {
+  text-decoration: none;
+}
+
+.contact-icons .icon {
+  font-size: 1.5em;
+  color: var( --Icon-Chetwode-Blue);
+}
+
+.contact-icons .icon:hover {
+  opacity: .70;
+}
 
 @media (min-width: 600px) {
   header {
@@ -350,6 +377,11 @@ footer {
     margin: auto;
     padding: 0;
     text-align: center;
+  }
+
+  .contact-icons .icon {
+    font-size: 2.5em;
+    color: var( --Icon-Chetwode-Blue);
   }
 }
 

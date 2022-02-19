@@ -16,9 +16,11 @@
     <div class="btn-not-print print-view">
       <button onclick="window.print();return false;" title="Print Resume">
         <span class="icon-print"></span>
+        Print
       </button>
       <button id="default-style-sheet" title="Web-View">
         <span class="icon-globe"></span>
+        Website View
       </button>
     </div>
     <div class="header-container web-view">
@@ -350,29 +352,34 @@
               <input type="email" name="Contact-Email" required
               id="email-address" placeholder="email@domain.com">
               <label for="message">Message:</label>
-              <textarea name="message" required
-              id="message" cols="20" rows="6" placeholder="Write yor message here">
+              <textarea name="message" required spellcheck="true"
+              id="message" cols="20" rows="6">
               </textarea>
-              <button type="submit" value="submit">Send</button>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <button type="submit" value="submit">Submit</button>
         </form>
       </section>
-      <ul class="contact-icons web-view">
-        <li>
-          <a id="profile-link" class="contact-icon-link" target="_blank" href="https://github.com/DayMrz" title="GitHub">
-            <span  class="icon-github web-view print-view not-print"></span>
-          </a>
-        </li>
-        <li>
-          <a id="profile-link" class="contact-icon-link" target="_blank" href="https://github.com/DayMrz" title="GitHub">
-            <span  class="icon-github web-view print-view not-print"></span>
-          </a>
-        </li>
-        <li>
-          <a id="profile-link" class="contact-icon-link" target="_blank" href="https://github.com/DayMrz" title="GitHub">
-            <span  class="icon-github web-view print-view not-print"></span>
-          </a>
-        </li>
-      </ul>
+      <section class="icons-container">
+        <ul class="contact-icons web-view">
+          <li>
+            <a id="profile-link" class="contact-icon-link" target="_blank" href="https://github.com/DayMrz" title="GitHub">
+              <span  class="icon-linkedin-square icon web-view print-view not-print"></span>
+            </a>
+          </li>
+          <li>
+            <a id="profile-link" class="contact-icon-link" target="_blank" href="https://github.com/DayMrz" title="GitHub">
+              <span  class="icon-github icon web-view print-view not-print"></span>
+            </a>
+          </li>
+          <li>
+            <a id="profile-link" class="contact-icon-link" target="_blank" href="https://github.com/DayMrz" title="GitHub">
+              <span  class="icon-twitter icon web-view print-view not-print"></span>
+            </a>
+          </li>
+        </ul>
+        
+      </section>
+      <hr class="line-breaks web-view">
     </footer>
   </div>
     

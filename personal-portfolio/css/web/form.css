@@ -20,6 +20,10 @@
   font-size: 2em;
 }
 
+.form label {
+  padding-bottom: .5em;
+}
+
 .form input,
 .form textarea {
   background-color: var(--Primary-Background-Violet);
@@ -49,4 +53,28 @@
 .form button:hover {
   background-color: var(--Icon-Chetwode-Blue);
   color: var(  --Active-Icon-Alice-Purple);
+}
+
+@media (min-width: 600px) {
+  
+.container-form {
+  padding: 2em;
+}
+  
+
+  
+  .form label {
+    padding-bottom: 1em;
+  }
+  
+  .form input,
+  .form textarea {
+    font-size: .7em;
+    margin-bottom: 2em;
+    padding: 1em;
+  }
+  
+  .form button {
+    padding: 1em;
+  }
 }
