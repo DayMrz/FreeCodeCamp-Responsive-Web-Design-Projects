@@ -95,23 +95,21 @@ body {
 
 .settings-btn {
   background-color: transparent;
-  border: 3px solid var(--Icon-Chetwode-Blue);
+  border: 1.5px solid var(--Icon-Chetwode-Blue);
   border-radius: 10px;
   padding: .5em;
 }
 
 .icon-btn-set {
-  padding: 0;
-  font-size: 1.5em;
   color: var(--Active-Icon-Lila);
+  font-size: 1.5em;
+  padding: 0;
 }
 
 #icon-setting {
+  background-color: var(--Button-Anakiwa);
   margin-bottom: .5em;
-}
-
-#icon-setting:active {
-  background-color: var(--Icon-Chetwode-Blue);
+  color: var(--Background-Night-Black);
 }
 
 .settings-list button:hover, 

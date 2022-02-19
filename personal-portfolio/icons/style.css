@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?vu45jo');
-  src:  url('fonts/icomoon.eot?vu45jo#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?vu45jo') format('truetype'),
-    url('fonts/icomoon.woff?vu45jo') format('woff'),
-    url('fonts/icomoon.svg?vu45jo#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?i41trz');
+  src:  url('fonts/icomoon.eot?i41trz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i41trz') format('truetype'),
+    url('fonts/icomoon.woff?i41trz') format('woff'),
+    url('fonts/icomoon.svg?i41trz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  /* speak: never; */
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -69,17 +69,14 @@
 .icon-profile:before {
   content: "\e90c";
 }
-.icon-sphere:before {
-  content: "\e90a";
-}
-.icon-globe:before {
-  content: "\e90a";
-}
-.icon-internet:before {
-  content: "\e90a";
-}
 .icon-education:before {
   content: "\e906";
+}
+.icon-arrow-right:before {
+  content: "\e90a";
+}
+.icon-close:before {
+  content: "\e91a";
 }
 .icon-cog:before {
   content: "\e917";
