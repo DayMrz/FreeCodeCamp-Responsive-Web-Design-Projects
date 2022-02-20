@@ -27,7 +27,6 @@ header {
 
 .navbar {
   position: absolute;
-  /* transition: all; */
   visibility: hidden;
   width: 100%;
 }
@@ -79,7 +78,6 @@ header {
     justify-content: flex-end;
     visibility: visible;
     width: 100%;
-    /* transition: top 0.3s; */
     top: 0;
   }
 
