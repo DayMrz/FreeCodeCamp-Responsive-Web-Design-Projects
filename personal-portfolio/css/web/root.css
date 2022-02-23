@@ -7,6 +7,7 @@
   --Color-Header-Title: hsl(237, 63%, 71%);
   --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
   --Background-Night-Black: hsl(250, 75%, 2%);
+  --Background-Welcome-Section: hsl(250, 75%, 2%);
   --Background-Night-Black-Opacity: hsla(252, 86%, 5%, 0.938);
   
   --Button-Anakiwa: hsla(195, 100%, 75%, 0.685);
@@ -14,7 +15,7 @@
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Icon-: hsl(0, 0%, 100%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
-
+  --Particles-Animation-Color: hsl(263, 67%, 76%);
   --Background-Image-Theme: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
 
   --Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
@@ -32,6 +33,7 @@
   --Color-Header-Title: hsl(0, 0%, 100%);
   --Primary-Background-Violet: hsla(300, 13%, 89%, 0.322);
   --Active-Letter-Gray: hsl(0, 0%, 9%);
+  --Background-Welcome-Section: hsl(0, 0%, 100%);
   --Active-Icon: hsl(262, 81%, 10%);
 
   --Box-Shadow-Dark: hsl(285, 51%, 83%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(285, 51%, 83%) 0px -1px 20px 0px inset;

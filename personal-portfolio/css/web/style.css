@@ -2,6 +2,7 @@
 @import url('font-size.css');
 @import url('form.css');
 @import url('navbar.css');
+@import url('particles.css');
 @import url('reset.css');
 @import url('root.css');
 @import url('transition-scroll-page.css');
@@ -37,37 +38,22 @@ body {
 
 #welcome-section {
   align-items: center;
-  background-image: var(--Background-Image-Theme);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
+  position: absolute;
   width: 100%;
+  /* height: 100vh; */
+
 }
 
 .settings {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 1.2rem;
-  top: 7rem;
-}
-
-.settings-list {
-  padding: 0;
-  visibility: hidden;
-}
-
-.setting--visible {
-  visibility: visible;
-}
-
-.settings-list li {
-  list-style: none;
-  padding: .3em 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 4em 1em 8em 0;
+  width: 100%;
 }
 
 .settings-btn {
@@ -83,22 +69,6 @@ body {
   font-size: 1.5em;
   padding: 0;
 }
-
-#icon-setting  {
-  background-color: var(--Neutral-Yellow);
-  margin-bottom: .5em;
-}
-
-.icon-cog {
-  color: var(--Background-Night-Black);
-}
-
-#icon-setting:hover,
-#icon-setting:focus,
-.settings-list button:hover, 
-.settings-list button:focus {
-  opacity: .60;
-} 
 
 #welcome-section .main-title {
   font-size: 1.5em;

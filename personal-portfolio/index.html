@@ -8,16 +8,14 @@
   <title>Day's Portfolio</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/day-logo-purple-background.jpg">
   <link rel="stylesheet" href="./icons/style.css">
-    <link id="pagestyle" rel="stylesheet" href="css/web/style.css" type="text/css">
+    <link id="pagestyle" rel="stylesheet" href="css/web/style.css" type="text/css" media="screen">
+    <link id="pagestyle" rel="stylesheet" href="css/print/print-view.css" media="print" type="text/css">
 </head>
 <body>
   <div class="wrapper">
     <header>
     <div class="btn-not-print print-view">
-      <button onclick="window.print();return false;" title="Print Resume">
-        <span class="icon-print"></span>
-        Print
-      </button>
+
       <button id="default-style-sheet" title="Web-View">
         Go to Website View
         <span class="icon-arrow-right"></span>
@@ -33,53 +31,51 @@
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#blog">Blog</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><button onclick="window.print();return false;" title="Print Resume">
+          <span class="icon-print"></span>
+          Download
+        </button></li>
     </ul>
     </nav>
     </header>
 
-    <section id="welcome-section">
-    <div class="settings web-view">
-      <button id="icon-setting" class="settings-btn" aria-label="setting-visible" title="View Settings">
-          <span class="icon-cog icon-btn-set"></span>
-      </button>
-      <ul class="settings-list">
-        <li><button id="print-style-sheet" class="settings-btn web-view" 
-          title="Resume View">
-            <span class="icon-profile icon-btn-set"></span>
-          </li>
-        <li><button id="color-theme" class="settings-btn web-view" 
-          title="Color Theme">
-            <span  class="icon-IcoMoon icon-btn-set"></span>
-          </li>
-      </ul>
-      </button>
+    <div id="particles-js" class="web-view">
+      <section id="welcome-section">
+          <div class="settings web-view">
+            <button id="color-theme" class="settings-btn web-view" 
+            title="Color Theme">
+              <span  class="icon-IcoMoon icon-btn-set"></span>
+          </div>
+          <h1 class="main-title web-view">I am Day </h1>
+          <h1 class="main-title print-view">Day Munoz</h1>
+          <div class="img web-view">
+            <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
+          </div>
+          <div class="language-icons web-view">
+            <span class="icon-html5"></span>
+            <span class="icon-css3"></span>
+            <span class="icon-javascript"></span>
+          </div>
+          <p class="description web-view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate expedita</p>
+        
+
+          <div class="under-title-contact-info print-view">
+            <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
+            target="_blank" title="San Jose, CA, 95124">
+              <span class="icon-map-marker print-view icon-contact not-print"></span>
+            </a>
+            <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
+              <span class="icon-envelope icon-contact print-view not-print"></span>
+            </a>
+            <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
+              <span class="icon-linkedin-square icon-contact print-view not-print"></span>
+            </a>
+          </div>
+        
+          <hr class="line-breaks  print-view">
+      </section>
     </div>
-    
-    <h1 class="main-title web-view">I am Day </h1>
-    <h1 class="main-title print-view">Day Munoz</h1>
-    <div class="img web-view">
-      <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
-    </div>
-    <div class="language-icons web-view">
-      <span class="icon-html5"></span>
-      <span class="icon-css3"></span>
-      <span class="icon-javascript"></span>
-    </div>
-    <p class="description web-view">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate expedita</p>
-    <div class="under-title-contact-info print-view">
-      <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
-      target="_blank" title="San Jose, CA, 95124">
-        <span class="icon-map-marker print-view icon-contact not-print"></span>
-      </a>
-      <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
-        <span class="icon-envelope icon-contact print-view not-print"></span>
-      </a>
-      <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
-        <span class="icon-linkedin-square icon-contact print-view not-print"></span>
-      </a>
-    </div>
-    <hr class="line-breaks  print-view">
-    </section>
+      
 
     <aside id="about-me" class="web-view print-view">
       <ul class="contact-icons print-view">
@@ -387,9 +383,9 @@
   </div>
     
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="./js/particles.js"></script>
   <script src="./js/app.js" type="application/javascript"></script>
   <script src="./js/carousel.js" type="application/javascript"></script>
-  <script src="./js/web-view.js" type="application/javascript"></script>
-  
   </body>
   </html>

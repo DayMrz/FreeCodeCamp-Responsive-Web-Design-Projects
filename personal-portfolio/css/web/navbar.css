@@ -29,8 +29,6 @@ header {
   position: absolute;
   visibility: hidden;
   width: 100%;
-  transition: .5s  ease-in-out;
-
 }
 
 .nav--visible {
