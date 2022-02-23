@@ -1,10 +1,11 @@
 const barsToggle = document.querySelector('#bars')
 const nav = document.querySelector('.navbar')
-const barsIcon = document.querySelector('.icon-bars')
+
 
 let showMenu = false
 
 barsToggle.addEventListener('click', toggleMenu);
+
 
 function toggleMenu() {
   if (!showMenu) {
@@ -19,14 +20,25 @@ function toggleMenu() {
   }
 }
 
-const settingBtn = document.querySelector('#icon-setting')
+const settingBtn = document.querySelector('#icon-setting span')
 const settingList = document.querySelector('.settings-list')
 
-settingBtn.addEventListener('click', () => {
-  settingList.classList.toggle('setting--visible');
-})
+let settingMenu = false
 
+settingBtn.addEventListener('click', toggleSetting);
 
+function toggleSetting() {
+  if(!settingMenu) {
+    settingList.classList.toggle('setting--visible');
+    settingBtn.classList.add('icon-close')
+    settingBtn.classList.remove('icon-cog')
+    settingMenu = true
+  } else {
+    settingList.classList.remove('setting--visible')
+    settingBtn.classList.add('icon-cog')
+    settingMenu = false
+  }
+}
 
 function reveal() {
   const reveals = document.querySelectorAll('.reveal')

@@ -15,7 +15,7 @@
 
 .container-form .subtitle {
   font-family: 'Lobster', cursive;
-  color: var(--Icon-Chetwode-Blue);
+  color: var(--Color-Header-Title);
   text-align: center;
   font-size: 2em;
 }
@@ -30,21 +30,22 @@
   border: none;
   border-radius: 5px;
   color: var(--Active-Icon-Alice-Purple);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.3em;
   margin-bottom: 1em;
   padding: .5em;
 }
 
 .form input::placeholder {
-  color: rgba(128, 128, 128, 0.507);
+  color: var(--Primary-Link-Active);
 }
 
 .form button {
-  border: 2px solid var(--Icon-Chetwode-Blue);
+  border: 2px solid var(--Color-Header-Title);
   background-color: transparent;
   border-radius: 5px;
-  color: var(--Icon-Chetwode-Blue);
-  font-weight: 700;
+  color: var(--Color-Header-Title);
+  font-weight: 900;
   padding: .5em;
   text-transform: uppercase;
   transition: .1s ease-out;
@@ -56,13 +57,10 @@
 }
 
 @media (min-width: 600px) {
-  
-.container-form {
-  padding: 2em;
-}
-  
-
-  
+  .container-form {
+    padding: 2em;
+  }
+    
   .form label {
     padding-bottom: 1em;
   }

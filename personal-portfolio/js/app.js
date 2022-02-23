@@ -12,44 +12,12 @@ function initiate() {
 
 window.onload = initiate;
 
+const colorTheme = document.querySelector('#color-theme span')
+const setButtons = document.querySelectorAll('.icon-btn-set')
 
-// function toggleClass(span) {
-//     span.className ='icon-sun-o'
-// }
+colorTheme.addEventListener('click', lightTheme)
 
-// const $light = document.querySelector('#Light');
-// const $dark = document.querySelector('#Dark');
-
-// const toggleBtn = document.querySelector('#toggleBtn')
-
-// const toggleBtn = document.querySelector('#toggle-btn');
-
-
-
-
-
-
-// $light.addEventListener('click', lightTheme);
-// $dark.addEventListener('click', darkTheme);
-
-// function lightTheme() {
-//     document.body.classList.toggle('light');
-//     $dark.hidden = false
-//     $light.hidden = true
-// }
-
-// function darkTheme() {
-//     document.body.classList.toggle('dark');
-    // $dark.hidden = true
-    // $light.hidden = false
-// }
-
-
-
-// import "./styles.css";
-
-// const button = document.querySelector('button');
-
-// button.addEventListener('click', () => {
-//   document.body.classList.toggle('dark');
-// });
+function lightTheme() {
+        console.log('keep')
+    document.body.classList.toggle('light')
+}
