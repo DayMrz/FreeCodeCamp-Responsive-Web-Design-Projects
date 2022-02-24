@@ -9,14 +9,14 @@
   --Background-Night-Black: hsl(250, 75%, 2%);
   --Background-Welcome-Section: hsl(250, 75%, 2%);
   --Background-Night-Black-Opacity: hsla(252, 86%, 5%, 0.938);
-  
+  --Letter-Light: hsl(264, 7%, 86%);
   --Button-Anakiwa: hsla(195, 100%, 75%, 0.685);
   --Neutral-Yellow: hsl(60, 100%, 50%); 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
-  --Active-Icon-: hsl(0, 0%, 100%);
+  --Active-Icon: hsl(0, 0%, 100%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
   --Particles-Animation-Color: hsl(263, 67%, 76%);
-  --Background-Image-Theme: url('https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+
 
   --Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
   --Box-Shadow-Light-Btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
@@ -24,22 +24,22 @@
 }
 
 .light {
-  --Icon-Chetwode-Blue:hsl(237, 40%, 60%);
-  --Background-Night-Black-Opacity: hsla(251, 58%, 57%, 0.842);
-  --Secondary-Background-Persian-Indigo: hsl(269, 39%, 49%);
-  --Background-Night-Black: hsla(251, 58%, 57%, 0.644);
-  --Secondary-Background-Violet: hsl(263, 67%, 76%);
-  --Button-Anakiwa: hsl(195, 59%, 51%);
-  --Color-Header-Title: hsl(0, 0%, 100%);
   --Primary-Background-Violet: hsla(300, 13%, 89%, 0.322);
-  --Active-Letter-Gray: hsl(0, 0%, 9%);
-  --Background-Welcome-Section: hsl(0, 0%, 100%);
+  --Secondary-Background-Persian-Indigo: hsl(269, 39%, 49%);
+  --Secondary-Background-Violet: hsl(263, 67%, 76%);
   --Active-Icon: hsl(262, 81%, 10%);
+  --Icon-Chetwode-Blue:hsl(237, 40%, 60%);
+  --Color-Header-Title: hsl(0, 0%, 100%);
+  --Background-Night-Black: hsla(251, 58%, 57%, 0.644);
+  --Background-Welcome-Section: hsl(0, 0%, 100%);
+  --Background-Night-Black-Opacity: hsla(251, 58%, 57%, 0.842);
+  --Button-Anakiwa: hsl(195, 59%, 51%);
+  --Neutral-Yellow: hsl(60, 78%, 2%); 
+
+  --Active-Letter-Gray: hsl(0, 0%, 9%);
 
   --Box-Shadow-Dark: hsl(285, 51%, 83%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(285, 51%, 83%) 0px -1px 20px 0px inset;
   /* --Box-Shadow-Dark: transparent; */
   --Box-Shadow-Light-Btn: hsla(286, 30%, 48%, 0.774) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsla(286, 30%, 48%, 0.774) 0px -2px 6px 0px inset;
   --Box-Shadow-Color-Btn: hsla(195, 100%, 75%, 0.171) 0px 50px 200px -30px, hsla(195, 100%, 75%, 0.171) 0px 30px 60px -30px, hsla(196, 38%, 6%, 0.171) 0px -2px 6px 0px inset;
-
-  --Background-Image-Theme: url('https://res.cloudinary.com/daymrz/image/upload/v1645575056/Portfolio-Day/background_byrkm2.jpg')
 }

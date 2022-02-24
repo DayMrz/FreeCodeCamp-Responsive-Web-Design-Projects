@@ -38,8 +38,8 @@ header {
 }
 
 .nav-list {
-  padding: 1em 0;
-  font-weight: 500;
+  padding: 1em 0 0 0;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -48,20 +48,28 @@ header {
   padding: .3em 0;
 }
 
+.nav-list_color {
+  background-color: var(--Primary-Link-Active);
+}
+
 #bars:hover,
 #bars:focus {
   color: var(--Icon-Chetwode-Blue);
 }
-.nav-list li:hover,
-.nav-list li:focus {
-  background-color: var(--Color-Header-Title);
-}
 
 .nav-link {
-  color: var(--Active-Letter-Gray);
+  color: var(--Letter-Light);
   letter-spacing: .1em;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.nav-list li:hover {
+  background-color: var(--Color-Header-Title);
+}
+
+.nav-list li .nav-link:hover {
+  color: var(--Active-Letter-Gray);
 }
 
 
