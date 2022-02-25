@@ -343,13 +343,9 @@ footer {
 
 @media (min-width: 1500px) {
   body {
-    background-color: var(--Secondary-Background-Violet);
     display: flex;
     justify-content: center;
+    font-size: 3em;
     }
 
-  .wrapper,
-  header  {
-    max-width: 1400px;
-  }
 }
