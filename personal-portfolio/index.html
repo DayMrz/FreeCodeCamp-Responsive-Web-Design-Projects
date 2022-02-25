@@ -7,21 +7,17 @@
 
   <title>Day's Portfolio</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/day-logo-purple-background.jpg">
-  <link rel="stylesheet" href="./icons/style.css">
-    <link id="pagestyle" rel="stylesheet" href="css/web/style.css" type="text/css" media="screen">
-    <link id="pagestyle" rel="stylesheet" href="css/print/print-view.css" media="print" type="text/css">
+  <link rel="stylesheet" href="./icons/style.css" type="text/css">
+  <link id="pagestyle" rel="stylesheet" href="css/web/style.css" type="text/css" media="screen">
+  <link id="pagestyle" rel="stylesheet" href="css/print/print-view.css" media="print" type="text/css">
 </head>
 <body>
   <div class="wrapper">
     <header>
-    <div class="btn-not-print print-view">
-      <button id="default-style-sheet" title="Web-View">
-        Go to Website View
-        <span class="icon-arrow-right"></span>
-        </button>
-    </div>
     <div class="header-container web-view">
-      <h1 class="nav-title">Portfolio.</h1>
+      <a class="profile-link" href="#welcome-section" type="button"> 
+        <h1 class="nav-title">Portfolio.</h1>
+      </a>
       <span id="bars" class="icon-bars" aria-label="nav--visible"></span>
     </div>
     <nav id="navbar" class="navbar web-view">
@@ -41,99 +37,106 @@
     </nav>
     </header>
 
+    <section id="header-print" class="print-view">
+      <h1 class="main-title print-view print-only">Day Munoz</h1>
+      <div class="under-title-contact-info print-view">
+        <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
+        target="_blank" title="San Jose, CA, 95124">
+        </a>
+        <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
+        </a>
+        <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
+        </a>
+      </div>
+      <hr class="line-breaks  print-view">
+    </section>
+
+    <div class="settings web-view">
+      <button id="color-theme" class="settings-btn web-view" 
+      title="Color Theme">
+      <span  class="icon-IcoMoon"></span>
+    </div>
+
     <div id="particles-js" class="web-view">
+      
       <section id="welcome-section">
-          <div class="settings web-view">
-            <button id="color-theme" class="settings-btn web-view" 
-            title="Color Theme">
-              <span  class="icon-IcoMoon"></span>
-          </div>
-          <h1 class="main-title web-view">I am Day </h1>
-          <h1 class="main-title print-view">Day Munoz</h1>
-          <div class="img web-view">
-            <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
-          </div>
-          <div class="language-icons web-view">
-            <span class="icon-html5"></span>
-            <span class="icon-css3"></span>
-            <span class="icon-javascript"></span>
-          </div>
-          <p class="description web-view">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate expedita
-          </p>
-          <div class="under-title-contact-info print-view">
-            <a class="display-title print-view" href="https://goo.gl/maps/rWjTnLmrhpKUkip18" 
-            target="_blank" title="San Jose, CA, 95124">
-              <span class="icon-map-marker print-view icon-contact not-print"></span>
-            </a>
-            <a class="display-title print-view" href="mailto:daymrz1465@gmail.com" target="_blank" title="daymrz1465@gmail.com">
-              <span class="icon-envelope icon-contact print-view not-print"></span>
-            </a>
-            <a class="display-title print-view" href="https://www.linkedin.com/in/day-munoz-a6064113a/" target="_blank" title="https://www.linkedin.com/in/day-munoz-a6064113a/">
-              <span class="icon-linkedin-square icon-contact print-view not-print"></span>
-            </a>
-          </div>
-          <hr class="line-breaks  print-view">
+        
+        <h1 id="home" class="main-title web-view">I am Day </h1>
+        <div class="img web-view">
+          <img class="logo-contact-icon icon-contact web-view" src="./images/day-logo-cut.png" alt="Day Logo">
+        </div>
+        <div class="language-icons web-view">
+          <span class="icon-html5"></span>
+          <span class="icon-css3"></span>
+          <span class="icon-javascript"></span>
+        </div>
+        <p class="description web-view">
+          I'm a self-taught Web Developer from Colombia, located in Bay Area.<br>Motivated to learn more about upcoming tech every day. 
+        </p>
       </section>
     </div>
+
 
     <aside id="about-me" class="web-view print-view">
       <ul class="contact-icons print-view">
         <li>
           <span class="only-print"><strong>Portfolio</strong></span>
           <a class="display-title" href="https://daymrz.github.io/Portfolio-Resume-Day/" target="_blank" title="Portfolio">
-            <img class="logo-contact-icon icon-contact print-view not-print" src="./images/day-logo-purple-background.jpg" alt="Day Logo">
           </a>
         </li>
         <li>
           <span class="only-print"><strong>GitHub</strong></span>
           <a id="profile-link" class="display-title" href="https://github.com/DayMrz" target="_blank" title="GitHub" >
-            <span class="icon-github icon-contact print-view not-print"></span>
           </a>
         </li>
         <li>
           <span class="only-print"><strong>Twitter</strong></span>
           <a class="display-title" href="https://twitter.com/daymrz_" target="_blank" title="Twitter">
-            <span class="icon-twitter icon-contact print-view not-print"></span>
           </a>
         </li>
       </ul>
       <hr class="line-breaks print-view">
       <div class="reveal">
-        <h2 class="subtitle print-view">Skills</h2>
+        <h2 class="subtitle print-view">About Me</h2>
         <h2 class="subtitle web-view">About Me</h2>
         <p class="description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Hello there!, This journey as a self-taught web developer started two years ago, it became a passion for me since I realized the satisfaction in creating and building clean, modern websites.
         </p>
       </div>
 
       <ul id="skill-list" class="two-cols">
         <li class="reveal">
-          <span class="web-view icon-laptop icons"></span>
-          <h3 class="subtitle">Skill 1</h3>
-          <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-        </li>
-        <li class="reveal">
           <span class="web-view icon-pencil icons"></span>
-          <h3 class="subtitle">Skill 1</h3>
+          <h3 class="subtitle">Responsive Web App</h3>
           <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Following best practices and guidance to build responsive mobile-first applications allowing better user experiences. <br>
+            Likewise, constantly looking for learning opportunities to improve accessibility around the different devices
           </p>
         </li>
+
         <li class="reveal">
           <span class="web-view icon-education icons"></span>
-          <h3 class="subtitle">Skill 1</h3>
+          <h3 class="subtitle">Education</h3>
           <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Continuously learning new techniques, interested in exploring the tools that big companies use, and aware of the trends in the frontend dev community.
           </p>
         </li>
         <li class="reveal">
-          <span class="web-view icon-chain icons"></span>
-          <h3 class="subtitle">Skill 1</h3>
+          <span class="web-view  icon-laptop icons"></span>
+          <h3 class="subtitle">Skills</h3>
           <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            HTML5 &#124; CSS3 &#124; JavaScript &#124;
+            Express &#124; MongoDB &#124; Node.js &#124; Git 
+          </p>
+        </li>
+        
+        <li class="reveal">
+          <span class="web-view icon-chain icons"></span>
+          <h3 class="subtitle">Dev Tools</h3>
+          <p class="description">
+            VSCode &#124; CodePen &#124; Google Fonts &#124;
+            Icomoon &#124; Font Awesome &#124; GitHub &#124; Bulma &#124;
+            Bootstrap &#124; Cloudinary &#124; npm &#124; Heroku
           </p>
         </li>
       </ul>
@@ -142,29 +145,29 @@
     <main>
       <hr class="line-breaks web-view">
       <section id="projects">
-        <h2 class="project-title reveal">Project Experience</h2>
+        <div class="reveal">
+          <h2 class="project-title">Project Experience</h2>
+          <p class="description print-view web-view">
+            To learn different programming languages apart from participating in online courses constantly, I have also focused on the development of different projects, which have allowed me to put my knowledge into practice and be able to build several of them form scratch.<br>
+            Here I present some of them
+          </p>
+        </div>
         <ul class="projects">
           <li class="reveal">
             <article>
               <div class="container-project-img web-view">
-                <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644881337/Web_capture_14-2-2022_152359_daymrz.github.io_rwmmvs.jpg" target="_blank">
-                  <img class="project-img web-view" src="./images/project-img/video-player.jpeg" alt="image video player project">
-                </a>
+                <img class="project-img web-view" src="./images/project-img/video-player.jpeg" alt="image video player project">
               </div>
               <h3 class="project-subtitle web-view print-view">Video Player</h3>
               <p class="muted-text web-view">
                 html &#124; css &#124; JavaScript
               </p>
               <p class="description print-view web-view">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus quam error earum accusamus
-              </p>
+                This project allowed me to understand the logic behind the position property in CSS and create functions that implement a specific functionality via an event listener.
               <div class="project-two-btn">
                 <a class="project-btn web-view" type="button" 
-                href="https://github.com/DayMrz/Video-player" target="_blank">
-                  <span class="code web-view">&lt;</span>
-                  Code
-                  <span class="code web-view">&#47;&gt;</span>
-                </a>
+                href="https://github.com/DayMrz/Video-player" target="_blank">Code
+              </a>
                 <a class="live-btn web-view" type="button" 
                 href="https://daymrz.github.io/Video-player/" target="_blank">
                     Watch live
@@ -179,9 +182,7 @@
           <li class="reveal">
             <article>
               <div class="container-project-img web-view">
-                <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644966961/Portfolio-Day/yelpcamp_stgb3v.jpg" target="_blank">
-                  <img class="project-img web-view" src="./images/project-img//yelpcamp.jpeg" alt="image yelpcamp app">
-                </a>
+                <img class="project-img web-view" src="./images/project-img//yelpcamp.jpeg" alt="image yelpcamp app">
               </div>
               <h3 class="project-subtitle web-view print-view">YelpCamp App</h3>
               <p class="muted-text web-view">
@@ -192,10 +193,7 @@
               </p>
               <div class="project-two-btn">
                 <a class="project-btn web-view" type="button" 
-                href="https://github.com/DayMrz/Yelp-Camp" target="_blank">
-                    <span class="code web-view">&lt;</span>
-                    Code
-                    <span class="code web-view">&#47;&gt;</span>
+                href="https://github.com/DayMrz/Yelp-Camp" target="_blank"> Code
                 </a>
                 <a class="live-btn web-view" type="button" 
                 href="https://ancient-woodland-38865.herokuapp.com/campgrounds" target="_blank">
@@ -211,9 +209,7 @@
           <li class="reveal">
             <article>
               <div class="container-project-img web-view">
-                <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644971772/Portfolio-Day/landing-page_gmbm5n.jpg" target="_blank">
-                  <img class="project-img web-view" src="./images/project-img/landing-page.jpeg" alt="image landing page">
-                </a>
+                <img class="project-img web-view" src="./images/project-img/landing-page.jpeg" alt="image landing page">
               </div>
               <h3 class="project-subtitle web-view print-view">Landing Page</h3>
               <p class="muted-text web-view">
@@ -224,10 +220,7 @@
               </p>
               <div class="project-two-btn">
                 <a class="project-btn web-view" type="button" 
-                href="https://github.com/DayMrz/Landing-Page-OculusQuest2-Copy" target="_blank">
-                    <span class="code web-view">&lt;</span>
-                    Code
-                    <span class="code web-view">&#47;&gt;</span>
+                href="https://github.com/DayMrz/Landing-Page-OculusQuest2-Copy" target="_blank">Code
                 </a>
                 <a class="live-btn web-view" type="button" 
                 href="https://daymrz.github.io/Landing-Page-OculusQuest2-Copy/" target="_blank">
@@ -243,9 +236,7 @@
           <li class="reveal">
             <article>
               <div class="container-project-img web-view">
-                <a class="project-tile web-view print-view" href="https://res.cloudinary.com/daymrz/image/upload/v1644881337/Web_capture_14-2-2022_152359_daymrz.github.io_rwmmvs.jpg" target="_blank">
-                  <img class="project-img web-view" src="./images/project-img/video-player.jpeg" alt="image video player project">
-                </a>
+                <img class="project-img web-view" src="./images/project-img/video-player.jpeg" alt="image video player project">
               </div>
               <h3 class="project-subtitle web-view print-view">Video Player</h3>
               <p class="muted-text web-view">
@@ -256,10 +247,7 @@
               </p>
               <div class="project-two-btn">
                 <a class="project-btn web-view" type="button" 
-                href="https://github.com/DayMrz/Video-player" target="_blank">
-                  <span class="code web-view">&lt;</span>
-                  Code
-                  <span class="code web-view">&#47;&gt;</span>
+                href="https://github.com/DayMrz/Video-player" target="_blank">  Code
                 </a>
                 <a class="live-btn web-view" type="button" 
                 href="https://daymrz.github.io/Video-player/" target="_blank">
@@ -287,7 +275,7 @@
             </a>
           </li>
           <li class="print-view">
-            <h4 class="project-subtitle">Your McAfee Siscription Has Expired</h4>
+            <h4 class="project-subtitle">Your McAfee Suscription Has Expired</h4>
             <p class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus quam error earum accusamus
             </p>
@@ -316,7 +304,7 @@
         <div class="carousel-window">
           <div class="carousel-image-container" id="imgs">
             <a class="link-img-carousel" href="https://daynotes.hashnode.dev/what-is-regex">
-              <img class="img-carousel" src="./images/project-img/regex.jpeg" alt="what is regex?">
+              <img class="img-carousel" src="./images/project-img/whatisregex.png" alt="what is regex?">
             </a>
             <a class="link-img-carousel" href="https://daynotes.hashnode.dev/how-do-i-create-an-express-router">
               <img class="img-carousel" src="./images/project-img/express-route.jpeg" alt="how do you create an express route">
@@ -393,9 +381,11 @@
   </div>
     
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.2/tsparticles.bundle.min.js"></script>
+  <!-- OLD CDN <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.0.2/tsparticles.bundle.min.js"></script> -->
   <script src="./js/particles.js"></script>
-  <script src="./js/app.js" type="application/javascript"></script>
   <script src="./js/carousel.js" type="application/javascript"></script>
+  <script src="./js/app.js" type="application/javascript"></script>
   </body>
   </html>

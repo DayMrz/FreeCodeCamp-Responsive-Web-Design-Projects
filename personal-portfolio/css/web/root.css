@@ -4,14 +4,15 @@
   --Secondary-Background-Violet: hsla(289, 72%, 24%, 0.329);
   --Active-Icon: hsl(263, 54%, 83%);
   --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
+  --Letter-Che-Per: hsl(237, 63%, 71%);
   --Color-Header-Title: hsl(237, 63%, 71%);
   --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
   --Background-Night-Black: hsl(250, 75%, 2%);
   --Background-Welcome-Section: hsl(250, 75%, 2%);
   --Background-Night-Black-Opacity: hsla(252, 86%, 5%, 0.938);
-  --Letter-Light: hsl(264, 7%, 86%);
+  --Letter-Light: hsl(270, 12%, 94%);
   --Button-Anakiwa: hsla(195, 100%, 75%, 0.685);
-  --Neutral-Yellow: hsl(60, 100%, 50%); 
+  --Neutral: hsl(0, 0%, 0%); 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Icon: hsl(0, 0%, 100%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
@@ -29,12 +30,13 @@
   --Secondary-Background-Violet: hsl(263, 67%, 76%);
   --Active-Icon: hsl(262, 81%, 10%);
   --Icon-Chetwode-Blue:hsl(237, 40%, 60%);
+  --Letter-Che-Per: hsl(289, 75%, 19%);
   --Color-Header-Title: hsl(0, 0%, 100%);
   --Background-Night-Black: hsla(251, 58%, 57%, 0.644);
   --Background-Welcome-Section: hsl(0, 0%, 100%);
   --Background-Night-Black-Opacity: hsla(251, 58%, 57%, 0.842);
   --Button-Anakiwa: hsl(195, 59%, 51%);
-  --Neutral-Yellow: hsl(60, 78%, 2%); 
+  --Neutral: hsl(0, 0%, 0%); 
 
   --Active-Letter-Gray: hsl(0, 0%, 9%);
 

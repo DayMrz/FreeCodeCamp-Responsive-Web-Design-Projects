@@ -8,6 +8,10 @@ header {
   z-index: 1;
 }
 
+header .profile-link {
+  text-decoration: none;
+}
+
 .nav-title {
   color: var(--Color-Header-Title);
   font-family: 'Lobster', cursive;

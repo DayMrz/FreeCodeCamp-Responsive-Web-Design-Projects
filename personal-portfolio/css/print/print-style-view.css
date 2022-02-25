@@ -56,7 +56,7 @@ header .btn-not-print {
 
 aside,
 footer,
-#welcome-section {
+#header-print {
   background-color: var(--Primary-Background);
 }
 
@@ -70,12 +70,7 @@ footer,
   padding-left: .5em;
 }
 
-.project-tile {
-  color: inherit;
-  pointer-events: none;
-}
-
-#welcome-section .under-title-contact-info {
+#header-print .under-title-contact-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,10 +79,6 @@ footer,
 
 .display-title {
   text-decoration: none;
-}
-
-#welcome-section a .icon-contact {
-  margin-right: 1em;
 }
 
 #about-me .contact-icons {
@@ -107,10 +98,6 @@ footer,
   max-height: 20vw ;
   padding: 0;
   width: 30px;
-}
-
-.icon-contact {
-  margin-right: .3em;
 }
 
 .two-cols,

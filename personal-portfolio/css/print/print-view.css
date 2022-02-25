@@ -27,9 +27,7 @@
   grid-column: 1 / -1;
 }
 
-
-
-.wrapper #welcome-section {
+.wrapper #header-print {
   grid-column: 1 / -1;
   text-align: center;
 }
@@ -57,10 +55,6 @@
   
   .wrapper main {
     grid-column: span 6;
-  }
-
-  .icon-contact {
-    margin-right: .1em;
   }
 
   .project-title  {
@@ -108,7 +102,7 @@
 
   aside,
   footer,
-  #welcome-section {
+  #header-print {
     background-color: var(--Primary-Background);
   }
   
