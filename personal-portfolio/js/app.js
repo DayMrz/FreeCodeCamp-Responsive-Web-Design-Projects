@@ -9,12 +9,12 @@ barsToggle.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {
-    nav.classList.toggle('nav--visible')
+    nav.classList.toggle('nav-visible')
     barsToggle.classList.add('icon-close')
     barsToggle.classList.remove('icon-bars')
     showMenu = true
   } else {
-    nav.classList.remove('nav--visible')
+    nav.classList.remove('nav-visible')
     barsToggle.classList.add('icon-bars')
     showMenu = false
   }

@@ -321,6 +321,10 @@ footer {
   letter-spacing: .2em;
 }
 
+.footer-msg .emoji {
+  font-size: 1.5em;
+}
+
 @media (min-width: 600px) {
   header {
     display: flex;

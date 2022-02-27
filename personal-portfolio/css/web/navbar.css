@@ -34,7 +34,7 @@ header {
   width: 100%;
 }
 
-.nav--visible {
+.nav-visible {
   height: auto;
   position: relative;
   visibility: visible;
