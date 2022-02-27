@@ -4,7 +4,6 @@
 @import url('navbar.css');
 @import url('reset.css');
 @import url('root.css');
-@import url('transition-scroll-page.css');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
 
 *, *::before, ::after {
@@ -38,6 +37,17 @@ body {
   background-color: var(--Background-Welcome-Section);
   height: 100vh;
   width: 100%;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: .8s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #welcome-section {
