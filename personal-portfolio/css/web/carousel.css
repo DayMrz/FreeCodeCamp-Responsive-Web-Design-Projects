@@ -38,6 +38,7 @@
   background-color: var(--Button-Anakiwa);
   border: none;
   box-shadow: var(--Box-Shadow-Color-Btn);
+  color: var(--Primary-Button);
   cursor: pointer;
   font-weight: 700;
   padding: 1em;

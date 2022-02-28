@@ -45,6 +45,7 @@
   background-color: transparent;
   border-radius: 5px;
   color: var(--Color-Header-Title);
+  cursor: pointer;
   font-weight: 900;
   padding: .5em;
   text-transform: uppercase;

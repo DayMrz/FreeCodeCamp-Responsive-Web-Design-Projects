@@ -18,7 +18,6 @@ header {
 .nav-list {
   cursor: pointer;
 }
-
 #bars {
   cursor: pointer;
   color: rgb(239, 230, 253);
@@ -56,7 +55,7 @@ header {
 
 #bars:hover,
 #bars:focus {
-  color: var(--Icon-Chetwode-Blue);
+  color: var(--Letter-Che-Per);
 }
 
 .nav-link {

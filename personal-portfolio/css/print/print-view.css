@@ -75,12 +75,6 @@
         display: none;
     }
 
-  .display-link::before,
-  .contact-icon-link::before {
-    content: attr(href);
-    text-decoration: underline;
-  }
-
   .display-title::before {
     content: attr(title);
   }

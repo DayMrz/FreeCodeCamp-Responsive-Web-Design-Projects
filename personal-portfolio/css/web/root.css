@@ -1,5 +1,6 @@
 :root {
   --Primary-Background-Violet: hsl(288, 77%, 12%);
+  --Primary-Button: hsl(288, 77%, 12%);
   --Secondary-Background-Persian-Indigo: hsl(269, 75%, 31%);
   --Secondary-Background-Violet: hsla(289, 72%, 24%, 0.329);
   --Active-Icon: hsl(263, 54%, 83%);
@@ -26,6 +27,7 @@
 
 .light {
   --Primary-Background-Violet: hsla(300, 13%, 89%, 0.322);
+  --Primary-Button: hsl(0, 0%, 100%);
   --Secondary-Background-Persian-Indigo: hsl(269, 39%, 49%);
   --Secondary-Background-Violet: hsl(263, 67%, 76%);
   --Active-Icon: hsl(262, 81%, 10%);
@@ -36,8 +38,6 @@
   --Background-Welcome-Section: hsl(0, 0%, 100%);
   --Background-Night-Black-Opacity: hsla(251, 58%, 57%, 0.842);
   --Button-Anakiwa: hsl(195, 59%, 51%);
-  --Neutral: hsl(0, 0%, 0%); 
-
   --Active-Letter-Gray: hsl(0, 0%, 9%);
 
   --Box-Shadow-Dark: hsl(285, 51%, 83%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(285, 51%, 83%) 0px -1px 20px 0px inset;
