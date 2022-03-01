@@ -2,9 +2,8 @@
 @import url('font-size.css');
 @import url('form.css');
 @import url('navbar.css');
-@import url('reset.css');
+/* @import url('reset.css'); */
 @import url('root.css');
-@import url('transition-scroll-page.css');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
 
 *, *::before, ::after {
@@ -38,6 +37,18 @@ body {
   background-color: var(--Background-Welcome-Section);
   height: 100vh;
   width: 100%;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: .8s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #welcome-section {
@@ -167,11 +178,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 2em;
   padding: 1.5em;
   text-align: center;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .projects {
@@ -207,61 +218,40 @@ body {
   text-transform: uppercase;
 }
 
-article .description {
-  padding-bottom: 1em;
-}
-
 .project-btn,
 .live-btn {
   border-radius: 10px;
   font-size: .7em;
   font-weight: 700;
-  margin-bottom: 1em;
   padding: 1em;
   text-transform: uppercase;  
   transition: color 0.3s ease-out;
 }
 
 .project-btn {
-  align-items: center;
   background-color: transparent;
   border: 3px solid var(--Active-Icon);
   box-shadow: var(--Box-Shadow-Light-Btn);
   color: var(--Active-Icon);
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .live-btn {
-  align-items: center;  
   background-color: var(--Button-Anakiwa);
   box-shadow: var(--Box-Shadow-Color-Btn);
-  border: none;
+  border: 3px solid var(--Button-Anakiwa);
   color: var(--Primary-Button);
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .project-btn:hover, 
 .live-btn:hover,
 .btn-carousel:hover {
-  opacity: .9;
+  opacity: .7;
 }
 
 .project-two-btn {
   display: grid;
   gap: 1em;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.code {
-  color: transparent;
-  font-size: 1em;
-  transition: color 0.3s ease-out;
-}
-
-.project-two-btn:hover .code {
-  color: var(--Button-Anakiwa);
 }
 
 #blog {
@@ -287,7 +277,6 @@ article .description {
 footer {
   background-color: var(--Background-Night-Black);
   padding: 4.5em 0 0 0;
-  
 }
 
 .icons-container {
@@ -299,6 +288,7 @@ footer {
 .contact-icons {
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 
 .contact-icons li {
