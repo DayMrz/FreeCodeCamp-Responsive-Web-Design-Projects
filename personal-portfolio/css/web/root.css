@@ -10,16 +10,16 @@
   --Background-Night-Black: hsl(250, 75%, 2%);
   --Background-Welcome-Section: hsl(250, 75%, 2%);
   --Background-Night-Black-Opacity: hsla(252, 86%, 5%, 0.938);
-  --Letter-Light: hsl(0, 0%, 88%);
   --Button-Anakiwa: hsla(195, 100%, 75%, 0.685);
   --Neutral: hsl(0, 0%, 0%); 
   --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
   --Active-Icon: hsl(0, 0%, 100%);
   --Active-Letter-Gray: hsl(264, 7%, 86%);
   --Particles-Animation-Color: hsl(263, 67%, 76%);
+  --Letter-Light: hsl(0, 0%, 99%);
+  
   --Description-Font-Weight: 100;
   --Nav-Font-Weight: 300;
-
 
   --Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
   --Box-Shadow-Light-Btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
@@ -44,7 +44,6 @@
 
   --Description-Font-Weight:300;
   --Nav-Font-Weight: 500;
-
 
   --Box-Shadow-Dark: hsl(285, 51%, 83%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(285, 51%, 83%) 0px -1px 20px 0px inset;
   --Box-Shadow-Light-Btn: hsla(286, 30%, 48%, 0.774) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsla(286, 30%, 48%, 0.774) 0px -2px 6px 0px inset;
