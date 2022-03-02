@@ -22,6 +22,7 @@
 
 .form label {
   padding-bottom: .5em;
+  font-weight: 500;
 }
 
 .form input,
@@ -29,15 +30,10 @@
   background-color: var(--Primary-Background-Violet);
   border: none;
   border-radius: 5px;
-  color: var(--Active-Icon-Alice-Purple);
-  font-weight: 700;
-  font-size: 1.3em;
+  color: var(--Letter-Light);
+  font-size: 1.1em;
   margin-bottom: 1em;
   padding: .5em;
-}
-
-.form input::placeholder {
-  color: var(--Primary-Link-Active);
 }
 
 .form button {
@@ -54,7 +50,7 @@
 
 .form button:hover {
   background-color: var(--Icon-Chetwode-Blue);
-  color: var(  --Active-Icon-Alice-Purple);
+  color: var(--Active-Icon-Alice-Purple);
 }
 
 @media (min-width: 600px) {

@@ -7,8 +7,8 @@ header {
 
 .nav-title {
   color: var(--Color-Header-Title);
-  font-family: 'Lobster', cursive;
-  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.7em;
   font-weight: 700;
   padding-left: .3em;
   text-decoration: none;
@@ -18,12 +18,13 @@ header {
 .nav-list {
   cursor: pointer;
 }
+
 #bars {
   cursor: pointer;
   color: rgb(239, 230, 253);
-  font-size: 1.8em;
+  font-size: 1.6em;
   position: absolute;
-  right: .5em;
+  right: .3em;
   top: .3em;
 }
 
@@ -40,13 +41,16 @@ header {
 }
 
 .nav-list {
-  font-weight: 500;
+  font-weight: var(--Nav-Font-Weight);
   text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-list li {
   list-style: none;
-  padding: .5em 0;
+  padding: .1em 0;
 }
 
 .nav-list .nav-list_color {
@@ -67,7 +71,6 @@ header {
 
 .nav-list li:hover {
   background-color: var(--Color-Header-Title);
-  
 }
 
 .nav-list li .nav-link:hover {
@@ -77,11 +80,16 @@ header {
 
 
 @media (min-width: 600px) {
+  .header-container {
+    width: 30%;
+  }
+
   #navbar {
     display: flex;
     justify-content: flex-end;
+    position: static;
     visibility: visible;
-    width: 100%;
+    width: 70%;
   }
 
   .profile-link .nav-title {
@@ -94,7 +102,8 @@ header {
 
   .nav-list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 0;
     align-items: center;
   }
@@ -105,10 +114,14 @@ header {
     display: flex;
     text-align: center; 
   }
-
+  
   .nav-link {
     letter-spacing: normal;
-    padding: .75em .4em;
+    padding: .65em .4em;
   }
+  
+  .nav-link_padding {
+    padding: .65em 1em;
 
+  }
 }

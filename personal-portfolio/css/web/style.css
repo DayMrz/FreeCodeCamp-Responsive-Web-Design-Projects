@@ -1,10 +1,8 @@
 @import url('carousel.css');
-@import url('font-size.css');
 @import url('form.css');
 @import url('navbar.css');
-/* @import url('reset.css'); */
 @import url('root.css');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Lobster&family=Rubik:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Lobster&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *, *::before, ::after {
   box-sizing: border-box;
@@ -12,9 +10,12 @@
 }
 
 body {
-  color: var(--Active-Letter-Gray);
-  font-family: 'Rubik', sans-serif;  
-  font-size: 1.8em;
+  color: var(--Letter-Light);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: var(--Description-Font-Weight);
+  line-height: 1.5;
+  letter-spacing: .1em;
 }
 
 .wrapper {
@@ -77,28 +78,25 @@ body {
   padding: .5em;
 }
 
+.settings-btn:hover {
+  opacity: .80;
+}
+
 .icon-IcoMoon {
   color: var(--Neutral);
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 0;
 }
 
 #welcome-section .main-title {
-  font-size: 1.5em;
-  font-weight: 800;
-  letter-spacing: 1rem;
+  letter-spacing: .2em;
   text-transform: uppercase;
 }
 
 #welcome-section .description {
-  font-weight: 600;
   padding-top: 2em;
   text-align: center;
   width: 60%;
-}
-
-.language-icons span {
-  font-size: 1.2em;
 }
 
 .logo-contact-icon {
@@ -146,8 +144,6 @@ body {
 #about-me .subtitle,
 #projects .project-title {
   color: var(--Icon-Chetwode-Blue);
-  font-size: 1.5em;
-  font-weight: 800;
   padding-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -155,13 +151,17 @@ body {
 
 #skill-list .subtitle {
   color: var(--Active-Letter-Gray);
-  font-size: inherit;
   letter-spacing: .1em;
+  text-transform: none;
 }
 
 #about-me .icons {
   color: var(--Button-Anakiwa);
   font-size: 2.5em;
+}
+
+#about-me .icon-devices {
+  font-size: 3em;
 }
 
 .line-breaks {
@@ -182,7 +182,6 @@ body {
   margin-bottom: 2em;
   padding: 1.5em;
   text-align: center;
-  /* width: fit-content; */
 }
 
 .projects {
@@ -199,7 +198,6 @@ body {
 
 .projects .project-subtitle {
   padding-bottom: 1em;
-  text-transform: uppercase;
 }
 
 .container-project-img {
@@ -215,6 +213,7 @@ body {
 
 .muted-text {
   color: var(--Letter-Che-Per);
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -267,8 +266,6 @@ body {
 
 #blog .subtitle {
   color: var(--Icon-Chetwode-Blue);
-  font-size: 1.5em;
-  font-weight: 800;
   letter-spacing: .1em;
   text-align: center;
   text-transform: uppercase;
@@ -318,14 +315,18 @@ footer {
   letter-spacing: .2em;
 }
 
-.footer-msg .emoji {
-  font-size: 1.5em;
-}
-
 @media (min-width: 600px) {
+  body {
+    font-size: 1.1em;
+  }
+
   header {
     display: flex;
     padding: 0;
+  }
+
+  #welcome-section .description {
+    width: 50%;
   }
 
   .two-cols {
@@ -345,18 +346,12 @@ footer {
     text-align: center;
     align-items: stretch;
   }
-
-  .contact-icons .icon {
-    /* color: var( --Icon-Chetwode-Blue); */
-    font-size: 2.5em;
-  }
 }
 
 @media (min-width: 1500px) {
   body {
+    font-size: 2.3em;
     display: flex;
     justify-content: center;
-    font-size: 3em;
     }
-
 }
