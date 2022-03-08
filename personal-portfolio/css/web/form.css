@@ -48,10 +48,13 @@
   transition: .1s ease-out;
 }
 
-.form button:hover {
-  background-color: var(--Icon-Chetwode-Blue);
-  color: var(--Active-Icon-Alice-Purple);
+@media (any-hover: hover) {
+  .form button:hover {
+    background-color: var(--Icon-Chetwode-Blue);
+    color: var(--Active-Icon-Alice-Purple);
+  }
 }
+
 
 @media (min-width: 600px) {
   .container-form {

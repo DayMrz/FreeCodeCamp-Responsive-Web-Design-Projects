@@ -78,10 +78,6 @@ body {
   padding: .5em;
 }
 
-.settings-btn:hover {
-  opacity: .80;
-}
-
 .icon-IcoMoon {
   color: var(--Neutral);
   font-size: 1.5em;
@@ -241,12 +237,6 @@ body {
   color: var(--Primary-Button);
 }
 
-.project-btn:hover, 
-.live-btn:hover,
-.btn-carousel:hover {
-  opacity: .7;
-}
-
 .project-two-btn {
   display: grid;
   gap: 1em;
@@ -301,9 +291,6 @@ footer {
   color: var(--Color-Header-Title);
 }
 
-.contact-icons .icon:hover {
-  opacity: .70;
-}
 
 .footer-msg {
   font-family: 'Inconsolata', monospace;
@@ -313,6 +300,18 @@ footer {
 
 .footer-msg .description {
   letter-spacing: .2em;
+}
+
+@media (any-hover: hover) {
+  .project-btn:hover, 
+  .live-btn:hover,
+  .btn-carousel:hover {
+    opacity: .7;
+  }
+
+  .contact-icons .icon:hover {
+    opacity: .70;
+  }
 }
 
 @media (min-width: 600px) {
@@ -350,7 +349,7 @@ footer {
 
 @media (min-width: 1500px) {
   body {
-    font-size: 2.3em;
+    font-size: 1.8em;
     display: flex;
     justify-content: center;
     }

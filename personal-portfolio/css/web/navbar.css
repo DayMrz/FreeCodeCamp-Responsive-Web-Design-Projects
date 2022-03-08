@@ -57,11 +57,6 @@ header {
   background-color: var(--Primary-Link-Active);
 }
 
-#bars:hover,
-#bars:focus {
-  color: var(--Letter-Che-Per);
-}
-
 .nav-link {
   color: var(--Letter-Light);
   letter-spacing: .1em;
@@ -69,15 +64,25 @@ header {
   text-transform: uppercase;
 }
 
-.nav-list li:hover {
-  background-color: var(--Color-Header-Title);
-}
+@media (any-hover: hover) {
+  .nav-title:hover {
+    opacity: .80;
+  }
 
-.nav-list li .nav-link:hover {
-  color: var(--Active-Letter-Gray);
-  background-color: var(--Color-Header-Title);
-}
+  #bars:hover,
+  #bars:focus {
+    color: var(--Letter-Che-Per);
+  }
 
+  .nav-list li:hover {
+    background-color: var(--Color-Header-Title);
+  }
+
+  .nav-list li .nav-link:hover {
+    color: var(--Active-Letter-Gray);
+    background-color: var(--Color-Header-Title);
+  }
+}
 
 @media (min-width: 600px) {
   .header-container {
