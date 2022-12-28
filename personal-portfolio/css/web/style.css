@@ -10,16 +10,16 @@
 }
 
 body {
-  color: var(--Letter-Light);
+  color: var(--letter-light);
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  font-weight: var(--Description-Font-Weight);
+  font-weight: var(--description-font-weight);
   line-height: 1.5;
   letter-spacing: .1em;
 }
 
 .wrapper {
-  background-color: var(--Primary-Background-Violet);
+  background-color: var(--primary-background-violet);
 }
 
 .print-view {
@@ -35,7 +35,7 @@ body {
 }
 
 #particles-js {
-  background-color: var(--Background-Welcome-Section);
+  background-color: var(--background-welcome-section);
   height: 100vh;
   width: 100%;
 }
@@ -71,15 +71,17 @@ body {
 }
 
 .settings-btn {
-  border: 1.5px solid var(--Neutral); 
+  border: 1.5px solid var(--neutral); 
   border-radius: 10px;
-  box-shadow: var(--Box-Shadow-Color-Btn);
+  box-shadow: var(--box-shadow-color-btn);
   cursor: pointer;
   padding: .5em;
 }
 
-.icon-IcoMoon {
-  color: var(--Neutral);
+#color-theme {
+  background-image: var(--icon-theme);
+  color: var(--icon-theme-color);
+  /* color: var(--neutral); */
   font-size: 1.5em;
   padding: 0;
 }
@@ -96,7 +98,7 @@ body {
 }
 
 .logo-contact-icon {
-  background-color: var(--Secondary-Background-Persian-Indigo);
+  background-color: var(--secondary-background-persian-indigo);
   border-radius: 50%;
   margin: 2em 0;
 }
@@ -139,20 +141,20 @@ body {
 
 #about-me .subtitle,
 #projects .project-title {
-  color: var(--Icon-Chetwode-Blue);
+  color: var(--icon-chetwode-blue);
   padding-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
 }
 
 #skill-list .subtitle {
-  color: var(--Active-Letter-Gray);
+  color: var(--active-letter-gray);
   letter-spacing: .1em;
   text-transform: none;
 }
 
 #about-me .icons {
-  color: var(--Button-Anakiwa);
+  color: var(--button-anakiwa);
   font-size: 2.5em;
 }
 
@@ -161,16 +163,16 @@ body {
 }
 
 .line-breaks {
-  background-color: var(--Secondary-Background-Persian-Indigo);
+  background-color: var(--secondary-background-persian-indigo);
   border: 0;
   height: 3px;
   margin: 0 3em;
 }
 
 #projects article {
-  background-color: var(--Secondary-Background-Violet);
+  background-color: var(--secondary-background-violet);
   border-radius: 10px;
-  box-shadow: var(--Box-Shadow-Dark);
+  box-shadow: var(--box-shadow-dark);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -202,13 +204,13 @@ body {
 
 .project-img {
   border-radius: 10px;
-  box-shadow: var(--Box-Shadow-Dark);
+  box-shadow: var(--box-shadow-dark);
   max-height: 100%;
   max-width: 100%;
 }
 
 .muted-text {
-  color: var(--Letter-Che-Per);
+  color: var(--letter-che-per);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -225,16 +227,16 @@ body {
 
 .project-btn {
   background-color: transparent;
-  border: 3px solid var(--Active-Icon);
-  box-shadow: var(--Box-Shadow-Light-Btn);
-  color: var(--Active-Icon);
+  border: 3px solid var(--active-icon);
+  box-shadow: var(--box-shadow-light-btn);
+  color: var(--active-icon);
 }
 
 .live-btn {
-  background-color: var(--Button-Anakiwa);
-  box-shadow: var(--Box-Shadow-Color-Btn);
-  border: 3px solid var(--Button-Anakiwa);
-  color: var(--Primary-Button);
+  background-color: var(--button-anakiwa);
+  box-shadow: var(--box-shadow-color-btn);
+  border: 3px solid var(--button-anakiwa);
+  color: var(--primary-button);
 }
 
 .project-two-btn {
@@ -255,14 +257,14 @@ body {
 }
 
 #blog .subtitle {
-  color: var(--Icon-Chetwode-Blue);
+  color: var(--icon-chetwode-blue);
   letter-spacing: .1em;
   text-align: center;
   text-transform: uppercase;
 }
 
 footer {
-  background-color: var(--Background-Night-Black);
+  background-color: var(--background-night-black);
   padding: 4.5em 0 0 0;
 }
 
@@ -288,7 +290,7 @@ footer {
 
 .contact-icons .icon {
   font-size: 1.5em;
-  color: var(--Color-Header-Title);
+  color: var(--color-header-title);
 }
 
 

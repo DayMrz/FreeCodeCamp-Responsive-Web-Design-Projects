@@ -1,51 +1,60 @@
 :root {
-  --Primary-Background-Violet: hsl(288, 77%, 12%);
-  --Primary-Button: hsl(288, 77%, 12%);
-  --Secondary-Background-Persian-Indigo: hsl(269, 75%, 31%);
-  --Secondary-Background-Violet: hsla(289, 72%, 24%, 0.329);
-  --Icon-Chetwode-Blue:hsl(237, 63%, 71%);
-  --Letter-Che-Per: hsl(237, 63%, 71%);
-  --Color-Header-Title: hsl(237, 63%, 71%);
-  --Primary-Link-Active: hsla(240, 39%, 42%, 0.534);
-  --Background-Night-Black: hsl(250, 75%, 2%);
-  --Background-Welcome-Section: hsl(250, 75%, 2%);
-  --Background-Night-Black-Opacity: hsla(252, 86%, 5%, 0.938);
-  --Button-Anakiwa: hsla(195, 100%, 75%, 0.685);
-  --Neutral: hsl(0, 0%, 0%); 
-  --Active-Icon-Alice-Purple: hsl(263, 85%, 95%);
-  --Active-Icon: hsl(0, 0%, 100%);
-  --Active-Letter-Gray: hsl(264, 7%, 86%);
-  --Particles-Animation-Color: hsl(263, 67%, 76%);
-  --Letter-Light: hsl(0, 0%, 99%);
+  --primary-background-violet: hsl(288, 77%, 12%);
+  --primary-button: hsl(288, 77%, 12%);
+  --secondary-background-persian-indigo: hsl(269, 75%, 31%);
+  --secondary-background-violet: hsla(289, 72%, 24%, 0.329);
+  --icon-chetwode-blue:hsl(237, 63%, 71%);
+  --letter-che-per: hsl(237, 63%, 71%);
+  --color-header-title: hsl(237, 63%, 71%);
+  --primary-link-active: hsla(240, 39%, 42%, 0.534);
+  --background-night-black: hsl(250, 75%, 2%);
+  --background-welcome-section: hsl(250, 75%, 2%);
+  --background-night-black-opacity: hsla(252, 86%, 5%, 0.938);
+  --button-anakiwa: hsla(195, 100%, 75%, 0.685);
+  --neutral: hsl(0, 0%, 0%); 
+  --active-icon-alice-purple: hsl(263, 85%, 95%);
+  --active-icon: hsl(0, 0%, 100%);
+  --active-letter-gray: hsl(264, 7%, 86%);
+  --particles-animation-color: hsl(263, 67%, 76%);
+  --letter-light: hsl(0, 0%, 99%);
   
-  --Description-Font-Weight: 100;
-  --Nav-Font-Weight: 300;
+  --description-font-weight: 100;
+  --nav-font-weight: 300;
 
-  --Box-Shadow-Dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
-  --Box-Shadow-Light-Btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
-  --Box-Shadow-Color-Btn: hsla(195, 60%, 18%, 0.171) 0px 50px 200px -30px, hsla(195, 60%, 18%, 0.171) 0px 30px 60px -30px, hsla(195, 60%, 18%, 0.171) 0px -2px 6px 0px inset;
+  --box-shadow-dark: hsl(288, 77%, 12%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(288, 77%, 12%) 0px -2px 6px 0px inset;
+  --box-shadow-light-btn: hsl(263, 54%, 83%) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(263, 54%, 83%) 0px -2px 6px 0px inset;
+  --box-shadow-color-btn: hsla(195, 60%, 18%, 0.171) 0px 50px 200px -30px, hsla(195, 60%, 18%, 0.171) 0px 30px 60px -30px, hsla(195, 60%, 18%, 0.171) 0px -2px 6px 0px inset;
+
+  --icon-theme: url('/icons/svg/sun-solid.svg');
+  --icon-theme-color: hsl(60, 100%, 50%);
+  /* C:\Users\Dayhana Munoz\OneDrive\Documents\freecodecamp\personal-portfolio\icons\svg\moon-solid.svg */
 }
 
 .light {
-  --Primary-Background-Violet: hsl(300, 14%, 89%);
-  --Primary-Button: hsl(0, 0%, 100%);
-  --Secondary-Background-Persian-Indigo: hsl(269, 39%, 49%);
-  --Secondary-Background-Violet: hsl(263, 65%, 75%);
-  --Active-Icon: hsl(262, 81%, 10%);
-  --Icon-Chetwode-Blue:hsl(237, 40%, 60%);
-  --Letter-Che-Per: hsl(289, 75%, 19%);
-  --Color-Header-Title: hsl(0, 0%, 100%);
-  --Background-Night-Black: hsla(251, 58%, 57%, 0.644);
-  --Background-Welcome-Section: hsl(0, 0%, 100%);
-  --Background-Night-Black-Opacity: hsla(251, 58%, 57%, 0.842);
-  --Button-Anakiwa: hsl(195, 59%, 51%);
-  --Active-Letter-Gray: hsl(0, 0%, 9%);
-  --Letter-Light: hsl(0, 0%, 0%);
+  --primary-background-violet: hsl(300, 14%, 89%);
+  --primary-button: hsl(0, 0%, 100%);
+  --secondary-background-persian-indigo: hsl(269, 39%, 49%);
+  --secondary-background-violet: hsl(263, 65%, 75%);
+  --active-icon: hsl(262, 81%, 10%);
+  --icon-chetwode-blue:hsl(237, 40%, 60%);
+  --letter-che-per: hsl(289, 75%, 19%);
+  --color-header-title: hsl(0, 0%, 100%);
+  --background-night-black: hsla(251, 58%, 57%, 0.644);
+  --background-welcome-section: hsl(0, 0%, 100%);
+  --background-night-black-opacity: hsla(251, 58%, 57%, 0.842);
+  --button-anakiwa: hsl(195, 59%, 51%);
+  --active-letter-gray: hsl(0, 0%, 9%);
+  --letter-light: hsl(0, 0%, 0%);
 
-  --Description-Font-Weight:300;
-  --Nav-Font-Weight: 500;
+  --description-font-weight:300;
+  --nav-font-weight: 500;
 
-  --Box-Shadow-Dark: hsl(285, 51%, 83%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(285, 51%, 83%) 0px -1px 20px 0px inset;
-  --Box-Shadow-Light-Btn: hsla(286, 30%, 48%, 0.774) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsla(286, 30%, 48%, 0.774) 0px -2px 6px 0px inset;
-  --Box-Shadow-Color-Btn: hsla(195, 100%, 75%, 0.171) 0px 50px 200px -30px, hsla(195, 100%, 75%, 0.171) 0px 30px 60px -30px, hsla(196, 38%, 6%, 0.171) 0px -2px 6px 0px inset;
+  --box-shadow-dark: hsl(285, 51%, 83%) 0px 50px 100px -20px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsl(285, 51%, 83%) 0px -1px 20px 0px inset;
+  --box-shadow-light-btn: hsla(286, 30%, 48%, 0.774) 0px 50px 200px -30px, hsla(0, 0%, 0%, 0.3) 0px 30px 60px -30px, hsla(286, 30%, 48%, 0.774) 0px -2px 6px 0px inset;
+  --box-shadow-color-btn: hsla(195, 100%, 75%, 0.171) 0px 50px 200px -30px, hsla(195, 100%, 75%, 0.171) 0px 30px 60px -30px, hsla(196, 38%, 6%, 0.171) 0px -2px 6px 0px inset;
+
+  --icon-theme: url('/icons/svg/moon-solid.svg');
+  --icon-theme-color: hsl(0, 0%, 0%);
+
+
 }

@@ -2,7 +2,7 @@
 .container-form {
   width: 90%;
   margin: 0 auto;
-  border: 5px solid var(--Primary-Link-Active);
+  border: 5px solid var(--primary-link-active);
   border-radius: 10px;
   padding: 1em;
 }
@@ -15,7 +15,7 @@
 
 .container-form .subtitle {
   font-family: 'Lobster', cursive;
-  color: var(--Color-Header-Title);
+  color: var(--color-header-title);
   text-align: center;
   font-size: 2em;
 }
@@ -27,20 +27,20 @@
 
 .form input,
 .form textarea {
-  background-color: var(--Primary-Background-Violet);
+  background-color: var(--primary-background-violet);
   border: none;
   border-radius: 5px;
-  color: var(--Letter-Light);
+  color: var(--letter-light);
   font-size: 1.1em;
   margin-bottom: 1em;
   padding: .5em;
 }
 
 .form button {
-  border: 2px solid var(--Color-Header-Title);
+  border: 2px solid var(--color-header-title);
   background-color: transparent;
   border-radius: 5px;
-  color: var(--Color-Header-Title);
+  color: var(--color-header-title);
   cursor: pointer;
   font-weight: 900;
   padding: .5em;
@@ -50,8 +50,8 @@
 
 @media (any-hover: hover) {
   .form button:hover {
-    background-color: var(--Icon-Chetwode-Blue);
-    color: var(--Active-Icon-Alice-Purple);
+    background-color: var(--icon-chetwode-blue);
+    color: var(--active-icon-alice-purple);
   }
 }
 

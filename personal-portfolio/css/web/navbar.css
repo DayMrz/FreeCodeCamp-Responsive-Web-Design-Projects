@@ -1,12 +1,12 @@
 header {
-  background-color: var(--Background-Night-Black-Opacity);
+  background-color: var(--background-night-black-opacity);
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
 .nav-title {
-  color: var(--Color-Header-Title);
+  color: var(--color-header-title);
   font-family: 'Pacifico', cursive;
   font-size: 1.7em;
   font-weight: 700;
@@ -41,7 +41,7 @@ header {
 }
 
 .nav-list {
-  font-weight: var(--Nav-Font-Weight);
+  font-weight: var(--nav-font-weight);
   text-align: center;
   padding: 0;
   display: flex;
@@ -54,11 +54,11 @@ header {
 }
 
 .nav-list .nav-list_color {
-  background-color: var(--Primary-Link-Active);
+  background-color: var(--primary-link-active);
 }
 
 .nav-link {
-  color: var(--Letter-Light);
+  color: var(--letter-light);
   letter-spacing: .1em;
   text-decoration: none;
   text-transform: uppercase;
@@ -71,16 +71,16 @@ header {
 
   #bars:hover,
   #bars:focus {
-    color: var(--Letter-Che-Per);
+    color: var(--letter-che-per);
   }
 
   .nav-list li:hover {
-    background-color: var(--Color-Header-Title);
+    background-color: var(--color-header-title);
   }
 
   .nav-list li .nav-link:hover {
-    color: var(--Active-Letter-Gray);
-    background-color: var(--Color-Header-Title);
+    color: var(--active-letter-gray);
+    background-color: var(--color-header-title);
   }
 }
 

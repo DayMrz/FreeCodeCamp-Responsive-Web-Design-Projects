@@ -1,8 +1,8 @@
 :root {
-  --Primary-Link-Active: hsl(240, 54%, 37%);
+  --primary-link-active: hsl(240, 54%, 37%);
   --Secondary-Link-Active: hsla(240, 39%, 42%, 0.842);
   --Primary-Background: hsla(265, 51%, 80%, 0.082);
-  --Primary-Button: hsl(266, 47%, 27%);
+  --primary-button: hsl(266, 47%, 27%);
   --Secondary-Button: hsla(267, 47%, 27%, 0.397);
   --Secondary-Background: hsla(0, 0%, 100%, 0.945);
   --Background-Chetwode-Blue:hsl(237, 33%, 53%);
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: var(--Primary-Link-Active);
+  color: var(--primary-link-active);
   transition: all 0.3s ease ;
 }
 
@@ -31,7 +31,7 @@ header .btn-not-print {
 }
 
 .btn-not-print button {
-  background-color: var(--Primary-Link-Active);
+  background-color: var(--primary-link-active);
   border-radius: 5px;
   border: none;
   color: var(--Secondary-Background);

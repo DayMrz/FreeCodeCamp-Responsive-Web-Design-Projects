@@ -35,10 +35,10 @@
 }
 
 .btn-carousel {
-  background-color: var(--Button-Anakiwa);
+  background-color: var(--button-anakiwa);
   border: none;
-  box-shadow: var(--Box-Shadow-Color-Btn);
-  color: var(--Primary-Button);
+  box-shadow: var(--box-shadow-color-btn);
+  color: var(--primary-button);
   cursor: pointer;
   font-weight: 700;
   padding: 1em;
