@@ -38,8 +38,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-const colorTheme = document.querySelector('#color-theme')
-// const setButtons = document.querySelectorAll('.icon-btn-set')
+const colorTheme = document.querySelector('#btn-theme')
 
 colorTheme.addEventListener('click', lightTheme)
 

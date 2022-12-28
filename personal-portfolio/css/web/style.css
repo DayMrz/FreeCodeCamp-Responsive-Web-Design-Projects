@@ -71,19 +71,18 @@ body {
 }
 
 .settings-btn {
-  border: 1.5px solid var(--neutral); 
-  border-radius: 10px;
+  background-image: var(--icon-theme);
+  background-color: var(--color-header-title);
+  border: 1.5px solid var(--icon-theme-color);
+  border-radius: 50%;
   box-shadow: var(--box-shadow-color-btn);
   cursor: pointer;
-  padding: .5em;
+  padding: .9rem;
 }
 
 #color-theme {
-  background-image: var(--icon-theme);
-  color: var(--icon-theme-color);
-  /* color: var(--neutral); */
-  font-size: 1.5em;
-  padding: 0;
+  /* color: var(--icon-theme-color); */
+  /* font-size: 1.5em; */
 }
 
 #welcome-section .main-title {
